@@ -1,0 +1,50 @@
+h1 {
+  width: 1463px;
+  text-align: center;
+}
+
+.letter {
+  top: 0; 
+  left: 0; 
+}
+
+.lettertext {
+  width: 15em;
+  height: 20em; 
+}
+
+#santa {
+  width: 70px;
+  height: 66px;
+  position: fixed; 
+  top: 377px; 
+  left: 893px; 
+  transition: all 1s linear;
+  visibility: hidden; 
+}
+#santa.big {
+  width: 400px;
+  height: 400px;
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+}
+
+textarea {
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+
+}
