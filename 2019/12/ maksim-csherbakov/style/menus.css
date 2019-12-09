@@ -1,0 +1,99 @@
+#background_deny{
+    position: absolute;
+    bottom: 10000px;
+}
+.can_hidden{
+    position: absolute;
+    bottom: 10000px;
+}
+.can_allow{
+    position: relative;
+    left: 100px;
+    width: 1300px;
+    text-align: center;
+}
+.menu_block{
+    width: 508px;
+    height: 350px;
+    position: relative;
+    left: 18%;
+    bottom: 100px;
+}
+.gui_deny{
+    position: absolute;
+    bottom: 10000px;
+}
+.gui_allow{
+    width: 900px;
+    height: 500px;
+    border: 2px solid black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    position: relative;
+    left: 233px;
+    margin-top: 5%;
+}
+#Txt1{
+    font-size: 50px;
+    text-align: center;
+}
+#Txt2{
+    font-size: 30px;
+    text-align: center;
+}
+
+#ul1{
+    font-size: 25px;
+}
+
+#Txt3{
+    font-size: 30px;
+}
+
+#ul2{
+    font-size: 25px;
+}
+#bar{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+    width: 1300px;
+}
+#bossbar{
+    background: red;
+    height: 42px;
+    position: relative;
+    top: 41px;
+    border: 1px solid black;
+}
+#Txt4{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}
+.win_deny{
+    position: absolute;
+    bottom: 10000px;
+}
+.win_allow{
+    width: 900px;
+    height: 500px;
+    border: 2px solid black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    position: relative;
+    left: 233px;
+    margin-top: 5%;
+}
+#Txt5{
+    text-align: center;
+    font-size: 35px;
+}
+#win_menu{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 10px;
+    font-size: 20px;
+}
+#sendd{
+    font-size: 30px;
+    background: brown;
+    position: relative;
+    left: 45%;
+}

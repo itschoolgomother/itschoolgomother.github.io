@@ -1,0 +1,415 @@
+#ded_54_goda{
+    width: 150px;
+    height: 250px;
+    position: relative;
+    left: 300px;
+    top: 400px;
+}
+#old_head{
+    background-color: burlywood;
+    width: 30px;
+    height: 35px;
+    border-radius:  30px ;
+    position: relative;
+    left: 20px;
+    top: 5px;
+
+
+}
+#old_body{
+    background-color: red;
+    width: 70px;
+    height: 80px;
+    border-radius:  40px ;
+    position: relative;
+}
+#old_left_neg{
+    background-color: red;
+    width: 15px;
+    height: 40px;
+    border-radius:  10px ;
+    position: relative;
+    bottom: 15px;
+    transform: rotate(20deg)
+}
+#old_right_neg{
+    background-color: red;
+    width: 15px;
+    height: 40px;
+    border-radius:  10px ;
+    position: relative;
+    left: 50px;
+    bottom: 52px;
+    transform: rotate(160deg)
+}
+#old_left_hand{
+    background-color: red;
+    width: 13px;
+    height: 50px;
+    border-radius:  10px ;
+    position: relative;
+    right: 18px;
+    bottom: 25px;
+    transform-origin: left;
+    transform: rotate(60deg);
+    animation-name: left_hend;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+#old_right_hand{
+    background-color: red;
+    width: 13px;
+    height: 50px;
+    border-radius:  10px ;
+    position: relative;
+    left: 62px;
+    bottom: 78px;
+    transform: rotate(120deg);
+    animation-name: right_hend;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+
+}
+#first_eye{
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius:  4px ;
+    position: relative;
+    bottom: 20px;
+    left: 4px;
+
+
+}
+
+#second_eye{
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius:  4px ;
+    position: relative;
+    bottom: 28px;
+    left: 18px;
+
+}
+#boroda{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+}
+#left_tapok{
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    right: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#right_tapok{
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    position: relative;
+    right: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#shapka{
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    position: relative;
+    bottom: 23px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:5px ;
+}
+#banbon{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: wheat;
+}
+#fingers_left{
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: burlywood;
+    position: relative;
+    top: 40px;
+}
+#fingers_right{
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: burlywood;
+    position: relative;
+}
+#deda_remen{
+    width: 70px;
+    height: 8px;
+    background-color: brown;
+    position: relative;
+    bottom: 75px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@keyframes left_hend {
+    100%{
+        transform-origin: right;
+        transform: rotate(70deg);
+
+    }
+    50%{
+        transform-origin: right;
+        transform: rotate(120deg);
+
+    }
+    0%{
+        transform-origin:right;
+        transform: rotate(70deg);
+
+    }
+}
+@keyframes right_hend {
+    100%{
+        transform-origin: right;
+        transform: rotate(110deg);
+
+    }
+    50%{
+        transform-origin: right;
+        transform: rotate(60deg);
+
+    }
+    0%{
+        transform-origin:right;
+        transform: rotate(110deg);
+
+    }
+}
+#background{
+    background-color:darkcyan;
+    width: 2366px;
+    height: 750px;
+
+}
+#other{
+    opacity: 60%;
+}
+*{
+    margin: 0px;
+}
+#flat{
+    width: 2366px;
+    height: 350px;
+    background: rgba(179,220,237,1);
+    background: -webkit-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(167,218,237,1) 93%, rgba(188,224,238,1) 100%);
+    position: absolute;
+    top: 400px;
+    border-radius: 1400px;
+}
+.bodya{
+    overflow: hidden;
+    width: 1366px;
+    height: 650px;
+}
+#snow_man{
+    position: relative;
+    bottom: 300px;
+    left: 950px;
+}
+#body_two{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    border: 1px solid black;
+}
+
+#head{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 18px;
+    border: 1px solid black;
+}
+#vedro{
+    width: 40px;
+    background: darkslategray;
+    border: 1px solid black;
+    height: 30px;
+    position: relative;
+    bottom: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#nose{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 30px solid orangered;
+    border-bottom: 10px solid transparent;
+    transform: rotate(160deg);
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+#pygovka1{
+    background: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+}
+#pygovka2{
+    background: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    position: relative;
+    top: 8px;
+}
+#pygovka3{
+    background: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    position: relative;
+    top: 16px;
+}
+#pugovki{
+    position: relative;
+    left: 20px;
+    top: 5px;
+    transform: rotate(340deg);
+}
+#noga_left{
+    background: white;
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    top: 25px;
+    right: 5px;
+    transform: rotate(10deg);
+}
+#noga_right{
+    background: white;
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    left: 34px;
+}
+#glass{
+    background: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+}
+.First{
+    border: 50px solid transparent; border-bottom: 40px solid green;
+    position: relative;
+    left: 10px;
+}
+.Second{
+    border: 20px solid transparent; border-bottom: 30px solid green;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+.Third{
+    border: 20px solid transparent; border-bottom: 40px solid green;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+.Four{
+    border: 20px solid transparent; border-bottom: 50px solid green;
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+}
+.trunk{
+    width: 30px;
+    height: 35px;
+    background: saddlebrown;
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+}
+.trunk2{
+    width: 38px;
+    height: 35px;
+    background: saddlebrown;
+    position: relative;
+    left: 40px;
+    bottom: 60px;
+}
+#Spruce{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 466px;
+}
+#Spruce1{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 566px;
+    left: 100px;
+}
+#Spruce2{
+     width: 100px;
+     height: 200px;
+     position: relative;
+     bottom: 666px;
+ left: 600px;
+}
+#Spruce3{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 966px;
+    left: 800px;
+}
+#Spruce4{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 1200px;
+    left: 1000px;
+}
+#Spruce5{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom: 1500px;
+    left: 1250px;
+}
