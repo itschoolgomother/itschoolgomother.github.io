@@ -1,0 +1,40 @@
+body {
+    background-image: url("../img/newyear.png"); /* Задний фон */
+    background-repeat: no-repeat; /* Задний фон не повт. */
+    background-attachment: fixed; /* Фикс. ПОзиция */
+    background-size: auto 90% ; /*Размер Фона */
+    background-position: center;/*Позиция фона */
+   }
+
+html, body {
+    height: 100%; /*Висота*/
+    overflow:  hidden;/*Спрятаное*/
+    }
+    @keyframes snow {
+        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}/*позиция*/
+        100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}/*Позиция*/
+       }
+       div#wrapper {
+        background-image: url('../img/snowballs500.png'), url('../img/snowfballs300.png'), url('../img/snowballs400.png');/*Картинки*/
+        height:90%;/*висота*/
+        animation: snow 20s linear infinite; /*анимация*/
+       }
+       div{
+        background: linear-gradient(red, blue); /* Градиент для текста */
+       }
+       div>h2 {
+        font-size: 3rem; /* Размер текста */
+        margin: 0; /* Убираем отступы */
+        background: white; /* Белый цвет фона */
+        mix-blend-mode: screen; /* Режим наложения */
+       }
+       audio {
+        position: absolute;/*позиция*/
+        top: 90%;/*верх*/
+        left: 37%;/*влево*/
+        }
+
+
+    
+   
+   
