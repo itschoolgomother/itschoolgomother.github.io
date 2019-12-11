@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Открытка к Новому Году</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="canvas2.png">
+</head>
+<body>
+        <div id="blackRecktangle"></div>
+<style type="text/css">
+    body {
+        background-image: url('house.jpg'); 
+        background-size: 140%; 
+        background-repeat:no-repeat
+    }
+	.body{
+		background-color: #00909e;
+		width: 60%;
+		top: 5%;
+		left: 20%;
+		position: absolute;
+		height: 92%;
+	}
+	#letter{
+		position: relative;
+		top: 50%;
+		left: 30%;
+		width: 40%;
+		height: 32%;
+		z-index: 5;
+	}
+	h1{
+		position: absolute;
+		left: 30%;
+		font-size: 300%;
+		color: #465881;
+	}
+	h2{
+		position: absolute;
+		left: 5%;
+		top: 15%;
+		color: #465881;
+	}
+	#b {
+		background: #c9d1d3;
+        color: #00909e;
+        font-size: 12pt;
+        border: 1px solid ;
+        dots.style.display = "inline";
+        position: relative;
+        top: 60%;
+        z-index: 7;
+	}
+	#canvas {
+    position:absolute; 
+	}
+	#canvas3 {
+    position:absolute; 
+	}
+    #snow2 {
+        position: absolute;
+    }
+    #canvas6 {
+        position: absolute;
+    }
+     #canvas7 {
+        position: absolute;
+    }
+    #blackRecktangle {
+        background-color: black;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #text {
+        color: white;
+        opacity: 0;
+        font-size: 24;
+        position: absolute;
+        top: 45%;
+        left: 20%;
+    }
+    #canvas2 {
+    background-image: url(321.png);
+    animation: 8s ani infinite;
+    animation-timing-function: linear;
+    }
+    @keyframes ani{
+            from{background-position: 0px 0px;}
+            to{background-position: 500px 1000px}
+        }
+</style>
+<div class="body">
+	<h1>С Новым Годом!</h1>
+	<h2>Отправьте письмо Деду Морозу и пусть ваши мечты станут реальностью!</h2>
+	<textarea id="letter">Ваше письмо</textarea>
+	<button id="b" onclick="letter2()">Отправить письмо</button>
+    <h2 id="text">Письмо отправлено</h2>
+    <audio id="audio1" autoplay="autoplay" loop="loop" src="we-wish-you-a-merry-christmas.mp3"></audio>
+</div>
+<div class="snow">
+    <div id="snow2"></div>
+	<canvas id="canvas3"></canvas>
+    <canvas id="canvas6"></canvas>
+    <canvas id="canvas7"></canvas>
+	<canvas id="canvas"></canvas>
+	<canvas id="canvas2"></canvas>
+</div>
+<script type="text/javascript">
+    var noSound = 1;
+    var myAudio = document.getElementById('audio1')
+	var canvas = document.getElementById('canvas2');
+	var canvas2 = document.getElementById('canvas');
+	var canvas3 = document.getElementById('canvas3');
+    var canvas6 = document.getElementById('canvas6');
+    var canvas7 = document.getElementById('canvas7');
+	var ctx = canvas.getContext('2d');
+	var ctx2 = canvas2.getContext('2d');
+	var ctx3 = canvas3.getContext('2d');
+    var ctx6 = canvas6.getContext('2d');
+    var ctx7 = canvas7.getContext('2d');
+	var random = 0;
+	var x = 0;
+	var x2 = 0;
+	var x3 = 0;
+	var x4 = 0;
+    var x5 = 0;
+    var x6 = 0;
+    var x7 = 0;
+    var x8 = 0;
+    var x9 = 1500;
+    var x10 = 1200;
+    var y8 = 0;
+    var stop = false;
+    var frameCount = 0;
+    var fps, fpsInterval, startTime, now, then, elapsed;
+    var y = 0;
+    var y2 = 0;
+    var y3 = 0;
+    var y4 = 0;
+    var y5 = 0;
+    var y6 = 0;
+    var y7 = 0;
+    var y9 = 0;
+    var noDraw = 0;
+    var now = new Date().getTime();
+    var millisecondsToWait = 10000; /* i.e. 1 second */
+    var r1 = 0;
+    var r2 = 0;
+    var s = 1;
+    var toy1 = new Image();
+    toy1.src = "iconfinder_Artboard_17_5412960.png";
+    var toy2 = new Image();
+    toy2.src = "iconfinder__tree_ornament_1679618.png";
+     drawToy();
+    function drawToy() {
+   requestAnimationFrame(drawToy);
+    ctx7.clearRect(0,0,100000000,100000000);
+    ctx7.drawImage(toy1,380,285,100,100);
+    ctx7.drawImage(toy2,880,275,100,100);
+}
+	canvas.width = window.innerWidth-20;
+    canvas.height = window.innerHeight-20;
+    canvas6.width = window.innerWidth-10;
+    canvas6.height = window.innerHeight-10;
+    canvas7.width = window.innerWidth-20;
+    canvas7.height = window.innerHeight-20;
+	ctx.beginPath();
+    canvas2.width = 1300;
+    canvas2.height = 780;
+    canvas3.width = 1300;
+    canvas3.height = 780;
+    function sleep(ms)
+{
+    return(
+        new Promise(function(resolve, reject)
+        {
+            setTimeout(function() { resolve(); }, ms);
+        })
+    );
+}
+    ctx2.beginPath();
+    for (var i = 0; i < 6; i++) {
+    	ctx2.moveTo(x2+300,300);	
+    	ctx2.lineTo(x2+320,300);
+    	ctx2.lineTo(x2+330,296);
+    	ctx2.lineTo(x2+340,292);
+    	ctx2.lineTo(x2+345,288);
+    	ctx2.lineTo(x2+348,283);
+    	ctx2.lineTo(x2+351,277);
+    	ctx2.lineTo(x2+353,274);
+    	ctx2.lineTo(x2+356,271);
+    	ctx2.lineTo(x2+360,269);
+    	ctx2.lineTo(x2+364,268);
+    	ctx2.lineTo(x2+368,267);
+    	ctx2.lineTo(x2+372,267);
+    	ctx2.lineTo(x2+376,267);
+    	ctx2.lineTo(x2+380,268);
+    	ctx2.lineTo(x2+384,269);
+    	ctx2.lineTo(x2+388,271);
+    	ctx2.lineTo(x2+391,274);
+    	ctx2.lineTo(x2+393,277);
+    	ctx2.lineTo(x2+396,283);
+    	ctx2.lineTo(x2+399,288);
+    	ctx2.lineTo(x2+404,292);
+    	ctx2.lineTo(x2+414,296);
+    	ctx2.lineTo(x2+424,300);
+    	ctx2.lineTo(x2+444,300);
+        ctx2.stroke();
+        x2 += 145;
+	}
+	x2 = 0;
+	for (var i = 0; i < 6; i++) {
+    	ctx2.moveTo(x2+300,750);	
+    	ctx2.lineTo(x2+320,750);
+    	ctx2.lineTo(x2+330,746);
+    	ctx2.lineTo(x2+340,742);
+    	ctx2.lineTo(x2+345,738);
+    	ctx2.lineTo(x2+348,733);
+    	ctx2.lineTo(x2+351,727);
+    	ctx2.lineTo(x2+353,724);
+    	ctx2.lineTo(x2+356,721);
+    	ctx2.lineTo(x2+360,719);
+    	ctx2.lineTo(x2+364,718);
+    	ctx2.lineTo(x2+368,717);
+    	ctx2.lineTo(x2+372,717);
+    	ctx2.lineTo(x2+376,717);
+    	ctx2.lineTo(x2+380,718);
+    	ctx2.lineTo(x2+384,719);
+    	ctx2.lineTo(x2+388,721);
+    	ctx2.lineTo(x2+391,724);
+    	ctx2.lineTo(x2+393,727);
+    	ctx2.lineTo(x2+396,733);
+    	ctx2.lineTo(x2+399,738);
+    	ctx2.lineTo(x2+404,742);
+    	ctx2.lineTo(x2+414,746);
+    	ctx2.lineTo(x2+424,750);
+    	ctx2.lineTo(x2+444,750);
+        ctx2.stroke();
+        x2 += 145;
+	}
+	ctx2.beginPath();
+    for (var i = 0; i < 3; i++) {
+    	ctx2.moveTo(300,y+300);	
+    	ctx2.lineTo(300,y+320);
+    	ctx2.lineTo(304,y+330);
+    	ctx2.lineTo(308,y+340);
+    	ctx2.lineTo(312,y+345);
+    	ctx2.lineTo(317,y+348);
+    	ctx2.lineTo(323,y+351);
+    	ctx2.lineTo(326,y+353);
+    	ctx2.lineTo(329,y+356);
+    	ctx2.lineTo(331,y+360);
+    	ctx2.lineTo(332,y+364);
+    	ctx2.lineTo(333,y+368);
+    	ctx2.lineTo(333,y+372);
+    	ctx2.lineTo(333,y+376);
+    	ctx2.lineTo(332,y+380);
+    	ctx2.lineTo(331,y+384);
+    	ctx2.lineTo(329,y+388);
+    	ctx2.lineTo(326,y+391);
+    	ctx2.lineTo(323,y+393);
+    	ctx2.lineTo(317,y+396);
+    	ctx2.lineTo(312,y+399);
+    	ctx2.lineTo(308,y+404);
+    	ctx2.lineTo(304,y+414);
+    	ctx2.lineTo(300,y+424);
+    	ctx2.lineTo(300,y+444);
+        ctx2.stroke();
+        y += 145;
+	}
+	 ctx2.beginPath();
+    for (var i = 0; i < 3; i++) {
+    	ctx2.moveTo(1170,y2+300);	
+    	ctx2.lineTo(1170,y2+320);
+    	ctx2.lineTo(1166,y2+330);
+    	ctx2.lineTo(1162,y2+340);
+    	ctx2.lineTo(1158,y2+345);
+    	ctx2.lineTo(1153,y2+348);
+    	ctx2.lineTo(1147,y2+351);
+    	ctx2.lineTo(1144,y2+353);
+    	ctx2.lineTo(1141,y2+356);
+    	ctx2.lineTo(1139,y2+360);
+    	ctx2.lineTo(1138,y2+364);
+    	ctx2.lineTo(1137,y2+368);
+    	ctx2.lineTo(1137,y2+372);
+    	ctx2.lineTo(1137,y2+376);
+    	ctx2.lineTo(1138,y2+380);
+    	ctx2.lineTo(1139,y2+384);
+    	ctx2.lineTo(1141,y2+388);
+    	ctx2.lineTo(1144,y2+391);
+    	ctx2.lineTo(1147,y2+393);
+    	ctx2.lineTo(1153,y2+396);
+    	ctx2.lineTo(1158,y2+399);
+    	ctx2.lineTo(1162,y2+404);
+    	ctx2.lineTo(1166,y2+414);
+    	ctx2.lineTo(1170,y2+424);
+    	ctx2.lineTo(1170,y2+444);
+        ctx2.stroke();
+        y2 += 145;
+	}
+	drawArc();
+function drawArc() {
+	x3 = 0;
+	for (var i = 0; i < 6; i++) {
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(x3+300, 297, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+	ctx2.stroke();
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(x3+373, 267, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+    ctx2.stroke();
+    x3 += 145;
+}
+x3 = 0;
+	for (var i = 0; i < 6; i++) {
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(x3+300, 738, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+	ctx2.stroke();
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(x3+373, 717, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+    ctx2.stroke();
+    x3 += 145;
+}
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(1170, 297, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+	ctx2.stroke();
+
+    y3 = 0;
+	for (var i = 0; i < 3; i++) {
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(332,y3+373, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+	ctx2.stroke();
+	ctx2.beginPath();
+	var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(300,y3+447, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+    ctx2.stroke();
+    ctx2.beginPath();
+    var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(1138,y3+373, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+    ctx2.stroke();
+    ctx2.beginPath();
+    var r = Math.random() * 254;
+	var g = Math.random() * 254;
+	var b = Math.random() * 254;
+	ctx2.arc(1170,y3+447, 10, 0, 2 * Math.PI);
+	ctx2.fillStyle = "rgb("+r+","+g+","+b+")";
+    ctx2.fill();
+    ctx2.stroke();
+    y3 += 145;
+}
+}
+    startAnimating(1);
+    function startAnimating(fps) {
+    fpsInterval = 1000 / fps;
+    then = Date.now();
+    startTime = then;
+    name2();
+    }
+	function name2() {
+		requestAnimationFrame(name2);
+		now = Date.now();
+        elapsed = now - then;
+        if (elapsed > fpsInterval) {
+        then = now - (elapsed % fpsInterval);
+        drawArc();
+       }	
+	}
+	letter();
+	function letter() {
+        if (noDraw==0) {
+		ctx3.beginPath();
+		ctx3.moveTo(565,400);
+		ctx3.lineTo(747.5,300);
+		ctx3.lineTo(930,400);
+		ctx3.lineTo(565,400);
+		ctx3.fillStyle = "white";
+        ctx3.fill();
+        ctx3.stroke();
+        ctx3.beginPath();
+        ctx3.moveTo(565,400);
+        ctx3.lineTo(450,520);
+        ctx3.lineTo(565,635);
+        ctx3.lineTo(565,400);
+        ctx3.stroke();
+        ctx3.fill();
+        ctx3.beginPath();
+        ctx3.moveTo(930,400);
+        ctx3.lineTo(1045,520);
+        ctx3.lineTo(930,635);
+        ctx3.lineTo(930,400);
+        ctx3.stroke();
+        ctx3.fill();
+        ctx3.beginPath();
+		ctx3.moveTo(565,635);
+		ctx3.lineTo(747.5,735);
+		ctx3.lineTo(930,635);
+		ctx3.lineTo(565,635);
+		ctx3.stroke();
+        ctx3.fill();
+    }
+	}
+	function letter2() {
+        var canvas4 = document.createElement('canvas');
+        canvas4.id = "CursorLayer";
+        canvas4.width = window.innerWidth-20;
+        canvas4.height = 780;
+        canvas4.style.zIndex = 8;
+        canvas4.style.position = "absolute";
+        canvas4.style.top = "0" 
+        var body = document.getElementById("snow2")[0];
+        snow2.appendChild(canvas4);
+        var cursorLayer = document.getElementById("CursorLayer");
+        var ctx4 = canvas4.getContext("2d");
+        var canvas5 = document.createElement('canvas');
+        canvas5.id = "CursorLayer2";
+        canvas5.width = window.innerWidth-20;
+        canvas5.height = 780;
+        canvas5.style.zIndex = 8;
+        canvas5.style.position = "absolute";
+        canvas5.style.top = "0" 
+        snow2.appendChild(canvas5);
+        var cursorLayer2 = document.getElementById("CursorLayer2");
+        var ctx5 = canvas5.getContext("2d");
+        function letter3() {
+        requestAnimationFrame(letter3);
+        ctx4.clearRect(0,0,100000000,100000000);
+        ctx3.clearRect(0,0,100000000,100000000);
+        ctx4.beginPath();
+        noDraw = 1;
+        letter();
+        ctx4.moveTo(x8+565,400+y8);
+        ctx4.lineTo(x8+565+182.5/s,400+y8+(y4+300-400)/s);
+        ctx4.lineTo(x8+565+182.5*2/s,400+y8);
+        ctx4.lineTo(x8+565,400+y8);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+        ctx4.stroke();
+        ctx4.beginPath();
+        ctx4.moveTo(x8+565,400+y8);
+        ctx4.lineTo(x8+565+(x4+450-565)/s,400+y8+120/s);
+        ctx4.lineTo(x8+565,400+y8+235/s);
+        ctx4.lineTo(x8+565,400+y8);
+        ctx4.stroke();
+        ctx4.fill();
+        ctx4.beginPath();
+        ctx4.moveTo(x8+565+(930-565)/s,400+y8);
+        ctx4.lineTo(x8+565+(930-565)/s+(x5+1045-930)/s,400+y8+120/s);
+        ctx4.lineTo(x8+565+(930-565)/s,400+y8+235/s);
+        ctx4.lineTo(x8+565+(930-565)/s,400+y8);
+        ctx4.stroke();
+        ctx4.fill();
+        ctx4.beginPath();
+        ctx4.moveTo(x8+565,400+y8+235/s);
+        ctx4.lineTo(x8+565+(747.5-565)/s,400+y8+235/s+(y5+100)/s);
+        ctx4.lineTo(x8+565+(930-565)/s,400+y8+235/s);
+        ctx4.lineTo(x8+565,400+y8+235/s);
+        ctx4.stroke();
+        ctx4.fill();
+        if (x4<292.5) {
+        x4+=4
+        x5-=4
+        }//if
+        if (y4<240.5) {
+        y4+=4
+        y5-=4
+        }
+    }//letter3()
+    letter3();
+    sleep(1500).then(function()
+{
+    var letter4 = document.getElementById('letter');
+    letter4.style.opacity = 0;
+    seal();
+    function seal() {
+    requestAnimationFrame(seal);
+    ctx5.clearRect(0,0,100000000,100000000);
+    ctx5.beginPath();
+    ctx5.arc(x8+565+(x7+x6+1000)/s,400+y8+(y7+y6+-5-400)/s, r2+33/s, 0, 2 * Math.PI)
+    ctx5.fillStyle = "black";
+    ctx5.fill();
+    ctx5.stroke();
+    ctx5.beginPath();
+    ctx5.arc(x8+565+(x6+1550-565)/s,400+y8+(y6+10-400)/s, r1+35/s, 0, 2 * Math.PI)
+    ctx5.fillStyle = "#801336";
+    ctx5.fill();
+    ctx5.stroke();
+    if (x6>-807.5) {
+    x6-=4
+    x7-=0.08
+    }
+    if (y6<500.5) {
+    y6+=2.5
+    y7+=0.11
+    }
+}
+ sleep(3500).then(function() {
+    seal2();
+    function seal2() {
+    r1+=5;
+    r2-=5;
+    y7+=12;
+     sleep(1500).then(function() {
+    r1=0;
+    r2=0;
+    y7-=15;   
+ })
+}
+     sleep(3500).then(function() {
+
+        santa();
+        function santa () {
+        requestAnimationFrame(santa);
+        if (x8<650) {
+        x8+=5
+        s+=0.03
+    }
+   }
+         var santa2 = new Image();
+    santa2.src = "santa claus.png";
+    drawSanta()
+    function drawSanta() {
+    requestAnimationFrame(drawSanta);
+    ctx6.clearRect(0,0,100000000,100000000);
+    ctx6.drawImage(santa2,x9,y9+450,344,420);
+    if (x9>1200) {
+    x9-=5
+
+}
+}
+ sleep(2500).then(function() {
+    letterFall();
+    function letterFall() {
+    requestAnimationFrame(letterFall);
+    if (y8<180) {
+        y8+=5
+    }
+     else {
+        ctx5.clearRect(0,0,100000000,100000000);
+        ctx4.clearRect(0,0,100000000,100000000);
+        ctx6.clearRect(0,0,100000000,100000000);
+        ctx6.drawImage(santa2,x10,y9+450,344,420);
+        x10+=5;
+     }//else if
+    }//letterFall
+    sleep(2500).then(function() {
+        var blackRecktangle = document.getElementById('blackRecktangle');
+        blackRecktangle.style.opacity=0.5;
+        blackRecktangle.width = 20;
+        blackRecktangle.height = 20;
+        blackRecktangle.style.backgroundColor = "black";
+        blackRecktangle.style.zIndex = 10;
+        var text = document.getElementById('text');
+        text.style.opacity = 1;
+        text.style.fontSize = "50px";
+        text.style.zIndex = 11;
+        })
+    })//2500ms
+    })//3500ms
+ })
+    })
+}
+</script>
+</body>
+</html>
