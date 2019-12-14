@@ -32,13 +32,12 @@ html{
 
 /* Фон */
 .snow{
-	width: 1680px;
+	width: 100%;
 	height:250px;
 	background-color: #c2c2c2;
 	position: absolute;
-	bottom: 0%;
-	left: 0%;
-	right: 0%;
+	bottom: -20px;
+	left: 0px;
 	z-index: -999;
 }
 
@@ -184,21 +183,22 @@ html{
 .sweet{
 	width: 100px;
 	height: 100px;
-	background: #108709;
+	background-color: #108709;
 	position: absolute;
 	left:73%;
 	top:65%;
 	z-index: -3;
+	transform: translate(10%,50%);
 }
 
 /* Лента */
-.ribbon{
+.ribbon1{
 	background: #d40d0d;
 	height: 100px;
 	width: 10px;
 	position: absolute;
-	left: 75.6%;
-	top:610px;
+	left: 44%;
+	top:0%;
 }
 
 .ribbon2{
@@ -206,8 +206,8 @@ html{
 	width: 100px;
 	background: #d40d0d;
 	position: absolute;
-	left: 73%;
-	top: 650px;
+	left: 0%;
+	top: 45%;
 }
 
 .knot1{
@@ -217,8 +217,8 @@ html{
 	border-left: 30px solid #d40d0d;
 	border-bottom: 15px solid transparent;
 	position: absolute;
-	left: 74.5%;
-	top: 600px;
+	left: 30%;
+	top: -10%;
 }
 
 .knot2{
@@ -228,8 +228,8 @@ html{
 	border-right: 30px solid #d40d0d;
 	border-bottom: 15px solid transparent;
 	position: absolute;
-	left: 75.6%;
-	top: 600px;
+	left: 40%;
+	top: -10%;
 }
 
 
