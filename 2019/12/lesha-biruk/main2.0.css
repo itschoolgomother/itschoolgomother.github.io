@@ -1,0 +1,507 @@
+html{
+		 background-color:#3f4eba;
+		background-image: url(1.gif);
+		overflow: hidden;
+		font-family: 'Permanent Marker', cursive;
+
+
+}
+
+/* Текст */
+.text{
+	position: absolute;
+	left:60%;
+	top: 10%;
+	font-size: 40px;
+	color: #ff96e3;
+}
+
+.text :hover{
+	animation-name: changeColor;
+	animation-delay: 0.1s;
+	animation-duration: 3s;
+}
+
+@keyframes changeColor {
+	0% {color: #900;}
+	25% {color: #060;}
+	50% {color: #ff0;}
+	75% {color: #036;}
+	100% {color: #f00;}
+}
+
+/* Фон */
+.snow{
+	width: 100%;
+	height:250px;
+	background-color: #c2c2c2;
+	position: absolute;
+	bottom: -20px;
+	left: 0px;
+	z-index: -999;
+}
+
+/* Ёлка */
+.tree{
+	width:400px;
+	height: 800px;
+	/* background-color: #111; */
+	position: absolute;
+	left: 20%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+/* Листва */
+.tree1{
+	width: 0;
+	height: 0;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-bottom: 240px solid #49b035;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+
+}
+
+/* Листва */
+.tree2{
+	width: 0;
+	height: 0;
+	border-left: 130px solid transparent;
+	border-right: 130px solid transparent;
+	border-bottom:260px solid #49b035;
+	position: absolute;
+	left: 16.5%;
+	top: 20%;
+
+}
+
+/* Листва */
+.tree3{
+	width: 0;
+	height: 0;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	border-bottom:280px solid #49b035;
+	position: absolute;
+	left: 14.5%;
+	top:30%;
+}
+
+/* Бревно */
+.log{
+    width: 80px;
+    height: 180px;
+    background-color: saddlebrown;
+	position: absolute;
+	left: 40%;
+	top: 57%;
+	z-index: -1;
+}
+
+/* Игрушки */
+.toys{
+	width:20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.toy_yellow{
+	background-color: yellow;
+	position: absolute;
+	left: 65%;
+	top: 50%;
+}
+
+.toy_blue{
+	background-color: blue;
+	position: absolute;
+	left: 55%;
+	top: 30%;
+}
+
+.toy_red{
+	background-color: red;
+	position: absolute;
+	left: 30%;
+	top: 40%;
+}
+
+.toy_purple{
+	background-color: purple;
+	position: absolute;
+	left: 45%;
+	top: 60%;
+}
+
+.toy_orange{
+	background-color: orange;
+	position: absolute;
+	left: 25%;
+	top: 55%;
+}
+
+.toy_pink{
+	background-color: pink;
+	position: absolute;
+	left: 62%;
+	top: 40%;
+}
+
+.toy_light_green{
+	background-color: #00ff11;
+	position: absolute;
+	left: 35%;
+	top: 25%;
+}
+
+.toy_turquoise{
+	background-color: #00ffff;
+	position: absolute;
+	left: 40%;
+	top: 45%;
+}
+
+.toy_scarlet{
+	background-color: #ff7575;
+	position: absolute;
+	left: 40%;
+	top: 33%;
+}
+
+.toy_crimson{
+	background-color: #fa2fd5;
+	position: absolute;
+	left: 47%;
+	top: 20%;
+}
+
+
+/* Подарок */
+.sweet{
+	width: 100px;
+	height: 100px;
+	background-color: #108709;
+	position: absolute;
+	left:73%;
+	top:65%;
+	z-index: -3;
+	transform: translate(10%,50%);
+}
+
+/* Лента */
+.ribbon1{
+	background: #d40d0d;
+	height: 100px;
+	width: 10px;
+	position: absolute;
+	left: 44%;
+	top:0%;
+}
+
+.ribbon2{
+	height: 10px;
+	width: 100px;
+	background: #d40d0d;
+	position: absolute;
+	left: 0%;
+	top: 45%;
+}
+
+.knot1{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid #d40d0d;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	left: 30%;
+	top: -10%;
+}
+
+.knot2{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 30px solid #d40d0d;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	left: 40%;
+	top: -10%;
+}
+
+
+/* Дед Мороз*/
+.Ded{
+	width:300px;
+	height: 600px;
+
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+/*Тело*/
+.body{
+	width: 200px;
+	height: 300px;
+	background: #d40d0d;
+	border-radius: 50px/100px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+/*Руки*/
+.arm1{
+	width: 150px;
+    height: 50px;
+   	background: #d40d0d;
+  	border-radius: 50px/100px;
+  	transform-origin: 0px, 0px, 0px;
+    transform: rotate(-50deg);
+    position: absolute;
+    left: -40%;
+    top:22%;
+}
+
+.arm2{
+	width: 150px;
+    height: 50px;
+   	background: #d40d0d;
+  	border-radius: 50px/100px;
+	transform-origin: 0px, 0px, 0px;
+    transform: rotate(50deg);
+    position: absolute;
+    left: 65%;
+    top: 22%;
+}
+
+/*Ноги*/
+.leg1{
+	width: 60px;
+    height: 190px;
+   	background: #d40d0d;
+   	border-radius: 100px/50px;
+   	position: absolute;
+   	left:10%;
+   	top: 89%;
+}
+
+.leg2{
+	width: 60px;
+    height: 190px;
+   	background: #d40d0d;
+   	border-radius: 100px/50px;
+   	position: absolute;
+   	left:60%;
+   	top: 89%;
+}
+
+/*Ладонь*/
+.hand1{
+	width: 45px;
+	height:45px;
+	border-radius: 80px/100px;
+	background: #ffb885;
+	transform-origin: 0px, 0px, 0px;
+	transform: rotate(50deg);
+	position: absolute;
+	left: 115%;
+	top: 42%;
+	z-index: -2;
+}
+
+.hand2{
+	width: 45px;
+	height:45px;
+	border-radius: 80px/100px;
+	background: #ffb885;
+	transform-origin: 0px, 0px, 0px;
+	transform: rotate(50deg);
+	position: absolute;
+	left: -38%;
+	top: 42%;
+	z-index: -1;
+}
+
+/* Стопы */
+.foot1,.foot2{
+   background-color: #424242;
+   width: 100px;
+   height: 40px;
+   position: absolute;
+}
+
+.foot1{
+   left: -5%;
+   top: 145%;
+   border-radius: 18px 0 0 0;
+}
+
+.foot2{
+   right: -5%;
+   top: 145%;
+   border-radius: 0 18px 0 0;
+}
+
+
+/*Голова*/
+.head{
+	width: 155px;
+	height: 155px;
+	background: #ffb885;
+	border-radius: 50%;
+	left: 23%;
+	top: 0%;
+	position: absolute;
+}
+
+/*Глаза*/
+.eyes{
+	width: 10px;
+	height: 15px;
+	/* background: #83A7C9; */
+	border-radius: 50%;
+	position: absolute;
+}
+
+.eyes::before, .eyes::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 15px;
+	border-radius: 50%;
+	background: #83A7C9;
+	top: 0px;
+	animation: eye 3s ease-in-out infinite;
+	animation: eye 3s ease-in-out infinite;
+}
+.eyes::before { left: 0px; }
+	.eyes::after { right: 0px; }
+	@keyframes eye {
+	 	90% { transform: none; }
+	 	95% { transform: scaleY(0.1); }
+	}
+	@keyframes eye {
+	 	90% { transform: none; }
+	 	95% { transform: scaleY(0.1); }
+	}
+
+.eye1{
+	left: 25%;
+	top: 40%;
+}
+
+.eye2{
+	left: 65%;
+	top: 40%;
+}
+
+/*Нос*/
+.nouse{
+	width: 30px;
+	height: 30px;
+	background: #f5a371;
+	border-radius: 50%;
+	position: absolute;
+	left: 40%;
+	top: 55%;
+}
+
+/*Шапка*/
+.heat{
+	width: 150px;
+	height: 160px;
+	border-radius: 50%;
+	box-shadow: 1px -25px 0 0 #fff;
+	z-index: 1;
+	position: absolute;
+	left: 1%;
+	z-index: 1;
+}
+
+.heat1{
+	width: 0;
+	height: 0;
+	border-left: 63px solid transparent;
+	border-right: 63px solid transparent;
+	border-bottom: 126px solid #d40d0d;
+	position: absolute;
+	top:-73%;
+	left: 10%;
+	z-index: -2;
+}
+
+.heat2{
+	width: 1;
+	height:10;
+	border-top: 40px solid transparent;
+	border-left: 60px solid #d40d0d;
+	border-bottom: 40px solid transparent;
+	z-index: -2;
+	position: absolute;
+	left: 50%;
+	top: -73%;
+}
+
+.ball{
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 85%;
+	top: -58%;
+}
+
+/*Усы*/
+.mustage{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 1px -10px 0 0 #fff;
+	position: absolute;
+	left:23%;
+	top: 83%;
+}
+
+/*Борода*/
+.beard{
+	width: 155px;
+	height: 155px;
+	border-radius: 50%;
+	box-shadow: 0px 25px 0 0 #fff;
+	position: absolute;
+	left:;
+	top:-1%;
+	z-index:1;
+
+}
+
+.beard1{
+	width: 0;
+	height: 0;
+	border-left: 57px solid transparent;
+	border-right: 57px solid transparent;
+	border-top: 114px solid #fff;
+	position: absolute;
+	left:13%;
+	top: 100%;
+}
+
+/*Рот*/
+.mouth{
+	width: 40px;
+	height: 20px;
+	background: #c76969;
+	border-radius: 50%;
+	position: absolute;
+	left: 37%;
+	top: 85%;
+}
