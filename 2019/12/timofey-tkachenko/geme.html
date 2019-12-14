@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv = "Content=type" content="text/html;charset=utf-8">
+	<title>Открытка3</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery.js"></script>
+<script src="gs.js"></script>
+</head>
+ <body>
+ 	<audio controls="controls">
+<source src="audio.mp3">
+</audio>
+	<div id ="grinch" class="grinch"></div>
+	<div id="ratadyй" class="ratadyй"></div>
+	<div id="suri" class="suri"></div>
+	<div id="йolka2" class="йolka2"></div>
+	<div id="йolka" class="йolka"></div>
+	<div id="stenka" class="stenka"></div>
+	<div id="stenka2" class="stenka2"></div>
+	<div id="COLDDOG" class="COLDDOG"></div>
+	<div id="HOTDOG" class="HOTDOG"></div>
+	<div id="gfgf" class="gfgf"></div>
+	<div id="syprise" class="syprise"></div>
+	<div id="syprise2" class="syprise2"></div>
+	<div id="syprise3" class="syprise3"></div>
+	<div id="syprise4" class="syprise4"></div>
+	<div id="winner" class="winner"></div>
+	<div id ="gameover"></div>
+
+	<script>
+		alert('Забери сыр у Гринча, и год мышки наступит!!! Стерегись "милых" собачек, они оoooooooooooooooooooooчень "милые"');
+
+		var HOTDOG = document.getElementById('HOTDOG');
+		var COLDDOG = document.getElementById('COLDDOG');
+		var suri = document.getElementById('suri');
+		var ratadyй = document.getElementById('ratadyй');          
+		var gfgf = document.getElementById('gfgf');
+		var stenka = document.getElementById('stenka');          
+		var stenka2 = document.getElementById('stenka2');
+		var syprise = document.getElementById('syprise');          
+		var syprise2 = document.getElementById('syprise2');
+		var syprise3 = document.getElementById('syprise3');          
+		var syprise4 = document.getElementById('syprise4');
+		var grinch = document.getElementById('grinch');
+		var gameover = document.getElementById('gameover');
+		var winner = document.getElementById('winner');
+		
+
+		var intersection = function(a,b) {
+			return a.left + a.width >= b.left && a.left <= b.left +b.width && a.top + a.height >= b.top && a.top <= b.top + b.height;
+		};			
+
+		var n = 1;
+		var loop = function (){
+
+			var box = HOTDOG.getBoundingClientRect();
+			var box1 = COLDDOG.getBoundingClientRect();
+			var box2 = suri.getBoundingClientRect();
+			var box3 = ratadyй.getBoundingClientRect();
+			var box4 = gfgf.getBoundingClientRect(); 
+			var box5 = stenka.getBoundingClientRect();
+			var box6 = stenka2.getBoundingClientRect();
+			var box7 = syprise.getBoundingClientRect();
+			var box8 = syprise2.getBoundingClientRect(); 
+			var box9 = syprise3.getBoundingClientRect();
+			var box10 = syprise4.getBoundingClientRect();
+			var box11 = grinch.getBoundingClientRect();
+			var box12 = gfgf.getBoundingClientRect();    
+
+			
+				
+
+
+
+				if(intersection(box3,box)){ratadyй.style.display = 'none';(function(){
+					gfgf.style.display = "block";
+				}.bind(gfgf),1000);}
+
+
+
+
+				if(intersection(box3,box1)){ratadyй.style.display = 'none';(function(){
+					gfgf.style.display = "block";
+				}.bind(gfgf),1000);}
+
+
+			
+				if(intersection(box2,box3)){suri.style.display = 'none';(function(){
+					vfvf.style.display = "block";
+				}.bind(vfvf),1000);}
+
+
+
+				if(intersection(box3,box5)){ratadyй.style.display = 'none';(function(){
+					gfgf.style.display = "block";
+				}.bind(gfgf),1000);}
+
+
+
+				if(intersection(box3,box6)){ratadyй.style.display = 'none';(function(){
+					gfgf.style.display = "block";
+				}.bind(gfgf),1000);}
+
+				if(intersection(box7,box3)){
+			syprise.style.display="none";
+			ratadyй.style.width = 100 + 20*n +'px';
+			ratadyй.style.height = 100 + 20*n +'px';
+			n++;
+		};
+			if(intersection(box8,box3)){
+			syprise2.style.display="none";
+			ratadyй.style.width = 100 + 20*n +'px';
+			ratadyй.style.height = 100 + 20*n +'px';
+			n++;
+		};	
+			if(intersection(box9,box3)){
+			syprise3.style.display="none";
+			ratadyй.style.width = 100 + 20*n +'px';
+			ratadyй.style.height = 100 + 20*n +'px';
+			n++;
+		};	
+			if(intersection(box10,box3)){
+			syprise4.style.display="none";
+			ratadyй.style.width = 100 + 20*n +'px';
+			ratadyй.style.height = 100 + 20*n +'px';
+			n++;
+		};
+
+			if(intersection(box3,box11)){
+
+				if(intersection(box3,box11)){
+				grinch.style.display="none";
+				ratadyй.style.width = 100 + 20*n +'px';
+				ratadyй.style.height = 100 + 20*n +'px';
+				setTimeout(function(){
+				winner.style.display = "block";
+				}.bind(winner),100);}
+				
+			}	
+
+
+			requestAnimationFrame(loop);
+				
+	
+};
+		requestAnimationFrame(loop);
+	</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

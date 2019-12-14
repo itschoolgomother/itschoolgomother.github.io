@@ -1,0 +1,255 @@
+body {width: 400px;
+	height: 641px;
+	background-repeat: no-repeat;
+background-image:url(7.jpg);
+background-size: 100% 100%;}
+
+
+.ratadyй{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 493px;
+	left: 614px;
+	background-size: 100% 100%;
+background-repeat: no-repeat;
+background-image:url(10.png);}
+
+
+
+.grinch{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: 0px;
+	left: 615px;
+	background-repeat: no-repeat;
+background-image:url(-.png);
+background-size: 100% 100%;}
+
+.suri{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 80px;
+	left: 600px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+background-image:url(6.png);}
+
+.йolka{
+	width: 100px;
+	height: 200px;
+	position: absolute;
+	top: 430px;
+	left: 0px;
+	background-repeat: no-repeat;
+background-image:url(8.png);
+background-size: 100% 100%;}
+
+.йolka2{
+	width: 100px;
+	height: 200px;
+	position: absolute;
+	top:430px;
+	left: 1265px;
+	background-repeat: no-repeat;
+background-image:url(8.png);
+background-size: 100% 100%;}
+
+.stenka2{
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	top: 300px;
+	left:0px;
+	background-repeat: no-repeat;
+background-image:url(dratyjte.jpg);
+background-size: 100% 100%;}
+
+.stenka{
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	top: 300px;
+	left: 866px;
+	background-repeat: no-repeat;
+background-image:url(dratyjte.jpg);
+background-size: 100% 100%;}
+
+.COLDDOG{
+	width: 100px;
+	height: 90px;
+	position: absolute;
+	top: 215px;
+	left: 1250px;
+	background-repeat: no-repeat;
+background-image:url(GG.png);
+background-size: 100% 100%;
+animation-name: ly;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-delay:1s;}
+
+.HOTDOG{
+	width: 100px;
+	height: 90px;
+	position: absolute;
+	top: 215px;
+	left: 0px;
+	background-repeat: no-repeat;
+background-image:url(GG2.png);
+background-size: 100% 100%;
+animation-name: move;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-delay:1s;}
+
+.gfgf{
+	width: 1000px;
+	height: 10
+	00px;
+	position: absolute;
+	top: 350px;
+	left: 915px;
+	background-repeat: no-repeat;
+background-image:url(gfgf.png);
+background-size: 100% 100%;
+display: none;}
+
+.vfvf{
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	top: 350px;
+	left: 915px;
+	background-repeat: no-repeat;
+background-image:url(11.png);
+background-size: 100% 100%;
+display: none;}
+
+.syprise{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 600px;
+	left: 366px;
+	background-repeat: no-repeat;
+background-image:url(1.png);
+background-size: 100% 100%;}
+
+.syprise2{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 575px;
+	left: 0px;
+	background-repeat: no-repeat;
+background-image:url(2.png);
+background-size: 100% 100%;}
+
+.syprise3{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 275px;
+	left: 700px;
+	background-repeat: no-repeat;
+background-image:url(3.png);
+background-size: 100% 100%;}
+
+.syprise4{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 370px;
+	left: 915px;
+	background-repeat: no-repeat;
+background-image:url(4.png);
+background-size: 100% 100%;}
+
+@keyframes move{
+50%{top: 215px;
+	left: 0px;}
+100%{top: 215px;
+	left: 1250px;}}
+
+@keyframes ly{
+50%{top: 215px;
+	left: 1250px;}
+100%{top: 215px;
+	left: 0px;}}
+
+
+	#gameover{
+	width: 900px;
+	height:600px;
+	background-image: url(gfgf.png);
+	background-size: 100%;
+	z-index: 99;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	display: none;
+}
+	#winner{
+	width: 900px;
+	height:640px;
+	background-image: url(9.jpg);
+	background-size: 100%;
+	z-index: 99;
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
