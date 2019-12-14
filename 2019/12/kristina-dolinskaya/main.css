@@ -1,0 +1,385 @@
+body{height: 900px; background: linear-gradient(45deg,white,blue);}
+.ka{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+	position: absolute;
+	top: 380px;
+	left: 500px;
+}
+.ku{
+	width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 140px solid green;
+	position: absolute;
+	top: 440px ;
+	left: 480px;
+}
+
+.ky{
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid green;
+	position: absolute;
+	top: 510px;
+	left: 452px;
+}
+.f1{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 9px solid red;
+	top: 406px;
+	left: 549px;
+
+}
+.f1:hover {
+border: 9px solid pink;
+}
+
+.f2{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 9px solid red;
+	top: 417px;
+	left: 536px;
+}
+.f2:hover {
+border: 9px solid black;
+}
+.f3{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 9px solid red;
+	top: 425px;
+	left: 522px;
+	
+}
+.f3:hover {
+border: 9px solid white;
+}
+.f4{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 15px solid yellow;
+	top: 490px;
+	left: 550px;
+}
+.f4:hover {
+border: 15px solid aqua;
+}
+.f5{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 15px solid yellow;
+	top: 505px;
+	left: 527px;
+
+}
+.f5:hover {
+border: 15px solid red;
+}
+.f6{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 15px solid yellow;
+	top: 520px;
+	left: 503px;
+}
+.f6:hover {
+border: 15px solid black;
+}
+.f7{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 20px solid pink;
+    top: 596px;
+    left: 562px;
+}
+.f7:hover {
+border: 20px solid blue;
+}
+.f8{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 20px solid pink;
+	top: 609px;
+	left: 525px;
+}
+.f8:hover {
+border: 20px solid purple;
+}
+.f9{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 20px solid pink;
+	top: 622px;
+	left: 488px;
+}
+.f9:hover {
+border: 20px solid black;
+}
+.s1{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 30px solid blue;
+	top: 675px;
+	left: 555px;
+}
+.s1:hover {
+	border: 30px solid purple;
+}
+.s2{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 30px solid pink;
+	top: 655px;
+	left: 405px; 
+}
+.s2:hover {
+	border: 30px solid blue;
+}
+.s3{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 45px solid white;
+	top: 645px;
+	left: 600px;
+}
+.s3:hover {
+	border: 45px solid red;
+}
+
+.s4{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 20px  solid black;
+	top: 650px;
+	left: 363px;
+}
+.s4:hover {
+	border: 20px solid white;
+}
+.s5{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 30px solid brown;
+	top: 665px;
+	left: 300px;
+}
+.s5:hover {
+	border: 30px solid green;
+}
+.r1{
+	width: 30px; 
+	height: 55px;
+	position: absolute;
+	border: solid black;
+	top: 655px;
+	left: 417px;
+	color: red
+}
+.r1:hover {
+	border: solid red;
+}
+.r2{
+	width: 15px;
+	height: 53px;
+	position: absolute;
+	border: solid black;
+	top: 665px;
+	left: 325px;
+}
+.r2:hover {
+	border: solid red;
+}
+#textStyles {
+	font-size: 50px;
+	font-family: fantasy;
+	text-align: center;
+	border: solid red;
+	color: red;
+	animation-direction: ltr;
+}
+#textStyles:hover {
+	border: solid green;
+	border-size: 50 px;
+	color: green;
+}
+#textStyles1 {
+	font-size: 50px;
+	font-family: fantasy;
+	text-align: center;
+	border: solid red;
+	color: red;
+	animation-direction: ltr;
+}
+#textStyles1:hover {
+	border: solid green;
+	border-size: 50 px;
+	color: green;
+}
+.r3{
+	width: 10px; 
+	height: 34px;
+	position: absolute;
+	border: solid black;
+	top: 650px;
+	left: 375px;
+}
+.r3:hover {
+	border: solid white;
+}
+.r4{
+	width: 10px;
+	height: 84px;
+	position: absolute;
+	border: solid black;
+	top: 645px;
+	left: 605px;
+}
+.r4:hover {
+	border: solid red;
+
+}
+.r5{
+	width: 10px;
+	height: 54px;
+	position: absolute;
+	border: solid black;
+	top: 675px;
+	left: 580px;
+}
+.r5:hover {
+	border: solid purple;
+}
+.la{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 95px solid white;
+	top: 575px;
+	left: 730px;
+}
+.lu{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 70px solid white;
+	top: 465px;
+	left: 752px;
+}
+.ly{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 50px solid white;
+	top: 390px;
+	left: 770px;
+}
+.d1{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 5px solid black;
+	top: 420px;
+	left: 794px;
+}
+.d1:hover {
+	border: 8px solid grey;
+}
+.d2{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 5px solid black;
+	top: 420px;
+	left: 835px;
+}
+.d2:hover {
+	border: 8px solid grey;
+}
+.d3{
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 25px solid orange;
+	position: absolute;
+	top: 420px;
+	left: 810px;
+}
+.d3:hover {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 25px solid red;
+}
+.n1{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 5px solid black;
+	top: 490px;
+	left: 814px;
+}
+.n1:hover {
+	border: 8px solid blue;
+}
+.n2{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 5px solid black;
+	top: 525px;
+	left: 814px;
+}
+.n2:hover {
+	border: 8px solid red;
+}
+.n3{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-radius: 50%;
+	border: 5px solid black;
+	top: 560px;
+	left: 814px;
+}
+.n3:hover {
+	border: 8px solid yellow;
+}
