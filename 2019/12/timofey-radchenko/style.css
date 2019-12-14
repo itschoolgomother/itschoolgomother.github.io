@@ -1,0 +1,1176 @@
+html{background-color: #0e6073; overflow: hidden;}
+
+
+
+#tree-part1{
+	width: 50px;
+    height: 50px;
+	position: absolute;
+	top: -50px;
+	left: 400px;
+    border-top: 100px solid red; 
+    border-left: 100px solid transparent;
+    z-index: 200;
+}
+
+#tree{
+	border-bottom: 100px solid red; 
+	border-left: 100px solid transparent;
+	position: absolute;
+	top: 00px;
+	left: 00px;
+	width: 400px;
+	height: 100%;
+	background-color: green;
+	z-index: -10;
+}
+
+#handr {
+	position: absolute;
+	top: 549px;
+	left: 1075px;
+	width: 45px;
+	height: 10px;
+	transform: rotate(50deg);
+	background-color: #f35975;
+	border-radius: 10%;
+	z-index: 5;
+
+}
+
+#handl {
+	position: absolute;
+	top: 525.5px;
+	left: 970px;
+	width: 45px;
+	height: 10px;
+	background-color: #f35975;
+	border-radius: 10%;
+	animation-name: santa;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 5;
+}
+
+@keyframes santa {
+	0% {
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+	}
+
+	50% {
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+	}
+
+	100% {
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+	}
+}
+
+#legl {
+	position: absolute;
+	top: 604px;
+	left: 1010px;
+	width: 30px;
+	height: 15px;
+	background-color: brown;
+	border-radius: 50px;
+	z-index: 5;
+}
+
+#legr {
+	position: absolute;
+	top: 604px;
+	left: 1050px;
+	width: 30px;
+	height: 15px;
+	background-color: brown;
+	border-radius: 50px;
+	z-index: 5;
+}
+
+#eyel {
+	position: absolute;
+	top: 502px;
+	left: 1037px;
+	width: 3px;
+	height: 3px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 30;
+}
+
+#eyer {
+	position: absolute;
+	top: 502px;
+	left: 1053px;
+	width: 3px;
+	height: 3px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 30;
+}
+
+#nose {
+	position: absolute;
+	top: 503px;
+	left: 1042px;
+	width: 10px;
+	height: 10px;
+	background-color: #fedbc2;
+	border-radius: 50%;
+	z-index: 30;
+}
+
+#smile2{
+	position: absolute;
+	top: 514px;
+	left: 1044px;
+	width: 7px;
+	height: 2.5px;
+	background-color: white;
+	z-index: 40;
+}
+
+#smile {
+	position: absolute;
+	top: 515px;
+	left: 1044px;
+	width: 7px;
+	height: 5px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 35;
+}
+
+#brd {
+	position: relative;
+	top: -225px;
+	left: 1015px;
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 0 50% 50% 50%;
+	transform: rotate(-135deg);
+	z-index: 11;
+}
+
+#face {
+	position: absolute;
+	top: 498px;
+	left: 1032px;
+	background-color: #fedbc2 ;
+	width: 30px;
+	height: 10px;
+	z-index: 20;
+	border-radius: 30%
+}
+
+#hat {
+	position: absolute;
+	top: 460px;
+	left: 1033.5px;
+	background-color: #f14a68;
+	border-radius: 20px 200px 0 0;
+	z-index: 15;
+	width: 30px;
+	height: 30px;
+}
+
+#hat2 {
+	position: absolute;
+	top: 490px;
+	left: 1027px;
+	background-color: white;
+	border-radius: 35px;
+	z-index: 20;
+	width: 43px;
+	height: 10px;
+}
+
+#santa1 {
+	border-radius: 50%;
+	position: absolute;
+	top: 510px;
+	left: 1000px;
+	width: 95px;
+	height: 105px;
+	background: #f14a68;
+	z-index: 10;
+   }
+
+#star1 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 670px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star2 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 670px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star3 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 670px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star4 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 705px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star5 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 705px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star6 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 705px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star7 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 725px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star8 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 740px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star9 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 755px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star10 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 740px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star11 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 770px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star12 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 770px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star13 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 770px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	z-index: -20;
+}
+
+#star14 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 216.25px;
+	left: 785px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star15 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 785px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star16 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 800px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star17 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 800px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star18 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 815px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star19 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 800px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star20 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 825px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star21 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 825px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star22 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 845px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star23 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 845px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star24 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 232px;
+	left: 860px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star25 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 875px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star26 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 875px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star27 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 925px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star28 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 925px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star29 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 955px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star30 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 980.8px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star31 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 980.8px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star32 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 995px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star33 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 965px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star34 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 1015px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star35 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 1035px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star36 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 1035px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star37 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 1045px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star38 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 1040px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star39 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 1010px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star40 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 1015px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star41 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 248.75px;
+	left: 1005px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star42 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 1070.5px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star43 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 1085px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star44 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 1070.5px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star45 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 232.5px;
+	left: 1055px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+/*M*/
+#star46 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 1100px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star47 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 1100px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star48 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 230px;
+	left: 1115px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star49 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 10px #FFFFFF;
+	position: absolute;
+	top: 200px;
+	left: 1130px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#star50 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 265px;
+	left: 1130px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+	animation-name: star2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#starmass1 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 150px;
+	left: 1126px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+}
+
+#starmass2 {
+	-moz-text-shadow:0 0 10px #FFFFFF;
+	-webkit-text-shadow:0 0 10px #FFFFFF; 
+	box-shadow:0 0 0px #FFFFFF;
+	position: absolute;
+	top: 257px;
+	left: 1165px;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: -20;
+}
+
+@keyframes star1 {
+	0% {
+		box-shadow:0 0 20px #FFFFFF;
+	}
+
+	50% {
+		box-shadow:0 0 0px #FFFFFF;
+	}
+
+	100% {
+		box-shadow:0 0 20px #FFFFFF;
+	}
+}
+
+@keyframes star2 {
+	0% {
+		box-shadow:0 0 0px #FFFFFF;
+	}
+
+	50%{
+		box-shadow:0 0 20px #FFFFFF;
+	}
+
+	100% {
+		box-shadow:0 0 0px #FFFFFF;
+	}
+}
+
+#moonpart2 {
+	position: absolute;
+	top: 195px;
+	left: 610px;
+	width: 80px;
+	height: 80px;
+	background: #0e6073;
+	border-radius: 50%;
+	z-index: -30;
+}
+
+#moonpart1 {
+	position: absolute;
+	top: 200px;
+	left: 640px;
+	width: 70px;
+	height: 70px;
+	background: #0e6073;
+	z-index: -40;
+}
+
+#moon {
+	position: absolute;
+	top: 200px;
+	left: 600px;
+	width: 70px; 
+	height: 70px;
+	background: #FFFF00;
+	border-radius: 50%;
+	z-index: -50;
+}
+
+#floor {
+	position: absolute;
+	top: 78%;
+	margin-left: -26px;
+    width: 101.2%;
+    height: 200px;
+    background: #b7e3ed;
+    border-radius: 50%/10%;
+}
