@@ -1,0 +1,46 @@
+.jumbotron {
+	/*margin-left: 100px;
+	margin-right:100px;
+	*/
+	width:700px;
+	height:650px;
+	background-size:100%;
+	background-image:url(https://image.shutterstock.com/image-vector/cute-christmas-rat-animal-character-600w-1543545062.jpg);
+}
+.te {
+	cursor:pointer;
+font-family: Garamond, serif;
+line-height: 1em;
+color: #fff9d6;
+font-weight:bold;
+font-size: 52px;
+text-shadow:0px 0px 0 rgb(231,231,231),1px 1px 0 rgb(216,216,216),2px 2px 0 rgb(202,202,202),3px 3px 0 rgb(187,187,187),4px 4px 0 rgb(173,173,173),5px 5px 0 rgb(158,158,158), 6px 6px 0 rgb(144,144,144),7px 7px 6px rgba(0,0,0,0.5),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
+.te:hover {
+cursor:pointer;
+font-family: Garamond, serif;
+line-height: 1em;
+color: #fff9d6;
+font-weight:bold;
+text-shadow:0px 0px 0 rgb(21,231,231),1px 1px 0 rgb(26,206,26),2px 2px 0 rgb(202,102,202),3px 3px 0 rgb(187,187,187),4px 4px 0 rgb(173,173,173),5px 5px 0 rgb(158,158,158), 6px 6px 0 rgb(144,144,144),7px 7px 6px rgba(0,0,0,0.5),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
+.block{
+
+	background-size: 100%;
+	background:url(http://file.mobilmusic.ru/61/22/c0/525383.jpg);
+	width:700px;
+	height:400px;
+	border:1px solid gray;
+}
+.b{
+	position:absolute;
+	left:100px;
+	top:1000px;
+}
+.g{
+	position:absolute;
+	left:100px;
+	top:700px;
+	width:300px;
+	height:260px;
+}
