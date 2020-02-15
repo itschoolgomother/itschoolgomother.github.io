@@ -1,3 +1,20 @@
+body{
+	background-color: #008000;
+	animation: 5s changecolor infinite;
+}
+@keyframes changecolor{
+	0%{background-color:#008000; }
+	25%{background-color: #00ff00;}
+	50%{background-color:#008000; }
+	90%{background-color:#00ff66; }
+	100%{background-color: #008000;}
+}
+@keyframes fff{
+	from{transform: rotate(15deg);}
+	to{transform: rotate(35deg);}
+
+}
+
 .panda{
 	width: 200px;
 	height: 400px;
@@ -59,8 +76,8 @@ top: 130px;
  z-index: -1;
 }
 .armr{
-	width: 45px;
-	height: 95px;
+	width: 50px;
+	height: 100px;
 	background-color: #000;
 	border-radius: 50% 90% 80% 70%;
 	position: absolute;
@@ -75,9 +92,12 @@ top: 130px;
 	background-color: #000;
 	border-radius: 50% 90% 80% 70%;
 	position:absolute;
-	left:185px;
+	left:165px;
 	top: -20px;
-	transform: rotate(-140deg);
+	/*transform: rotate(30deg);*/
+	animation: 1s fff infinite;
+	 animation-direction: alternate; 
+	transform-origin: center bottom ; 
 }
 .earl{
 	width: 70px;
@@ -172,6 +192,7 @@ width: 25px;
 	position: absolute;
 	left: 14px;
 	top: 36px;
+
 }
 .circle3r{
 	width: 22px;
@@ -219,4 +240,15 @@ width: 25px;
 	left: 70px;
 	z-index: 1;
 	top: 120px;
+	animation: .5s ms infinite;
+}
+@keyframes ms{
+	0%{width: 15px;
+	height: 12px;}
+	50%{width: 15px;
+		height: 17px;}
+	100%{
+		width: 15px;
+	height: 12px;
+	}
 }
