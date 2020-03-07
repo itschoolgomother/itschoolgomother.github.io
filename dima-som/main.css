@@ -1,0 +1,99 @@
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+header{
+    width: 100%;
+    background: purple;
+}
+.con{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.head{
+    display: flex;
+}
+.head-left{
+    width: 50%;
+    min-height: 150px;
+    display: flex;
+}
+.head-right{
+    width: 50%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.head-left > h1{
+    color: white;
+    font-size: 40px;
+    align-self: center;
+    font-family: 'Fjalla One' ;
+}
+menu{
+    align-self: center;
+}
+menu > li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+}
+.content{
+    width: 100%;
+    min-height: 500px;
+    background-color: purple;
+    margin-top: 80px;
+    display: flex;
+}
+.mainL{
+    width: 40%;
+    /* height: 100px;
+    background-color: khaki; */
+}
+.mainR{
+    width: 60%;
+    /* height: 100px;
+    background-color: olive; */
+}
+.img > img{
+    width: 100%;
+}
+.text > h2 {
+    text-align: center;
+    color: wheat;
+}
+.text > p{
+    color: thistle;
+    padding: 10px 0px;
+    font-family: 'Fredoka One' ;
+}
+footer{
+	width: 100%;
+	min-height: 100px;
+	background-color: purple;
+	margin-top: 90px;
+}
+footer > div > p{
+	color: lightskyblue;
+	text-align: center;
+	line-height: 100px;
+}
+@media (max-width: 900px){-
+	header{
+		background-color: indigo;
+	}
+	.content{
+		display: block;
+	} 
+	.mainL,.mainR{
+		width: 100%;
+		min-height: 200px;
+	}
+	.mainR{
+		padding: 25px 0px;
+	}
+}
