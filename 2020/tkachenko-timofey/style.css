@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	width: 100%;
+	min-height: 100px;
+	background-color: blue;
+}
+.con{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.head{
+	display: flex;
+}
+.head-left{
+	width: 50%;
+	min-height:100px;
+	display: flex;
+}
+.head-right{
+	width: 50%;
+	min-height:100px;
+	display: flex;
+}
+.head-left > h2{
+	color: orange;
+	align-self: center;
+}
+menu{
+	align-self: center;
+}
+menu > a{
+	color: yellowgreen;
+	text-decoration:none;
+	margin-left: 15px;
+}
+.contect{
+	width: 100%;
+	min-height: 500px;
+	margin-top: 50px;
+	display: flex;
+	padding: 10px;
+}
+.contectL{
+	width: 40%;
+	min-height: 500px;
+	background-color: red;
+}
+.contectR{
+	width: 60%;
+	min-height: 500px;
+	background-color: green;
+
+}
+.img{
+	width: 100%;
+	min-height: 100%;
+	background-image: url("1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat; 
+}
+
+/* Stule contentR */
+/text{
+	padding-left: 15px;
+}
+.text > h2{
+	text-align: center;
+	color: orange(150, 214, 125);
+	font-size: 40px;
+	padding-bottom: 15px;
+}
+.text > p{
+	color: (236, 27, 236);
+	padding: 15px 0px;
+}
+footer{
+	width: 100%;
+	min-height: 100px;
+	background-color: royalblue;
+}
+footer > div > p {
+	color: ghostwhite;
+	font-size: 25px;
+	text-align: center;
+    line-height: 100px;
+}
+@media (max-width: 900px) {
+	.contect{
+		width: 100%;
+		display: block;
+	}
+	.contectR,.contectL{
+		width: 99%;
+		min-height: 200px;
+		margin: 0 auto;
+	}
+body{
+	overflow-x: hidden;
+
+}
+.content{
+	min-height: 300px;
+}
+.text > h2{
+	margin-top: 35px;
+}
+}	
+
+

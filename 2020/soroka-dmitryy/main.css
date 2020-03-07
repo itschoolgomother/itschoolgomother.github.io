@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    min-height: 100px;
+    background-color: blue;
+}
+.con{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.head{
+    display: flex;
+}
+.head-left{
+    width: 50%;
+    min-height:100px ;
+    display: flex;
+}
+.head-right{
+    width: 50%;
+    min-height:100px ;
+    display: flex;
+    justify-content: center;
+}
+.head-left > h2{
+    color: seashell;
+    align-self: center;
+    font-family: 'Sriracha', cursive;
+}  
+menu{
+    align-self: center;
+}
+menu > a{
+    color: seashell;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.content{
+    width: 100%;
+    min-height: 700px ;
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    
+}
+.contentL,.contentR{
+	width: 99%;
+	min-height: 302px
+	margin: 0 auto;
+}
+.img{
+    width: 100%;
+    min-height: 100% ;
+    background-image: url("go.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Style contentR  */
+.text{
+    padding-left: 15px;
+}
+.text > h2{
+    text-align: center;
+    color: rgb(0, 0, 225);
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.text > p{
+    color: rgb(236, 7, 6);
+    padding: 15px 0px;
+}
+
+footer{
+    width: 100%;
+    min-height: 100px;    
+    background-color: royalblue;
+    margin-top: 50px;  
+}
+footer > div > p {
+    color: ghostwhite;
+    font-size: 25px;
+    text-align: center;
+    line-height: 100px;
+}
+.contentL > img{
+    width: 100%;
+}
+@media screen and (max-width: 899px)  { 
+    .content{
+        width: 100%;
+        display: block;
+        min-height: 400px;
+    }
+    .contentL > img{
+        width: 90%;
+    }
+    .contentL,.contentR{
+	width: 100%;
+	min-height: 302px;
+	margin: 0 auto;
+ }
+ .body{
+ 	overflow-x: hidden;
+ }
+.text > h2{
+margin-top: 40px;
+}
