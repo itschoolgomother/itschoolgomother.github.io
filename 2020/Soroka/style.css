@@ -64,7 +64,7 @@ ol{
 }
 @media only screen and (max-width: 900px){
 	
-   }
+  
 
 .main{
 	display: block;
@@ -74,7 +74,7 @@ ol{
 	min-height: 200px; 
 }
 .mainr{
-width:100%;
+	width:100%;
 	min-height: 200px;	
 }
 }
