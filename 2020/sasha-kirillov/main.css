@@ -1,0 +1,222 @@
+body{
+	background-color: yellow;
+	overflow-x: hidden;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+.container{
+	max-width: 1200px;
+	margin:0 auto
+}
+.title{
+	width: 100%;
+	min-height: 150px;
+	background-color: blue;
+	display:flex;
+	justify-content: center;
+	align-items: center; 
+}
+.title > p{
+	color: yellow;
+	font-size: 35px;
+}
+.main{
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	padding: 25px;
+}
+.main>img{
+	width: 48%;
+}
+.main>p{
+	width: 48%;
+	color: blue;
+}
+.footer{
+	width: 100%;
+	min-height:100px;
+	background-color: gold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer > p {
+    color: #a176ac;
+    font-size: 20px;
+}
+.first{
+	color: #004949;
+}
+.end{
+    color: #004949;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
