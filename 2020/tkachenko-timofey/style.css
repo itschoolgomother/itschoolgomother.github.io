@@ -48,12 +48,10 @@ menu > a{
 .contectL{
 	width: 40%;
 	min-height: 500px;
-	background-color: red;
 }
 .contectR{
 	width: 60%;
 	min-height: 500px;
-	background-color: green;
 
 }
 .img{
@@ -63,9 +61,11 @@ menu > a{
 	background-size: 100%;
 	background-repeat: no-repeat; 
 }
-
+img{
+	width: 100%;
+}
 /* Stule contentR */
-/text{
+.text{
 	padding-left: 15px;
 }
 .text > h2{
