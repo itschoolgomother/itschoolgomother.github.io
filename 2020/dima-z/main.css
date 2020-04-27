@@ -1,0 +1,116 @@
+body{
+	background-color: orange;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.con{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	min-height:100px;
+	background-color: black;
+	color: white;
+	margin-bottom: 50px;
+}
+.head{
+	display: flex ;
+	justify-content: center;
+}
+.logo{
+	line-height: 100px;
+}
+main{
+	width: 100%;
+	background-color: black;
+	min-height: 500px;
+	display: flex;
+
+}
+.mainL,.mainR{
+	width: 50%;
+	min-height: 500px;
+}
+.mainL>img{
+	width: 100%;
+}
+.text{
+	padding: 15px;
+}
+
+.text>h3{
+	font-size: 35px;
+	text-align: center;
+	color: white;
+}
+.text>p{
+	color: white;
+	margin-top: 15px;
+	font-size: 20px
+}
+footer{
+	width:100%;
+	min-height: 100px;
+	background-color: black;
+	margin-top: 100px;
+
+}
+footer>div>p{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	text-height: 100%;
+}
+.menu-line{
+	width: 100%;
+	min-height:100px;
+	background-color: black;
+	margin-bottom: 50px;
+	font-size: white;
+}
+menu>a{
+	color: white;
+	text-decoration-line: none;
+	margin-left: 100px;
+	line-height: 100px;
+	font-size: 15px;
+}
+menu{
+	text-align: center;
+}
+menu>a:first-child{
+	margin-left: 0px;
+}
+footer>div>p>a{
+	color: white;
+}
+.text>p>a{
+	color: white;
+}
+.text>p>a:hover{
+	background-color: grey;
+	color: indigo;
+
+}
+footer>div>p>a:hover{
+	background-color: grey;
+	color: indigo;
+}
+ @media only screen and (max-width: 600px) { 
+ main{
+
+		display: block;
+ 		}
+.mainL,.mainR{
+	width: 100%;
+	min-height: 100px;
+ 	}
+ 	footer{
+ 		margin-top: 50px;
+ 	}
+}
+
