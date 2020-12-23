@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="ua">
+﻿
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Новогодняя открытка</title>
@@ -7,7 +8,7 @@
  <style>
  
  body{
- background:url(winter.jpeg);
+ background:url(winter.jpg);
  background-size:cover;
  background-repeat:no-repeat;
  
@@ -63,13 +64,12 @@
 <audio class="sound" controls width="100">
 <source src="audio/jingle.mp3" type="audio/mp3">
 
-<script src='snowfall.js'></script>
-<script src="js/snowfall.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $(document).snowfall({image :"img/snow4.png", minSize: 10, maxSize:20});
     });
 </script>
-
+<script src="snowfall.js"></script>
 </body>
 </html>

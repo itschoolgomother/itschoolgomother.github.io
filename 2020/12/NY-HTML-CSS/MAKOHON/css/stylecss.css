@@ -16,7 +16,7 @@ body{
 }
 
 #wrapper{
-	background:#url(winter.JPEG);
+	background: url(winter.jpg);
 	min-height:100%;
 position:relative;}
 
