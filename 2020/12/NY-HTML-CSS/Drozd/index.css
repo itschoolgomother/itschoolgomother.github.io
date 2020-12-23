@@ -1,0 +1,105 @@
+.maimImg {
+    width: 350px;
+}
+
+.container {
+    background: linear-gradient(0.25turn, #a0cbd2, #a0cbd2, #faffb3);
+}
+
+.parent {
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
+
+.tooltip {
+    position: absolute;
+    top: 230px;
+    left: 250px;
+    font-family: cursive;
+}
+
+.tooltip-label {
+    border: 7px solid deepskyblue;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.tooltip-label::after {
+    content: " ";
+    position: absolute;
+    top: 7%;
+    right: 100%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent deepskyblue transparent transparent;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.bigText {
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+}
+
+@keyframes color {
+    from {background-color: #f44336;}
+    50% {background-color: #369bf4;}
+    to {background-color: #69f436;}
+}
+
+.myButtonAnimation {
+    font-size: 40px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    animation: color 4s infinite ease-in-out;
+}
+
+.bigTextRed {
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+    color: red;
+    text-decoration: line-through
+}
+
+.myButton {
+    font-size: 40px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.div {
+    background: linear-gradient(0.25turn, #e20c0c, #ebf8e1, #4ff63c);
+}
+
+
+@keyframes pos {
+    from {top: -400px;}
+    50% {top: -200px;}
+    to {top: 0px;}
+}
+.ps5div {
+    position: relative;
+}
+.ps5 {
+    height: 365px;
+    width: 500px;
+    position: absolute;
+    top: 1px;
+    animation: pos 4s;
+}

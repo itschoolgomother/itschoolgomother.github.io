@@ -1,0 +1,410 @@
+
+.brll{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+bottom:130px;
+right:700px;
+background-image:radial-gradient(teal,white);
+}
+.brll-1{
+    position:absolute;
+    animation-name:gone;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+@keyframes gone{
+40%{top:600px}
+      80%{left:500px;}
+      90%{bottom:400px;}
+      100%{right:1000px;}
+      50%{left:1500px;}
+      }
+body{
+    background-image:url(https://bestfon.ucoz.ru/_ph/22/702959170.jpg);
+}
+p{
+  border:3px solid black;
+  background-color:gold;
+  width:100px;
+  position:absolute;
+  top:400px;
+}
+p:hover{
+  background-color:#FFB6C1;
+}
+.NewYear{
+  border:3px solid black;
+  background-color:yellow;
+  position:absolute;
+  top:500px;
+}
+.NewYear:hover{
+  background-color:lightgreen;
+}
+
+
+h1{
+  border:3px solid red;
+  background:red;
+  text-align:center;
+  text-transform:uppercase;
+  font-style:italic;
+  font-size:50px;
+  color:gold;
+}
+
+
+.lil{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+top:130px;
+right:600px;
+background-image:radial-gradient(teal,white);
+}
+.lil2{
+    position:absolute;
+    animation-name:gone;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+}
+@keyframes gone{
+40%{top:600px}
+      80%{left:500px;}
+      90%{top:1000px;}
+     
+      }
+.bol{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+top:130px;
+right:250px;
+background-image:radial-gradient(teal,white);
+}
+.bol2{
+    position:absolute;
+    animation-name:gone;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+@keyframes gone{
+40%{top:600px}
+      80%{left:500px;}
+      90%{top:400px;}
+      100%{right:700px;}
+      50%{left:1500px;}
+      }
+     
+
+
+
+.ball{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+bottom:130px;
+right:1000px;
+background-image:radial-gradient(teal,white);
+}
+.ball1{
+    position:absolute;
+    animation-name:gone;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+}
+@keyframes gone{
+    40%{bottom: :600px}
+     
+       69%{right:40px}
+
+}
+
+
+
+.balli{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+top:130px;
+right:1000px;
+background-image:radial-gradient(teal,white);
+}
+.ball2{
+    position:absolute;
+    animation-name:gone;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+}
+@keyframes gone{
+    40%{top:600px}
+     
+       69%{right:40px}
+
+}
+
+.bally{
+height:50px;
+width:50px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+top:130px;
+right:1400px;
+background-image:radial-gradient(teal,white);
+}
+.ball3{
+    position:absolute;
+    animation-name:went;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+@keyframes went{
+    40%{top:600px}
+      80%{left:500px;}
+      90%{top:400px;}
+      100%{right:700px;}
+      50%{left:1500px;}
+      }
+
+
+.santa { 
+  position: absolute; 
+  left: 50%;
+  bottom: 0;  
+  transform: translateX(-50%); } 
+.santa .body { 
+  width: 170px; 
+  height: 90px; 
+  background: #de2f32;
+  position: relative;
+  border-radius: 50%; 
+  top: 0; 
+   transform: translateY(50%); } 
+.santa .body:before {
+  content: &quot; &quot;; 
+  width: 3px; height: 3px; 
+  background: #f7be10; 
+  border-radius: 50%; 
+  position: absolute; 
+  top: 35%; left: 50%; 
+   transform: translate(-50%, -50%); 
+   box-shadow: 0px -18px 0px #f7be10, 0px 18px 0px #f7be10; } 
+.santa .head { 
+  z-index: 2; 
+  position: absolute; 
+  bottom: 90px; left: 50%; 
+  transform: translateX(-50%); } 
+.santa .head .face { 
+  width: 90px; 
+  height: 100px; 
+  background: #edcab0; 
+  background: radial-gradient(#edcab0, #e9a982); 
+  border-radius: 50%; border: 3px solid #f8e7dc; } 
+.santa .head .face .redhat .whitepart { 
+  position: absolute;
+   left: 50%; top: 0; 
+   transform: translateX(-50%); 
+   width: 90%; height: 32px; 
+   background: #f8e7dc; 
+   border-radius: 50px; 
+   z-index: 4; 
+   box-shadow: 0px 6px 0px -4px rgba(0, 0, 0, 0.1); } 
+.santa .head .face .redhat .redpart { 
+  width: 120px; height: 120px; 
+  background: #de2f32; 
+  position: absolute; 
+  top: -50px; left: 15px; 
+  border-radius: 50%; 
+  z-index: -1; } 
+.santa .head .face .redhat .redpart:before { 
+  content: &quot; &quot;; 
+  width: 95px; 
+  height: 95px; 
+  position: absolute; 
+  left: 0; 
+  top: 12px; 
+  border-radius: 50%;
+  box-shadow: inset -8px -1px 0px -5px rgba(0, 0, 0, 0.05); } 
+.santa .head .face .redhat .redpart:after { 
+  content: &quot; &quot;; 
+  position: absolute; 
+  right: 0; top: 60px; 
+  background: #de2f32; 
+  width: 20px; 
+  height: 50px; } 
+.santa .head .face .redhat .hatball { 
+  width: 38px; 
+  height: 38px; 
+  background: #f8e7dc; 
+  border-radius: 50%; 
+  z-index: 5; position: 
+  absolute; right: 
+  -20px; top: 40px; 
+  box-shadow: 0px 6px 0px -4px rgba(0, 0, 0, 0.1); } 
+
+.santa .head .face .eyes { 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  top: 57px; } 
+.santa .head .face .eyes:before, 
+.santa .head .face .eyes:after { 
+  content: &quot; &quot;; 
+  position: absolute; 
+  width: 15px; 
+  height: 9px; 
+  top: 0; 
+  border: 5px solid #a8744f; 
+  border-width: 0; 
+  border-top-width: 5px; 
+  border-radius: 50%; } 
+
+.santa .head .face .eyes:before { left: -28px; } 
+.santa .head .face .eyes:after { right: -28px; } 
+
+.santa .head .face .beard { 
+  width: 55px; height: 55px; 
+  background: #f8e7dc; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: -30px; left: 50%; 
+  transform: translateX(-50%); } 
+.santa .head .face .beard:before, .santa .head .face .beard:after { 
+  content: &quot; &quot;; 
+  width: 80px; height: 80px; 
+  background: #f8e7dc; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 15px; } 
+.santa .head .face .beard:before { left: -40px; } 
+.santa .head .face .beard:after { right: -40px; } 
+.santa .head .face .beard .nouse { 
+  width: 25px; 
+  height: 20px; 
+  border-radius: 50%; 
+  background: #edcab0; 
+  position: absolute; 
+  z-index: 3; 
+  box-shadow:inset -3px -3px 0px #e9a982; 
+  left: 50%; 
+  top: -42px; } 
+.santa .head .face .beard .mouth { 
+  background: #a8744f; 
+  z-index: 3; 
+  position: absolute; 
+  width: 15px;
+  height: 5px; 
+  border-bottom-right-radius: 80px 50px; 
+  border-bottom-left-radius: 80px 50px; 
+  left: 50%; 
+  top: 15px; 
+  transform: translateX(-50%); } 
+.santa .head .ears:before, .santa .head .ears:after { 
+  content: &quot; &quot;; 
+  width: 20px; 
+  height: 30px; 
+  border-radius: 50%; 
+  background: radial-gradient(#e9a982, #edcab0); 
+  position: absolute; top: 50%; z-index: -1; } 
+.santa .head .ears:before { 
+  left: -8px; 
+  transform: rotate(-10deg); } 
+.santa .head .ears:after { 
+  right: -8px; 
+  transform: rotate(10deg); } 
+@font-face { 
+  font-family: &#39;Mountains of Christmas&#39;; 
+  font-style: normal; src: local(&quot;Mountains of Christmas&quot;), 
+  local(&quot;MountainsofChristmas-Regular&quot;), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) 
+  format(&quot;woff2&quot;); } 
+
+
+audio{
+  position: absolute; 
+  bottom:10% ;
+  right:80%;
+}
+
+
+
+.dedMoroz {
+ position: absolute;
+ bottom:410px;
+ left:1px;
+ background: url('http://inverser.pro/images/Ded_Moroz.png') 50% 0 no-repeat;
+ width: 341px;
+ height: 223px;
+ 
+}
+.dedMoroz_ryka {
+ position: absolute;
+ z-index: 4;
+ bottom: 15px;
+ left: 3px;
+ width: 66px;
+ height: 57px;
+ will-change: transform;
+ border-radius: 42%;
+ background: #B61313;
+ box-shadow: -2px 2px rgba(0, 0, 0, .2), inset 2px -2px 7px rgba(0, 0, 0, .3);
+ animation: a1 20s ease infinite 7s
+}
+
+.dedMoroz_palets {
+ position: absolute;
+ z-index: -1;
+ bottom: 30px;
+ left: 58px;
+ width: 22px;
+ height: 13px;
+ will-change: transform;
+ border-radius: 35%;
+ background: #A61110;
+ animation: a2 20s ease infinite 7s
+}
+.dedMoroz_rykav {
+ position: absolute;
+ z-index: -1;
+ bottom: 37px;
+ left: 0;
+ width: 73px;
+ height: 44px;
+ border-radius: 31px 31px 7px 7px;
+ background: #F1EFEF
+}
+.dedMoroz_ryka_all {
+ position: absolute;
+ bottom: -4px;
+ will-change: transform;
+ animation: a3 20s ease infinite 7s
+}
+.mishok{
+height:190px;
+width:270px;
+border:4px solid black;
+background-color:white;
+border-radius:50px;
+position:absolute;
+top:193px;
+left:20px;
+background-image:radial-gradient(yellow,red);
+}
+

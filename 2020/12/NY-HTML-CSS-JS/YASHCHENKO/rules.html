@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-image: url('rulesbg.jpg');background-size:100%;background-repeat: no-repeat;">
+
+	<div style='width:400px;height:500px;background-color:blue;opacity:0.8;position:absolute;left:600px;top:100px;font-color:black;z-index:2;'>
+
+
+
+		<h1><center>Rules</center></h1>
+		To win you need to scre 25 presents	
+		<p>If your score will go lower than -10, don't worry, you have a lot of tries!	
+		<br>
+		We have 3 types of bomb with random damage:
+		tnt,big bomb and  a grenade
+		<br>
+		Moving:You can move using mouse in one range on left side screen
+		<p>Catching:you need just to fly to the present to get it
+		<p>If you won't'catch it you will receive -1 present(
+		<p>Thank you for reading,good luck, Player!
+
+
+
+<button id='backk' onclick='back()' style='width:200px;height:100px;border-radius:10px;background-color:transparent;font-size:20px;font-family:system-ui;  border: medium none;background-image: none;background: transparent;float: left;background-color: transparent;z-index:2;'>Back</button>
+
+
+
+
+
+
+	</div>
+	<div id='sn2'style='width:1500px;height:600px;background-image:url(endsnow2.png);position:absolute;background-position:;z-index:1;'></div>
+
+<div id='sn1'style='width:1500px;height:600px;background-image:url(elsesnow.png);position:absolute;background-position:;z-index:1;'></div>
+<script type="text/javascript">
+	function back(){
+		document.location = 'menu.html'
+	}
+
+
+
+var bgpos = -300;
+	var bgpos2 = 0;
+	function snow(){
+
+bgpos+=3
+
+bgpos2+=2
+
+
+
+document.getElementById('sn1').style.top = bgpos+'px';
+document.getElementById('sn2').style.top = bgpos2+'px';
+
+
+
+if(bgpos>=160){
+	bgpos=-300;
+	document.getElementById('sn1').style.top = bgpos+'px';
+
+}
+if(bgpos2>=180){
+	bgpos2=0;
+	document.getElementById('sn2').style.top = bgpos2+'px';
+
+}
+
+
+
+}
+
+setInterval(snow,32)
+
+
+</script>
+</body>
+</html>

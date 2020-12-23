@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+<meta charset="UTF-8">
+<title>Новогодняя открытка</title>
+ <link rel="stylesheet" type="text/css" href="../css/stylecss.css">
+ <style>body{
+background:content-box radial-gradient(pink, skyblue);;
+background-size:cover;
+ background-repeat:no-repeat;
+ height:100%}
+ </style>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<p style="font-size:100px;color:#009688;text-align:center;">Скільки горошин з салату Олів’є ти з’їси, стільки бажань у тебе виповниться в 2021 році.</p>
+<script src='snowfall.js'></script>
+<script src="js/snowfall.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).snowfall({image :"img/snow4.png", minSize: 10, maxSize:20});
+    });
+</script>
+
+<svg class=svg width="50" height="50">
+<a href="index.html">
+<circle cx="25px" cy="25px" r="20px" stroke="blue" stroke-width="4px" fill="pink"/></a>
+<br>
+<h4 style="display:inline">Натисніть щоб повернутися</h4>
+
+</svg>
+</body>
+</html>

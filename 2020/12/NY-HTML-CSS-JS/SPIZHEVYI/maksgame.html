@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="maksgame.css">
+</head>
+<body>
+<h1 class="red">"Happy New Year"</h1>
+	
+		
+		<div>
+            <div class="brll brll-1"id="Itschool"></div>
+            <div class="ball ball1"id="bll"></div>
+			<div class="lil lil2"id="bill"></div>
+			<div class="bol bol2" id ="cript"></div>
+			<div class="ball ball1" id ="coin"></div>
+			<div class="balli ball2" id="moneta"></div>
+			<div class="bally ball3"id = "kopijka"></div>
+			<div class="ballr ball4" id = "mon"></div>
+			<div class="balls ball5" id="kop"></div>
+		<div class="all">
+ <div class="dedMoroz" id='hero'>
+ 	<div class="dedMoroz_ryka_all">
+ 		<div class="dedMoroz_rykav"></div>
+ <div class="dedMoroz_palets"></div>
+ <div class="dedMoroz_ryka"></div>
+ <div class="dedMoroz_overlay"></div>
+</div>
+ <div class="mishok"></div>
+  <div class="lol"></div>
+
+
+		<script type="text/javascript">
+     let  hero = document.getElementById('hero');
+    let coin = document.getElementById('coin');
+     let javascript = document.getElementById('cript');
+      let bull= document.getElementById('bll');
+    let x = 10;
+    let y = 10;
+    let mon =document.getElementById('kopijka');
+ let bill=document.getElementById('bill');
+     let  moneta = document.getElementById('moneta');;
+      let brll= document.getElementById('Itschool');
+    let intersection = function(h,c) {
+    	return h.top+h.height >= c.top && 
+    	 c.top+c.height>=h.top &&
+    	 h.left+h.width>=c.left &&
+    	  c.left+c.width>=c.left 
+
+	}
+document.addEventListener("keydown",move);
+ let loop = function() {
+    let box=hero.getBoundingClientRect();
+    let box1 = coin.getBoundingClientRect();
+    let box2 = moneta.getBoundingClientRect();
+    let box3=mon.getBoundingClientRect();
+    let box4=kop.getBoundingClientRect();
+    let box5=cript.getBoundingClientRect();
+    let box6=bill.getBoundingClientRect();
+    let box7=bll.getBoundingClientRect();
+    let box8=Itschool.getBoundingClientRect();
+        if(intersection (box,box8)){
+        Itschool.style.display = "none";
+    }
+if(intersection (box,box7)){
+        bll.style.display = "none";
+    }
+if(intersection (box,box6)){
+    	bill.style.display = "none";
+    }
+ if(intersection (box,box5)){
+    	cript.style.display = "none";
+    }
+    if(intersection (box,box4)){
+    	coin.style.display = "none";
+    }
+    if(intersection (box,box1)){
+    	coin.style.display = "none";
+    }
+     if(intersection (box,box2)){
+    	moneta.style.display = "none";
+    }
+     if(intersection (box,box3)){
+    	mon.style.display = "none";
+    }
+    requestAnimationFrame(loop);
+ }
+     requestAnimationFrame(loop);
+function move(e){
+if(e.keyCode == 37){
+	x = x  - 50;
+	hero.style.left = x + "px";
+		
+	}
+	if(e.keyCode == 39){
+	x = x  + 50;
+	hero.style.left = x + "px";
+		
+}
+	if(e.keyCode == 38){
+	y = y  - 50;
+	hero.style.top = y + "px";
+		
+}
+	if(e.keyCode == 40){
+	y = y  + 50;
+	hero.style.top = y + "px";
+		
+}
+}
+if(hero.style.top+hero.style.height >=
+	coin.style.top){
+coin.style.display="none";
+}
+    </script>
+			
+	
+   
+</body>
+</html>

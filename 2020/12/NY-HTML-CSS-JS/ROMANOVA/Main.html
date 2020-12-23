@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style type="text/css">
+	 	#pagediv1{
+         width:100%;
+         height:100%;
+         left: 0px;
+         top: 0px;
+         position: fixed;
+	 	}
+	 	#page1{
+         width:100%;
+         height:750px;
+         position: absolute;
+        }
+        #button{
+         left: 480px;
+         top: 500px;
+         position: absolute;
+        }
+        #text {
+         top:510px ;
+         width:250px;
+         left: 485px;
+         font-size:25px;
+         position: absolute;
+        }
+        #text-rules {
+         top:200px ;
+         width:700px;
+         left: 300px;
+         font-size:40px;
+         position: absolute;
+        }
+
+    #text { z-index: 4;}
+    #text-rules { z-index: 4;}
+
+    #pagediv1 { z-index: 1;}
+    #button { z-index: 2;}
+	 </style>
+</head>
+<body>
+
+<a href="Game.html" id="button" ><button style="width:200px;height:50px"></button></a>
+<div id="text"> Перейти к игре > </div>
+<div id="text-rules"> В этом году Дед Мороз так спешил раздать подарки, что потерял половину. Давайте поможем Деду Морозу собрать все потерянные подарки, не дайте Гринчю отобрать подарки и испортить праздник! Спасем же Новый год!</div>
+
+<div id="pagediv1"><img src="Imeges/page1_3.jpg" id="page1"></div>
+</body>
+</html>

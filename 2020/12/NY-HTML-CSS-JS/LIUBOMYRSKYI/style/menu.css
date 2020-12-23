@@ -1,0 +1,46 @@
+html {
+    background: #000 url(../gifs/background_menu.gif) 
+        no-repeat;
+    background-size:100%;
+    font-family: 'Fredoka One', cursive;
+}
+
+#play:hover{
+	transition: 1s;
+	background:#44238C;
+}
+#guide:hover{
+	transition: 1s;
+	background:#44238C;
+}
+
+#play{
+	position: absolute;
+	left: 43%;
+	top: 35%;
+	width: 300px;
+	height: 100px;
+	background: #0477BF;
+	transition: 1s;
+	text-align: center;
+	color:black;
+	border-radius: 5px;
+	font-size: 50px;
+}
+#guide{
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	width: 200px;
+	height: 60px;
+	background: #0477BF;
+	transition: 1s;
+	text-align: center;
+	color:black;
+	border-radius: 5px;
+	font-size: 30px;
+}
+p{
+	top: -40%;
+	position: relative;
+}

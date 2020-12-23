@@ -1,0 +1,99 @@
+body {
+  background:radial-gradient(circle at center,#d21e1e,#0aec1f,#1e59ab,#1a1e44);
+}
+audio{
+	top: 10%;
+	right:43%;
+	position: absolute;
+}
+label{
+top:20%;
+right:50%;
+position: absolute;
+}
+input{
+top:60%;
+right:51%;
+border-right: 50%;
+position: absolute;
+}
+.postcard {
+position: absolute;
+top: 10%;
+right: 39%;
+  max-width: 350px;
+  margin: 50px auto 0;
+  padding: 200px;
+  background: #f8f9fa00;
+  border: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg,#13EC22 ,#B417D3 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+  font-family: 'Playfair Display';
+  color: #605756;
+  background-image: url(фон1.png);
+}
+.background-image{
+  width: 1px;
+}
+h1 {
+  animation-duration: 60s;
+  animation-name: slidein;
+  color: #942222;
+  animation-iteration-count: infinite;
+  animation: 20s linear 0.1s infinite alternate slidein;
+  text-shadow: -7px -7px 5px #7fdbff;
+}
+	1%{color: #e00707;}
+@keyframes slidein {
+	2%{font-size: 50px}
+	100%{color: #900000;}
+  from {
+    margin-left: -0%;
+    width: -100%; 
+}
+  to {
+    margin-left: -100%;
+    width: -300%;
+  }
+}
+h2 {
+	animation-duration: 60s;
+  animation: 20s linear 0.1s infinite alternate slidein;
+  color: #942222;
+	animation-name: slidein2;
+	animation-iteration-count: infinite;
+  text-shadow: -7px -7px 5px #7fdbff;
+  position: absolute;
+  top: 80%;
+}
+@keyframes slidein2{
+	2%{font-size: 50px;}
+	100%{color: #900000}
+  from {
+    margin-left: 0%;
+    width: 100%; 
+}
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+img{
+  height: 48%;
+  width: 33%;
+  position: absolute;
+  top: 16%;
+  right: 70%;
+}
+label{
+  color: #d1ff00;
+  font-weight: bold;
+  font-size: 50px;
+  width: 20%;
+}
+textarea{
+  top: 30%;
+  right: 40%;
+  background-color: #f8f9fa9c;
+  position: absolute;
+  width: 30.5%;
+}

@@ -1,0 +1,602 @@
+#hero{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 300px;
+	left: 850px;
+}
+.head{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid black;
+	position: absolute;
+	left: 80px;
+}
+.body{
+	width: 55px;
+	height: 55px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 73px;
+	top: 40px;
+}
+.leg{
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 64px;
+	top: 95px;
+}
+.arm{
+	width: 50px;
+	height: 3px;
+	background-color: brown;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 41px;
+	top: 35px;
+	transform: rotate(45deg);
+	animation-name: fon;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+	@keyframes fon{
+		20%{
+			transform: rotate(45deg);
+		}
+		20%{
+			transform: rotate(65deg);
+		}
+		20%{
+			transform: rotate(55deg);
+		}
+		20%{
+			transform: rotate(65deg);
+		}
+		20%{
+			transform: rotate(75deg);
+		}
+		
+	}
+.arm1{
+	width: 50px;
+	height: 3px;
+	background-color: brown;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 115px;
+	top: 90px;
+	transform: rotate(60deg);
+}
+.eas{
+	border-bottom: 15px;
+	border: 1px solid black;
+	position: absolute;
+	left: 90px;
+	top: 15px;
+}
+.eas + .eas{
+	left: 105px;
+	top: 15px;
+}
+
+.scarf{
+	width: 40px;
+	height: 10px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute;
+	left: 80px;
+	top: 35px;
+}
+.scarf2{
+	width: 20px;
+	height: 40px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 40%;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 70px;
+	top: 35px;
+	z-index: -1;
+}
+.button{
+	width: 5px;
+	height:	5px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	left: 98px;
+}
+.button + .button{
+	top: 60px;
+	left: 98px;
+}
+.button + .button + .button{
+	top: 70px;
+	left: 98px;
+}
+.right{
+	border: 5px solid transparent;
+	border-left: 20px solid #ff8f00;
+	position: absolute;
+	top: 19px;
+	left: 75px;
+	transform: rotate(180deg);
+}
+.smile{
+	border-bottom: 15px;
+	border: 1px solid black;
+	position: absolute;
+	left: 95px;
+	top: 30px;
+}
+.smile + .smile{
+	left: 100px;
+	top: 30px;
+}
+.smile + .smile + .smile{
+	left: 105px;
+	top: 28px;
+}
+.broom{
+	width: 140px;
+	height: 3px;
+	border: 1px solid black;
+	background-color: brown;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	z-index: -1;
+}
+.broom2{
+	width: 15px;
+	height: 6px;
+	border: 1px solid black;
+	background-color: yellow;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 35px;
+	left: 142px;
+	
+}
+.broom3{
+	width: 25px;
+	height: 1px;
+	border: 1px solid black;
+	background-color: brown;
+	transform: rotate(50deg);
+	position: absolute;
+	top: 22px;
+	left: 128px;
+	z-index: -1;
+}
+.broom3 + .broom3{
+	top: 22px;
+	left: 133px;
+	transform: rotate(75deg);
+	z-index: -1;
+}
+.broom3 + .broom3 + .broom3{
+	top: 22px;
+	left: 138px;
+	transform: rotate(95deg);
+	z-index: -1;
+}
+.broom3 + .broom3 + .broom3 +.broom3{
+	top: 22px;
+	left: 143px;
+	transform: rotate(115deg);
+	z-index: -1;
+}
+#href{
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	top: -180px;
+	left: -500px;
+}
+.top{
+	border: 80px solid transparent;
+	border-left: 95px solid green;
+	position: absolute;
+	top: 125px;
+	left: 15px;
+	transform: rotate(-90deg);
+}
+.left{
+	border: 75px solid transparent;
+	border-left: 90px solid green;
+	position: absolute;
+	top: 110px;
+	left: 20px;
+	transform: rotate(-90deg);
+}
+.top2{
+	border: 70px solid transparent;
+	border-left: 85px solid green;
+	position: absolute;
+	top: 95px;
+	left: 25px;
+	transform: rotate(-90deg);
+}
+.bottom{
+	border: 65px solid transparent;
+	border-left: 80px solid green;
+	position: absolute;
+	top: 80px;
+	left: 30px;
+	transform: rotate(-90deg);
+}
+.bottom1{
+	border: 60px solid transparent;
+	border-left: 75px solid green;
+	position: absolute;
+	top: 65px;
+	left: 35px;
+	transform: rotate(-90deg);
+}
+.bottom2{
+	border: 55px solid transparent;
+	border-left: 70px solid green;
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	transform: rotate(-90deg);
+}
+.bottom3{
+	border: 50px solid transparent;
+	border-left: 65px solid green;
+	position: absolute;
+	top: 35px;
+	left: 45px;
+	transform: rotate(-90deg);
+}
+.bottom4{
+	border: 45px solid transparent;
+	border-left: 60px solid green;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	transform: rotate(-90deg);
+}
+.bottom5{
+	border: 40px solid transparent;
+	border-left: 55px solid green;
+	position: absolute;
+	top: 5px;
+	left: 55px;
+	transform: rotate(-90deg);
+}
+.bottom6{
+	width: 30px;
+	height: 50px;
+	background-color: #520d0d;
+	position: absolute;
+	top: 270px;
+	left: 85px;
+	border: 1px solid black;
+	z-index: -1;
+}
+body{
+	background-image: linear-gradient(to bottom, black, white);
+	background-repeat: no-repeat;
+	height: 5px;
+	cursor:  url(image.cur), auto;
+	min-height: 50vh;
+}
+.boll{
+	width: 5px;
+	height: 5px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: gold;
+	animation-name: go;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	left: 80px;
+	top: 70px;
+}
+@keyframes go{
+	25%{
+		background-color: purple;
+	}
+	25%{
+		background-color: orange;
+	}
+	25%{
+		background-color: blue;
+	}
+	25%{
+		background-color: red;
+	}
+}
+.boll + .boll{
+	left: 90px;
+	top: 75px;
+}
+.boll + .boll + .boll{
+	left: 100px;
+	top: 80px;
+}
+.boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 85px;
+}
+.boll + .boll + .boll + .boll + .boll{
+	left: 120px;
+	top: 90px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 95px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 100px;
+	top: 100px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 90px;
+	top: 105px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 80px;
+	top: 110px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 70px;
+	top: 115px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 80px;
+	top: 120px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 90px;
+	top: 125px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 100px;
+	top: 130px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 135px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 120px;
+	top: 140px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 130px;
+	top: 145px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 120px;
+	top: 150px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 155px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 100px;
+	top: 160px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 90px;
+	top: 165px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 80px;
+	top: 170px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 70px;
+	top: 175px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 60px;
+	top: 180px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll+ .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 50px;
+	top: 185px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 60px;
+	top: 190px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 70px;
+	top: 195px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 80px;
+	top: 200px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 90px;
+	top: 205px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 100px;
+	top: 210px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 215px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 120px;
+	top: 220px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 130px;
+	top: 225px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 140px;
+	top: 230px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 150px;
+	top: 235px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 140px;
+	top: 240px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 130px;
+	top: 245px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 120px;
+	top: 250px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 110px;
+	top: 255px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 100px;
+	top: 260px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 90px;
+	top: 265px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 80px;
+	top: 270px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 70px;
+	top: 275px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 60px;
+	top: 280px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 50px;
+	top: 285px;
+}
+.boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll + .boll{
+	left: 50px;
+	top: 290px;
+}
+.box1{
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	background-color: red;
+	position: absolute;
+	left: 45px;
+	top: 300px;
+}
+.box2{
+	width: 5px;
+	height: 30px;
+	border: 1px solid black;
+	background-color: #00ff00;
+	position: absolute;
+	left: 57px;
+	top: 300px;
+}
+.box3{
+	width: 5px;
+	height: 30px;
+	border: 1px solid black;
+	background-color: #00ff00;
+	position: absolute;
+	left: 57px;
+	top: 300px;
+	transform: rotate(90deg);
+}
+.box4{
+	width: 5px;
+	height: 10px;
+	border: 1px solid black;
+	background-color: #00ff00;
+	border-radius: 50%;
+	position: absolute;
+	left: 53px;
+	top: 290px;
+	transform: rotate(-45deg);
+}
+.box4 + .box4{
+	left: 60px;
+	top: 290px;
+	transform: rotate(45deg);
+}
+.box5{
+	width: 60px;
+	height: 30px;
+	border: 1px solid black;
+	background-color: blue;
+	position: absolute;
+	left: 100px;
+	top: 300px;
+}
+.box6{
+	width: 5px;
+	height: 30px;
+	border: 1px solid black;
+	background-color: red;
+	position: absolute;
+	left: 128px;
+	top: 300px;
+}
+.box7{
+	width: 5px;
+	height: 60px;
+	border: 1px solid black;
+	background-color: red;
+	position: absolute;
+	left: 128px;
+	top: 286px;
+	transform: rotate(90deg);
+}
+.box8{
+	width: 5px;
+	height: 10px;
+	border: 1px solid black;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	left: 125px;
+	top: 290px;
+	transform: rotate(-45deg);
+}
+.box8 + .box8{
+	left: 145px;
+	top: 290px;
+	transform: rotate(45deg);
+}
+.luna{
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	background-color: #ecff95;
+	border-radius: 50%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+

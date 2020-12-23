@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+   <style type="text/css">
+     html, body
+     {
+      height: 100%;
+     }
+     body
+     {
+      top:-100px;
+      left:-10px; 
+      width:1345px ;
+      height:700px ;
+      background: linear-gradient(to top, #005082, #000839);
+      padding: 10px;
+      position: fixed;
+ 
+     }
+ 
+    #snezhokdiv1
+    {
+      left: 1400px;
+      top:100px ;
+      width:85px ;
+      height:85px ;
+      position: fixed;
+    }
+    #snezhok1
+    {
+      width:85px ;
+      height:85px ;
+      position: absolute;
+    }
+     #snezhok2
+    {
+      width:85px ;
+      height:85px ;
+      position: absolute;
+    }
+    #snezhokdiv2
+    {
+      left: 1400px;
+      top:150px ;
+      width:85px ;
+      height:85px ;
+      position: fixed;
+    }
+   #snezhokdiv3
+    {
+      left: 1400px;
+      top:250px ;
+      width:85px ;
+      height:85px ;
+      position: absolute;
+    }
+    #snezhok3
+    {
+      width:85px ;
+      height:85px ;
+      position: fixed;
+    }
+    #points {
+      top:700px ;
+      left:250px ;
+      color: white;
+      font-size:20px;
+      position: absolute;
+    }
+    #text-points {
+      top:700px ;
+      width:250px;
+      font-size:20px;
+      color: white;
+      position: absolute;
+    }
+    #grinch{
+      top: 100px;
+      width:190px;
+      height:140px ;
+      position:absolute;
+    }
+    #grinchdiv
+    {
+      top:100px; 
+      left: 1400px;
+      width:200px ;
+      height:140px ;
+      transform: rotateY(180deg);
+      position: fixed;
+    }
+    #santa
+    {
+      top:0px; 
+      width:225px ;
+      height:140px ;
+      transform: rotateY(180deg);
+      position:relative;
+    }
+    #santadiv
+    {
+      width:225px ;
+      position: fixed;
+    }
+    #forest
+    {
+      top:140px; 
+      left: -9px;
+      width:1385px ;
+      height:750px ;
+      position: fixed;
+    }
+    #present1
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #presentdiv1
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv2
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv3
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv4
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv5
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv6
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+    #presentdiv7
+    {
+      width:50px ;
+      height:50px ;
+      position: fixed;
+    }
+ 
+     #present2
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #present3
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #present4
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #present5
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #present6
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #present7
+    {
+      width:50px ;
+      height:50px ;
+      position: absolute;
+    }
+    #snow
+    {
+      background-image: url("Imeges/1112.png"),url("Imeges/qw.png");
+      height: 100%;
+      animation:showsnow 25s linear infinite;
+    }
+    @keyframes showsnow
+    {
+      0% { background-position: 0px 0px, 0px 0px;}
+      100% {background-position: 500px 1000px,100px 1200px ;}
+    }
+ 
+    #firediv1 {
+      width:250px;
+      height:250px;
+      position: fixed;
+    }
+   #fire1
+    {
+      width:250px ;
+      height:250px ;
+      position: absolute;
+    }
+ 
+    #firediv2 {
+      width:250px;
+      height:250px;
+      position: fixed;
+    }
+ 
+   #fire2
+      {
+      width:250px ;
+      height:250px ;
+      position: absolute;
+    }
+ 
+    #firediv3 {
+      width:450px;
+      height:250px;
+      position: fixed;
+    }
+     #fire3
+    {
+      width:450px ;
+      height:250px ;
+      position: absolute;
+    }
+ 
+    #firediv4 {
+      width:450px;
+      height:250px;
+      position: fixed;
+    }
+      #fire4
+    {
+      width:450px ;
+      height:250px ;
+      position: absolute;
+    }
+ 
+    #letterdiv 
+    {
+ 
+      width:340px;
+      height:500px;
+      position: fixed;
+    }
+    #letter
+    {
+      width:340px ;
+      height:500px ;
+      position: absolute;
+    }
+    #text-letter {
+ 
+      width:250px;
+      font-size:18px;
+      position: absolute;
+    }
+ 
+    #gradient { z-index: 1; }
+    #forest{ z-index: 2;}
+    #santadiv { z-index: 3; }
+    #snezhokdiv1 { z-index: 3;}
+    #snezhokdiv2 { z-index: 3;}
+    #snezhokdiv3 { z-index: 3;}
+    #presentdiv1 { z-index: 3;}
+    #presentdiv2 { z-index: 3;}
+    #presentdiv3 { z-index: 3;}
+    #presentdiv4 { z-index: 3;}
+    #presentdiv5 { z-index: 3;}
+    #presentdiv6 { z-index: 3;}
+    #presentdiv7 { z-index: 3;}
+ 
+    #firediv1 { z-index: 3;}
+    #firediv2 { z-index: 3;}
+    #firediv3 { z-index: 3;}
+    #firediv4 { z-index: 3;}
+ 
+    #letterdiv{z-index: 3;} 
+    #text-letter{z-index: 4;}
+ 
+    #grinchdiv { z-index: 4;}
+    #text-points { z-index: 4;}
+    #points { z-index: 4;}
+    #snow{ z-index: 4;}
+  </style>
+</head>
+<body>
+ 
+  <div id="rotade"></div>
+  <div id="santadiv"><img src="Imeges/дедмороз2.gif" id="santa"></div>
+ 
+  <div id="presentdiv1"><img src="Imeges/preset1.png" id="present1"></div>
+  <div id="presentdiv2"><img src="Imeges/preset2.png" id="present2"></div>
+  <div id="presentdiv3"><img src="Imeges/preset3.png" id="present3"></div>
+  <div id="presentdiv4"><img src="Imeges/preset4.png" id="present4"></div>
+  <div id="presentdiv5"><img src="Imeges/preset5.png" id="present5"></div>
+  <div id="presentdiv6"><img src="Imeges/preset6.png" id="present6"></div>
+  <div id="presentdiv7"><img src="Imeges/preset7.png" id="present7"></div>
+ 
+  <div id="firediv1"><img src="Imeges/салют1.gif" id="fire1"></div>
+  <div id="firediv2"><img src="Imeges/салют2.gif" id="fire2"></div>
+  <div id="firediv3"><img src="Imeges/салют3.gif" id="fire3"></div>
+  <div id="firediv4"><img src="Imeges/салют4.gif" id="fire4"></div>
+ 
+  <div id="letterdiv"><img src="Imeges/letter.jpg" id="letter"></div>
+ 
+ 
+  <div id="snezhokdiv1"><img src="Imeges/snezhok.png" id="snezhok1"></div>
+  <div id="snezhokdiv2"><img src="Imeges/snezhok3.png" id="snezhok2"></div>
+  <div id="snezhokdiv3"><img src="Imeges/snezhok4.png" id="snezhok3"></div>
+ 
+  <div id="grinchdiv"><img src="Imeges/grinch.png" id="grinch"></div>
+  <div id="text-points">ПОЙМАНО  ПОДАРКОВ = </div>
+  <img src="Imeges/forest.png" id="forest">
+  <p id="gradient" class="gradient"></p>
+  <div id="points">0</div>
+  <div id="snow"></div>
+ 
+<script type="text/javascript">
+ 
+    var points=0;
+    var vx = 0;
+    var vy = 0;
+    var deg = 0;
+    var x = 150;
+    var y = 200;
+ 
+    var ex1 = 900;
+    var ey1 = 800;
+ 
+    var ex2 = 910;
+    var ey2 = 810;
+ 
+    var ex3 = 930;
+    var ey3 = 830;
+ 
+    var ex4 = 950;
+    var ey4 = 850;
+ 
+    var ex5 = 970;
+    var ey5 = 870;
+ 
+    var ex6 = 970;
+    var ey6 = 870;
+ 
+    var ex7 = 970;
+    var ey7 = 870;
+ 
+    var ev1 = 0;
+    var ev2 = 0;
+    var ev3 = 0;
+    var ev4 = 0;
+    var ev5 = 0;
+    var ev6 = 0;
+    var ev7 = 0;
+ 
+    var v_snezhok1 =0;
+    var v_snezhok2 =0;
+    var v_snezhok3 =0;
+ 
+ 
+    var v_grinch =0;
+    var vy_grinch =1.3;
+ 
+ 
+    var x_snezhok1 =1600;
+    var x_snezhok2 =1700;
+    var x_snezhok3 =1500;
+ 
+    var y_snezhok1 =50;
+    var y_snezhok2 =350;
+    var y_snezhok3 =500;
+ 
+    var y_grinch = 100;
+    var x_grinch = 1400;
+    var showgrinch = 0;
+    var deg_grinch = 0;
+ 
+    var x_fire1 = 350;
+    var y_fire1 = 800;
+    var x_fire2 = 50;
+    var y_fire2 = 670;
+    var x_fire3 = 570;
+    var y_fire3 = 650;
+    var x_fire4 = 850;
+    var y_fire4 = 800;
+ 
+    var x_letter = 500;
+    var y_letter = 1000;
+ 
+    var go = new Audio('Music/песня-игра2.mp3');
+    var go2 = new Audio('Music/Часы_Песня.mp3');
+ 
+ 
+      window.addEventListener('keydown',key)
+    function key() 
+    {
+      go.play();
+      if (event.keyCode=="38"){y-=7;deg-=0.2}
+      else if (event.keyCode=="40"){y+=7;deg+=0.2}
+ }
+    function draw()
+    {
+    document.getElementById('points').innerHTML=points;
+    
+     santadiv.style.top = y+ 'px'
+     santadiv.style.left = x+ 'px'
+ 
+     presentdiv1.style.left = ex1+ 'px'
+     presentdiv1.style.top = ey1+ 'px'
+     presentdiv2.style.left = ex2+ 'px'
+     presentdiv2.style.top = ey2+ 'px'
+     presentdiv3.style.left = ex3+ 'px'
+     presentdiv3.style.top = ey3+ 'px'
+     presentdiv4.style.left = ex4+ 'px'
+     presentdiv4.style.top = ey4+ 'px'
+     presentdiv5.style.left = ex5+ 'px'
+     presentdiv5.style.top = ey5+ 'px'
+     presentdiv6.style.left = ex6+ 'px'
+     presentdiv6.style.top = ey6+ 'px'
+     presentdiv7.style.left = ex7+ 'px'
+     presentdiv7.style.top = ey7+ 'px'
+ 
+     snezhokdiv1.style.left = x_snezhok1+ 'px'
+     snezhokdiv1.style.top = y_snezhok1+ 'px'
+     snezhokdiv2.style.left = x_snezhok2+ 'px'
+     snezhokdiv2.style.top = y_snezhok2+ 'px'
+     snezhokdiv3.style.left = x_snezhok3+ 'px'
+     snezhokdiv3.style.top = y_snezhok3+ 'px'
+ 
+     grinchdiv.style.left = x_grinch+ 'px'
+     grinchdiv.style.top = y_grinch+ 'px'
+ 
+     firediv1.style.left = x_fire1+ 'px'
+     firediv1.style.top = y_fire1+ 'px'
+     firediv2.style.left = x_fire2+ 'px'
+     firediv2.style.top = y_fire2+ 'px'
+     firediv3.style.left = x_fire3+ 'px'
+     firediv3.style.top = y_fire3+ 'px'
+     firediv4.style.left = x_fire4+ 'px'
+     firediv4.style.top = y_fire4+ 'px'
+ 
+     letterdiv.style.top = y_letter+ 'px'
+     letterdiv.style.left = x_letter+ 'px'
+ 
+ 
+ 
+ 
+      x=x+vx;
+      y=y-vy;
+      ex1=ex1-ev1;
+      ex2=ex2-ev2;
+      ex3=ex3-ev3;
+      ex4=ex4-ev4;
+      ex5=ex5-ev5;
+      ex6=ex6-ev6;
+      ex7=ex7-ev7;
+ 
+      ev1+=0.01;
+      ev2+=0.01;
+      ev3+=0.01;
+      ev4+=0.01;
+      ev5+=0.01;
+      ev6+=0.01;
+      ev7+=0.01;
+ 
+     if(ex1<=0){ex1=1200;ey1=Math.random()*2500;ev1=6.5}   
+     if(ex2<=0){ex2=1200;ey2=Math.random()*2500;ev2=6.5} 
+     if(ex3<=0){ex3=1200;ey3=Math.random()*2500;ev3=6.5} 
+     if(ex4<=0){ex4=1200;ey4=Math.random()*2500;ev4=6.5} 
+     if(ex5<=0){ex5=1200;ey5=Math.random()*2500;ev5=6.5} 
+     if(ex6<=0){ex6=1200;ey6=Math.random()*2500;ev6=6.5} 
+     if(ex6<=0){ex6=1200;ey6=Math.random()*2500;ev6=6.5} 
+     if(ex7<=0){ex7=1200;ey7=Math.random()*2500;ev7=6.5} 
+ 
+ 
+     if (x+225>=ex1 && y+140>=ey1 && x<=ex1+50 &&  y<=ey1+50) {ex1=1200; ey1=Math.random()*500; points=points+1}
+     if (x+225>=ex2 && y+140>=ey2 && x<=ex2+50 &&  y<=ey2+50) {ex2=1200; ey2=Math.random()*500; points=points+1}
+     if (x+225>=ex3 && y+140>=ey3 && x<=ex3+50 &&  y<=ey3+50) {ex3=1200; ey3=Math.random()*500; points=points+1}
+     if (x+225>=ex4 && y+140>=ey4 && x<=ex4+50 &&  y<=ey4+50) {ex4=1200; ey4=Math.random()*500; points=points+1}
+     if (x+225>=ex5 && y+140>=ey5 && x<=ex5+50 &&  y<=ey5+50) {ex5=1200; ey5=Math.random()*500; points=points+1}
+     if (x+225>=ex6 && y+140>=ey6 && x<=ex6+50 &&  y<=ey6+50) {ex6=1200; ey6=Math.random()*500; points=points+1}
+     if (x+225>=ex7 && y+140>=ey7 && x<=ex7+50 &&  y<=ey7+50) {ex7=1200; ey7=Math.random()*500; points=points+1}
+ 
+     if (points>=25) {ev1=10; ev2=10; ev3=10; ev4=10; ev5=10; ev6=10; ev7=10;}
+ 
+     if (points>=55 && points<90 ) {
+      showgrinch=1;
+      x_grinch=x_grinch-v_grinch;
+      v_grinch+=0.01;
+ 
+     if (x_grinch<=1000) {  v_grinch=0;
+      y_grinch=y_grinch-vy_grinch;
+ 
+     if (y_grinch>=150) {vy_grinch=vy_grinch+0.01}
+     else{y_grinch=y_grinch-vy_grinch;}
+     if (y_grinch<=270) {vy_grinch=vy_grinch-0.01}
+ 
+      x_snezhok1=x_snezhok1-v_snezhok1;
+      x_snezhok2=x_snezhok3-v_snezhok2;
+      x_snezhok3=x_snezhok3-v_snezhok3;
+ 
+      v_snezhok1+=0.01;
+      v_snezhok2+=0.01;
+      v_snezhok3+=0.01;
+ 
+ 
+ 
+     if(x_snezhok1<=0){ x_snezhok1=1350; y_snezhok1=y_grinch-50; v_snezhok1=8.5;}   
+     if(x_snezhok2<=0){ x_snezhok2=1400; y_snezhok2=y_grinch; v_snezhok2=8.5;} 
+     if(x_snezhok3<=0){ x_snezhok3=1350; y_snezhok3=y_grinch; v_snezhok3=8.5;} 
+ 
+ 
+    if (x+225>=x_snezhok1 && y+140>=y_snezhok1 && x<=x_snezhok1+85 &&  y<=y_snezhok1+85) { x_snezhok1=1000; y_snezhok1=y_grinch; points=points-3}
+    if (x+225>=x_snezhok2 && y+140>=y_snezhok2 && x<=x_snezhok2+85 &&  y<=y_snezhok2+85) { x_snezhok2=1000; y_snezhok2=y_grinch; points=points-3}
+    if (x+225>=x_snezhok3 && y+140>=y_snezhok3 && x<=x_snezhok3+85 &&  y<=y_snezhok3+85) { x_snezhok3=1000; y_snezhok3=y_grinch; points=points-3}
+ 
+    }
+}     
+      if (showgrinch==1 && points<55) {x_grinch=x_grinch-5; y_grinch--; deg_grinch=deg_grinch-0.2;  x_snezhok1=1350; y_snezhok1=y_grinch-50; v_snezhok1=8.5;
+        x_snezhok2=1400; y_snezhok2=y_grinch; v_snezhok2=8.5;
+        x_snezhok3=1350; y_snezhok3=y_grinch; v_snezhok3=8.5;
+      if (x_grinch<=0 ) {y_grinch=100;x_grinch=1400; v_grinch=0; showgrinch=0}}
+      if (showgrinch==0) {x_grinch=1400;}
+ 
+      if (points>=90 && points<100) {x_grinch=x_grinch-5; y_grinch--;deg_grinch=deg_grinch-0.2;
+        x_snezhok1=1350;y_snezhok1=y_grinch-50; v_snezhok1=8.5;
+        x_snezhok2=1400; y_snezhok2=y_grinch; v_snezhok2=8.5;
+        x_snezhok3=1350; y_snezhok3=y_grinch; v_snezhok3=8.5;}
+ 
+      if (points>=100) {x=x+5; y--; } 
+      if (x>=1400) {y_fire1--;y_fire3--;y_fire2--;y_fire4--;ex1 = 900; ex2 = 910; ex3 = 930; ex4 = 950; ex5 = 970; ex6 = 970; ex7 = 970; ey1=1000; ey2=1000; ey3=1000; ey4=1000; ey5=1000; ey6=1000; ey7=1000; y_letter--;
+        if (y_letter<=100) {y_letter=100}
+        if (y_fire1<=0) {y_fire1=800}
+        if (y_fire2<=0) {y_fire2=650}
+        if (y_fire3<=0) {y_fire3=650}
+        if (y_fire4<=0) {y_fire4=800}
+      if (points>=100) { go.pause();  go2.play(); }   
+
+}
+ 
+      document.getElementById('rotade').style.transform="rotate("+deg+'deg)';
+      document.getElementById('santadiv').style.left=x+"px";
+      document.getElementById('santadiv').style.transform="rotate("+deg+'deg)';
+      document.getElementById('santadiv').style.top=y-vy+"px";
+    }
+ 
+    setInterval(draw,16)
+  </script>
+</body>
+</html>

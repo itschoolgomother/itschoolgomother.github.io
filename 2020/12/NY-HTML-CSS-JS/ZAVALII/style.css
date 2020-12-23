@@ -1,0 +1,207 @@
+*{
+  font-family: Arial;
+}
+
+body{
+  background: #FAEBD7;
+}
+
+#main{
+  margin: 0 auto;
+}
+
+#main div{
+  display: inline-block;
+
+}
+button{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  margin: 2%;
+}
+
+
+div.clicker{
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  width: 15%;
+  margin-left: 3.5%;
+}
+
+
+
+div.cookie{
+  background: #D2691E;
+  width: 80%;
+  margin-top: 2%;
+}
+
+div.clicker button img{
+  height: 100px;
+  width: 100px;
+}
+
+div.clicker p.compteur{
+  font-size: 20px;
+  border-radius: 4px;
+  height: 25px;
+}
+
+
+
+div.scene{
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  width: 60%;
+}
+
+div.scene img.image1{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+
+#shop{
+  width: 15%; 
+}
+
+div.shop1{
+  background: #b6d7a8ff;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+
+  margin: 2%;
+}
+
+div.shop1 p{
+  background: #fff;
+  border-radius: 4px;
+  height: 25px;
+  margin: 2%;
+}
+
+div.shop1 button img{
+  height: 45px;
+  width: 45px;
+}
+
+div.shop2{
+  background: #ADD8E6;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  margin: 2%;
+}
+
+div.shop2 p{
+  background: #fff;
+  border-radius: 4px;
+  height: 25px;
+  margin: 2%;
+}
+
+div.shop2 button img{
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+}
+
+div.shop2 button.up1 div.circle img{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  visibility: hidden;
+}
+
+div.shop2 button.up2 div.cursor img{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  visibility: hidden;
+}
+
+
+
+div.scene img{
+  cursor: pointer;
+}
+
+div.scene img.image1{
+  position: relative;
+}
+
+div.scene img.image2{
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  top: 20%;
+  left: 46%;
+  visibility: hidden;
+}
+
+div.scene img.candycane{
+  height: 40px;
+  visibility: hidden;
+}
+
+div.scene img.ball {
+  height: 40px;
+  visibility: hidden;
+}
+
+div.scene img.guirland{
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  top: 13%;
+  left: 46%;
+  visibility: hidden;
+}
+
+div.scene img.star{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+
+div.scene img.cadeau{
+  height: 75px;
+  width: 75px;
+  visibility: hidden;
+}
+
+#cadeau1{
+  position: absolute;
+  top: 70%;
+  left: 57%
+}
+
+#cadeau2{
+  position: absolute;
+  top: 66%;
+  left: 63%
+}
+
+#cadeau3{
+  position: absolute;
+   top: 66%;
+  left: 51%
+}
+
+div.scene img.cook{
+  height: 75px;
+  width: 75px;
+  top: 20%;
+  left: 10%
+  visibility: hidden;
+}

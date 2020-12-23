@@ -1,0 +1,65 @@
+h1{
+	color: red;
+	text-decoration: none;
+}
+h2{
+	color: violet;
+	text-decoration: none;
+}
+.ball{
+	animation-name: ball;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes ball{
+	10%{
+		fill: #b0baff87;
+		stroke: pink;
+		stroke-width: 5 ;
+}
+20%{
+	fill: crimson;
+	stroke: pink;
+	stroke-width: 5 ;
+}
+	30%{
+		fill: orange;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	40%{
+		fill: gold;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	50%{
+		fill: green;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	60%{
+		fill: blue;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	70%{
+		fill: violet;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	80%{
+		fill: white;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	90%{
+		fill: #1abc9c;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	100%{
+		fill: orange;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+}

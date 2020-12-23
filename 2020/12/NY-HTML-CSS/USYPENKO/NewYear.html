@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		NewYear
+	</title>
+	<style type="text/css">
+		body{
+			background-color: #CD5C5C;
+		}
+		img{
+			position: absolute;
+			top: 150px;
+		}
+	.postcard{
+			width: 400px;
+			border: 1px solid white;
+			background-color: white;
+			height: 450px;
+			position: absolute;
+			left: 550px;
+			top: 250px;
+		}
+		ul{
+			font-size: 30px;
+			list-style-type: none;
+			position:absolute;
+			left: 520px;
+			top: 400px;
+		}
+		audio{
+			position: absolute;
+			top: 400px;
+		}
+		svg{
+			position: absolute;
+			top: 500px;
+		}
+		.log{
+			width: 20px;
+			height: 60px;
+			border: 1px solid brown;
+			background-color: brown;
+			position: absolute;
+			top: 650px;
+			left: 50px;
+		}
+		.tree{
+			position: absolute;
+			top: 500px;
+			left: 120px;
+		}
+		.log1{
+			width: 20px;
+			height: 60px;
+			border: 1px solid brown;
+			background-color: brown;
+			position: absolute;
+			top: 650px;
+			left: 155px;
+	}
+	input[type="text"]{
+		width: 130px;
+		position: absolute;
+		left: 630px;
+		top: 270px;
+		background-color: #E0FFFF;
+
+	}
+	label{
+		position: absolute;
+		left: 550px;
+		top: 270px;
+	}
+	.label1{
+		position: absolute;
+		left: 630px;
+		top: 350px;
+		font-size: 30px;
+	}
+	input[type="text1"]{
+		position: absolute;
+		top: 400px;
+		left: 600px;
+		width: 250px;
+		height: 100px;
+		background-color: #E0FFFF;
+	}
+	input[type=submit]{
+		position: absolute;
+		left: 800px;
+		top: 650px;
+	}
+	</style>
+
+</head>
+<body>
+<img src="https://gif2000.narod.ru/gif/1/Santa_skates.gif">
+<img src="">
+<svg width="200" height="200">
+	<polygon points="50,50 90,100 10,100" fill="green"/>
+	<polygon points="50,100 90,150 10,150" fill="green"/>
+</svg>
+<svg class="tree" width="200" height="200">
+	<polygon points="50,50 90,100 10,100" fill="green"/>
+	<polygon points="50,100 90,150 10,150" fill="green"/>
+</svg>
+<div class="line"></div>
+<div class="postcard"></div>
+<div class="log"></div>
+<div class="log1"></div>
+
+<form>
+	<label class="label1" for="wishes">Ваші побажання</label>
+	<label for="name"> Ваше ім'я</label>
+	<input for="name" type="text" name="yourname">
+	<input for="wishes" type="text1" name="wishes">
+	<input id="sub" type="submit" name="Vse">
+
+</form>
+<script type="text/javascript">
+	sub.onclick = function () {
+	alert("Відправлено! З Новим 2021!")
+	}
+</script>
+<audio src="JingleBells.mp3" controls=""></audio>
+</body>
+</html>

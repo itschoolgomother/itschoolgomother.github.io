@@ -1,0 +1,38 @@
+html {
+    background: #000 url(../gifs/background_menu.gif) 
+        no-repeat;
+    background-size:100%;
+    font-family: 'Fredoka One', cursive;
+}
+#main{
+	position: absolute;
+	
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.levels{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: #0477BF;
+	transition: 1s;
+	color:black;
+	border-radius: 5px;
+	font-size: 30px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.levels:hover{
+	transition: 1s;
+	background:#44238C;
+}
+p{
+	position: relative;
+}
+a{
+	text-decoration: none;
+}

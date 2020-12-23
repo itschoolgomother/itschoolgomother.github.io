@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style='background-image:url(end.jpg);background-size:100%;'>
+<div id='sn1'style='width:1500px;height:600px;background-image:url(elsesnow.png);position:absolute;background-position:;'></div>
+<div id='sn2'style='width:1500px;height:600px;background-image:url(endsnow2.png);position:absolute;background-position:;'></div>
+<div id='san'style='width:200px;height:300px;background-image:url(endsanta.gif);position:absolute;background-size:50%;background-repeat:no-repeat;top:600px; left:300px;'></div>
+<div id='santd'style='width:150px;height:100px;background-color:grey;position:absolute;background-repeat:no-repeat;top:520px; left:180px;'>Thank you for your help, Player! I wish you good luck in 2021)<button onclick="accept()" style=' border: medium none;background-image: none; background: transparent;float: left;background-color: transparent;'>Accept</button></div>
+
+<script type="text/javascript">
+	var bgpos = -300;
+	var bgpos2 = 0;
+	function snow(){
+
+bgpos+=5
+bgpos2+=2
+
+
+
+document.getElementById('sn1').style.top = bgpos+'px';
+document.getElementById('sn2').style.top = bgpos2+'px';
+
+
+
+if(bgpos>=130){
+	bgpos=-300;
+	document.getElementById('sn1').style.top = bgpos+'px';
+
+}
+if(bgpos2>=250){
+	bgpos2=0;
+	document.getElementById('sn2').style.top = bgpos2+'px';
+
+}
+
+
+
+}
+function accept(){
+alert('Thank you for playing')
+document.location = 'menu.html'
+
+
+
+}
+setInterval(snow,32)
+
+
+</script>
+</body>
+</html>

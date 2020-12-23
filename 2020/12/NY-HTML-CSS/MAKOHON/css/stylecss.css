@@ -1,0 +1,128 @@
+body, html {
+height:100%
+*{
+padding:100px;
+margin:0;
+border:0;
+}
+*,*:before,*:after{
+	-moz-box-sizing:border-box;/**/
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	background-position:fixed;
+}
+
+#wrapper{
+	background:#url(winter.png);
+	min-height:100%;
+position:relative;}
+
+}
+
+forma{
+	background-color:white;
+	color:black;
+font-family:"Georgia";
+font-weight:bold;
+}
+
+section
+{
+background-image:linear-gradient(gray,white);
+	width:20%;
+	border:1px solid #dedede;
+	font-size:20px;
+	color:black;
+	margin:5px 600px 100px;
+	padding:5px 5px 5px 5px;
+	width:300px;
+height:330px;
+border-style:dotted;
+border-width:5px;
+border-color:darkgray white;
+border-radius:15px;
+box-shadow:0 0 10px #000;
+
+}
+
+
+svg{
+	linear-gradient:180deg,red,yellow,green;
+}
+
+
+
+nav a{
+	float:left;
+	color:black;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+font:bold 13px Georgia,serif;
+}
+
+nav a:hover{
+	background-color:rgb(202,202,202);
+	color:red;
+}
+
+.one {
+    bottom: 65%;
+    left: 15%;
+    position: absolute;
+    text-decoration: none;
+    color:black;
+    font-family: 'COURIER', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.two {
+    bottom: 65%;
+    left: 18%;
+    position: absolute;
+    text-decoration: none;
+    color:white;
+    font-family: 'COURIER', sans-serif;
+    font-size: 40px;
+color: white;}
+
+.three {
+    bottom: 65%;
+    left: 21%;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: 'COURIER', sans-serif;
+    font-size: 40px;
+color: white;}
+
+#prediction{
+	color:white;
+	font-size:30px;
+	display:block;
+	margin:55px 190px;
+	 font-family: 'COURIER', sans-serif;
+	 font-size: 30px;
+	
+}
+#NY{text-align:center; 
+	font-family: 'COURIER', sans-serif;
+	font-size:60px;
+	color:gray;
+	
+}  
+
+ 
+
+
+	
+
+
+
+	audio{
+		margin:2px 600px 80px;
+	}
+	

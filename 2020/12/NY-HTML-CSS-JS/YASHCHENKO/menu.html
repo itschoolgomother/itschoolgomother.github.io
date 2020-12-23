@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body style="background-image:url(menubg.png);width:1920;height:1080;background-size:100%;background-repeat:no-repeat;">
+
+
+<audio id='mus' src="bgmusic.mp3"  hidden="true" loop='true'  >
+</audio>
+	
+	
+	<button id='g' onclick='game()' style="width:200px;height:100px;position:fixed;top:200px;left:0px;border-radius:10px;background-color:darkblue;font-size:40px;font-family:system-ui;  border: medium none;background-image: none;background: transparent;float: left;background-color: transparent;z-index:2;">Save 2021</button>
+
+	<button id='htp' onclick='gui()' style="width:200px;height:100px;position:fixed;top:400px;left:0px;border-radius:10px;background-color:darkblue;font-size:40px;font-family:system-ui;  border: medium none;background-image: none; background: transparent;float: left;background-color: transparent;z-index:2;">Guide</button>
+	<button id='pl' onclick='pl()' style="width:200px;height:100px;position:fixed;top:600px;left:0px;border-radius:10px;background-color:darkblue;font-size:40px;font-family:system-ui;  border: medium none;background-image: none; background: transparent;float: left;background-color: transparent;z-index:2;">Play the music</button>
+
+
+
+
+
+
+
+	<div id='sn2'style='width:1500px;height:600px;background-image:url(endsnow2.png);position:absolute;background-position:;z-index:1;'></div>
+
+<div id='sn1'style='width:1500px;height:600px;background-image:url(elsesnow.png);position:absolute;background-position:;z-index:1;'></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+var music = new Audio('bgmusic.mp3')
+var go = 0;
+
+function game(){
+	document.location = 'finalsanta.html'
+}
+
+
+function gui(){
+	document.location = 'rules.html'
+}
+
+
+
+function pl(){
+go+=1
+if(go<=1){
+
+	music.play();
+	go++;
+}
+
+}
+
+
+var bgpos = -300;
+	var bgpos2 = 0;
+	function snow(){
+
+bgpos+=3
+
+bgpos2+=2
+
+
+
+document.getElementById('sn1').style.top = bgpos+'px';
+document.getElementById('sn2').style.top = bgpos2+'px';
+
+
+
+if(bgpos>=160){
+	bgpos=-300;
+	document.getElementById('sn1').style.top = bgpos+'px';
+
+}
+if(bgpos2>=180){
+	bgpos2=0;
+	document.getElementById('sn2').style.top = bgpos2+'px';
+
+}
+
+
+
+}
+
+setInterval(snow,32)
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

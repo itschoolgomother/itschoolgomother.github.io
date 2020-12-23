@@ -1,0 +1,40 @@
+body{
+	width: 1425px;
+	height: auto;
+	background-image:radial-gradient(at top, red, green, blue);
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+	margin-left: -2px;
+	margin-right: -1px;
+	margin-top: -1px;
+	cursor: url(cursor.cur) 0 0, pointer;
+}
+#ww{
+	width: 1425px;
+	height: 150px;
+	position: absolute;
+	left: 10px;
+	bottom: 625px;
+}
+#ss{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+h1{
+color: white;	
+font-size: 40px;	
+margin-top: 150px;
+}
+form{
+	display: block;
+    margin-top: 0px;
+    margin-left: 600px;
+}
+audio{
+	margin-left: 4px;
+	margin-top: 368px;
+	text-decoration: blue;
+}

@@ -1,0 +1,138 @@
+.bg{
+	width: 100%;
+	position: fixed;
+	height: 33%;
+	left: 0px;
+	z-index: 1;	
+}
+#sky{
+	background-image: url("../img/sky.jpg");
+}
+#mountains{
+	background-image: url("../img/mountains.jpg");
+	background-size: 60%;
+	top: 33%;
+}
+#ground{
+	background-image: url("../img/ground.jpg");
+	top: 66%;
+	background-size: 70%;
+}
+#hero{
+	position: fixed;
+	z-index: 2;
+	top: 60%
+}
+#shot{
+	z-index: 3;
+	position: fixed;
+	background-image: url(../img/snowball.png);
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+	top: 3000px;
+}
+#snowman1{
+	z-index: 2;
+	background-image: url(../img/snowman.png);
+	position: fixed;
+	background-size: 100%;
+	width: 116px;
+	height: 179px;
+	left:3000px;
+	top: 60%;
+}
+#snowman1{
+	z-index: 2;
+	background-image: url(../img/snowman.png);
+	position: fixed;
+	background-size: 100%;
+	width: 116px;
+	height: 179px;
+	top: 750px;
+}
+#snowman2{
+	z-index: 2;
+	background-image: url(../img/snowman.png);
+	position: fixed;
+	background-size: 100%;
+	width: 116px;
+	height: 179px;
+	top: 750px;
+}
+#snowman3{
+	z-index: 2;
+	background-image: url(../img/snowman.png);
+	position: fixed;
+	background-size: 100%;
+	width: 116px;
+	height: 179px;
+	top: 750px;
+}
+#boss{
+	z-index: 2;
+	background-image: url(../img/snowman.png);
+	position: fixed;
+	background-size: 100%;
+	width: 407px;
+	height: 629px;
+	top: 400px;
+}
+#information{
+	z-index: 4;
+	font-family:  'Fredoka One', cursive;
+	font-size: 20px;
+	position: fixed;
+	top: 85%;
+}
+#hp{
+	z-index: 5;
+	position: fixed;
+	top: 80%;
+	left: 10px;
+	background: #009900;
+	height: 20px;
+	width: 500px;
+}
+#hp2{
+	z-index: 4;
+	position: fixed;
+	top: 80.5%;
+	left: 5px;
+	background: #001A04;
+	height: 20px;
+	width: 500px;
+}
+#count-shots{
+	position: absolute;
+	left: 210px;
+	top: 0px;
+}
+#hp-boss{
+	z-index: 5;
+	position: absolute;
+	top: 10px;
+	left: 700px;
+	width: 1000px;
+	height: 50px;
+	background-color: #FF0000;
+}
+#win{
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	height: 100%;
+	top: 0px;
+	background-color: grey;
+	opacity: 0.5;
+	font-family: 'Fredoka One', cursive;
+	font-size: 100px;
+	display: none;
+}
+p{
+	top: 50%;
+	margin-top: -0.625em;
+	position: absolute;
+	left: 45%;
+}

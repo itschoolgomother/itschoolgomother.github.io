@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body id='bod1' style=';cursor:none;width:1400;height:600px;background-color:darkblue;'>
+<div id='snow' style="width:2800px;height:550px;background-image: url(snow4.png);position:absolute;left:0px; background-position: -100px 0px;"></div>
+<div id='snow2' style="width:2800px;height:550px;background-image: url(snow3.png);position:absolute;left:0px; background-position: -100px 0px;"></div>
+<div id='flr1' style='width:2800px;height:300px;background-image: url(bgnew.png);position:absolute;left:0px; background-position: -100px 0px;visibility: visible;top:450px;'></div>
+ 
+ 
+<audio id='mus' src="bgmusic.mp3"  hidden="true" loop='true'  >
+</audio>
+	
+ 
+ 
+<div id='santa' style="background-image:url(santa.gif);
+background-size:100%;
+background-repeat:no-repeat;
+width:300px;
+height:100px;
+position:fixed;
+left:1200px;cursor:none;">
+</div>
+ 
+<div id='enemy'></div>
+ 
+<div id='prcount' style='width:200px;
+height:200px;
+font-family:  cursive;
+position:fixed;
+font-size:26px;
+top:0px;
+left:600px;cursor:none;'>Presents:0</div>
+ 
+<div id='present' 
+style="background-image:url(present.png);
+background-size:50%;
+width:100px;
+height:100px;
+position:fixed;
+visibility:visible;
+background-repeat:no-repeat;cursor:none;"></div>
+ 
+<style type='text/css'>
+ 
+ 
+ 
+#bod1{
+width:100%;
+height:700px;
+ 
+ 
+}
+#enemy{
+width:70px;
+height:70px;
+position:fixed;
+visibility:visible;
+background-image:url(enemy1.png);
+background-size:50%;
+transform-origin: top left;
+transform:rotate(0deg);
+background-repeat:no-repeat;
+left:500px;
+cursor:none;
+}
+</style>
+ 
+ 
+ 
+ 
+<script type="text/javascript">
+	var bgr = 100;
+	var present = 0;
+ 
+	var prx = 0;
+	var pry = 0;
+	var prcount = 10;
+	var prvx = Math.random()*7;
+	var enrot = 1;
+ 
+	var ex = 10;
+	var ey = 3;
+	var evx = 5+Math.random()*7;
+	var enem = 0;
+ 
+	var santx = 0;
+	var santy = 0;
+	var mx = 0;
+	var my = 0;
+
+	var music = new Audio('bgmusic.mp3')
+	var go = 0;
+ 
+	window.addEventListener('mousemove',santamove)
+
+	window.addEventListener('keydown',play)
+ 
+ 
+	document.getElementById('prcount').innerHTML = 'Presents:'+prcount
+ 
+ 
+ 
+ 
+function play(){
+if(event.code=='KeyL'){
+go+=1
+if(go<=1){
+
+	music.play();
+	go++;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+}
+ 
+ 
+ 
+ 
+ 
+ 
+function santamove(){
+		mx = event.x;
+		my = event.y;
+		document.getElementById('santa').style.left = mx+"px";
+		document.getElementById('santa').style.top = my+'px'
+
+ 
+if(prcount>=25){document.location = 'endscreen.html'}
+				}
+ 
+ 
+ 
+function bg(){
+	bgr+=2;
+document.getElementById('snow').style.backgroundPosition = bgr*0.7+'px 0px';
+document.getElementById('snow2').style.backgroundPosition = bgr*1.3+'px 0px';
+document.getElementById('flr1').style.backgroundPosition = bgr+'px 0px';
+}
+ 
+ 
+ 
+ 
+	function prmove(){
+ 
+		prx+=prvx;
+		prvx = Math.random()*7;
+ 
+ 
+		enrot+=1;
+		ex+=evx
+		if (enrot>360) {enrot=1}
+		document.getElementById('enemy').style.transform = 'rotate('+enrot+'deg)'
+		document.getElementById('present').style.left = prx+'px'
+		document.getElementById('present').style.top = pry+'px'
+		document.getElementById('enemy').style.left = ex+'px'
+		document.getElementById('enemy').style.top = ey+'px'
+ 
+				if(prx<=mx+200
+                && pry<=my+100
+                && mx<=prx+100
+                && my<=pry+100){prx = 0;pry = Math.random()*700;prcount+=3;document.getElementById('prcount').innerHTML = 'Presents:'+prcount;}
+		else{if (prx>1400) {
+			pry = Math.random()*700;
+
+			prx=0;
+			prcount--;
+			document.getElementById('prcount').innerHTML = 'Presents:'+prcount;}}
+		if( mx+300>=ex 
+			&& ex+70>=mx 
+			&& my+100>=ey 
+			&& ey+70>=my )
+			{ey = Math.random()*700;prcount-=2;document.getElementById('prcount').innerHTML = 'Presents:'+prcount;}
+	else{if (ex>1400) {enem = Math.random()*3
+		enem = Math.round(enem)
+			ex=0;
+			ey = Math.random()*700;
+			evx=Math.random()*10;
+ 
+if(enem==1){document.getElementById('enemy').style.backgroundImage = "url('enemy1.png')"}
+if(enem==2){document.getElementById('enemy').style.backgroundImage = "url('enemy2.png')"}
+if(enem==3){document.getElementById('enemy').style.backgroundImage = "url('enemy3.png')"}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		}}
+			if (prcount<-10) {
+			alert('Try again')
+			document.location.reload()
+			prcount=10;
+		}
+ 
+ 
+ 
+ 
+	}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+setInterval(prmove,16)
+setInterval(bg,16)
+ 
+</script>
+</body>
+</html>

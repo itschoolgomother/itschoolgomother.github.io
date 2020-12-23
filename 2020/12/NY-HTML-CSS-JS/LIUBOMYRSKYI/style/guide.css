@@ -1,0 +1,14 @@
+html {
+    background: #000 url(../gifs/background_menu.gif) 
+        no-repeat;
+    background-size:100%;
+    font-family: 'Fredoka One', cursive;
+}
+#box{
+	top: 380	px;
+	font-size: 30px;
+	position: relative;
+}
+p{
+	position: relative;
+}

@@ -1,0 +1,162 @@
+body{
+	min-width: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(to left bottom, green,blue,white);
+}
+.card{
+	border: 5px solid red;
+	background-color: #d6dbff;
+	margin: 0px auto;
+	z-index: -10;
+}
+.NewYear{
+	margin: 0px auto;
+	z-index: -10;
+	left: 350px;
+}
+a{
+	font-size: 30px;
+	text-decoration: none;
+	animation-name: run;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	text-align: center;
+	margin: 0px auto;
+	z-index: -10;
+}
+@keyframes run{
+	20%{ color: red;  }
+	40%{ color: orange; }
+	60%{ color: yellow; font-size: 50px; }
+	80%{ color: green; text-shadow: 50px 50px 0px lightgrey;}
+	100%{ color: pink;}
+}
+input[type="text"]{
+	color: pink;
+	margin: 10px;
+}
+input{
+	margin: 10px;
+}
+input[type="text"]:hover{
+	background-color: green;
+	cursor: url( gwl ) 2 2,pointer;
+}
+div{
+	width: 700px;
+	margin: 100px auto 10px auto; 
+	z-index: -100;
+}
+.pug{
+	animation-name: pug;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes pug{
+	10%{
+		fill: #b0baff87;
+		stroke: pink;
+		stroke-width: 5 ;
+}
+	20%{
+	fill: crimson;
+	stroke: pink;
+	stroke-width: 5 ;
+}
+	30%{
+		fill: orange;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	40%{
+		fill: gold;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	50%{
+		fill: green;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	60%{
+		fill: blue;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	70%{
+		fill: violet;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	80%{
+		fill: white;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	90%{
+		fill: #1abc9c;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+	100%{
+		fill: orange;
+		stroke: pink;
+		stroke-width: 5 ;
+	}
+}
+.form{
+	width: 300px;
+	margin: 0px auto;
+}
+.nextpage{
+	width: 600px;
+	margin: 100px auto;
+}
+.balloon{
+	animation-name: balloon;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes balloon{
+	10%{
+		fill: #b0baff87;
+		stroke-width: 5 ;
+}
+20%{
+	fill: crimson;
+	stroke-width: 5 ;
+}
+	30%{
+		fill: orange;
+		stroke-width: 5 ;
+	}
+	40%{
+		fill: gold;
+		stroke-width: 5 ;
+	}
+	50%{
+		fill: green;
+		stroke-width: 5 ;
+	}
+	60%{
+		fill: blue;
+		stroke-width: 5 ;
+	}
+	70%{
+		fill: violet;
+		stroke-width: 5 ;
+	}
+	80%{
+		fill: lightgreen;
+		stroke-width: 5 ;
+	}
+	90%{
+		fill: #1abc9c;
+		stroke-width: 5 ;
+	}
+	100%{
+		fill: orange;
+		stroke-width: 5 ;
+}
+}

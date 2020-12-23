@@ -1,0 +1,93 @@
+.gif {
+	position: absolute;
+	top: 5px;
+	left:5px;
+	width:69%;
+	height: 85%; 
+}
+.mp3{
+	position: absolute;
+	top: 88%;
+}
+.postcard {
+position: absolute;
+top: 9%;
+left:71%;
+  max-width: 350px;
+  margin: 50px auto 0;
+  padding: 20px;
+  background: #fffdee;
+  border: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, #C42061, #C42061 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px,transparent 30px, transparent 40px);
+  font-family: 'Playfair Display';
+  color: #605756;
+}
+.form-row {margin-bottom: 15px;}
+.form-row input[type="text"], 
+.form-row input[type="email"], 
+.form-row textarea {
+  width: 100%;
+  padding: 0 9px;
+  line-height: 35px;
+  border-width: 0;
+  outline: none;
+  background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+  background-size: 8px 35px;
+  font-family: 'Playfair Display';
+}
+.form-row textarea {
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+}
+.form-row input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #F67CA5;
+  border-width: 0;
+  cursor: pointer; 
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row input[type=submit]:hover {background: #C42061;
+}
+.text{
+	position: absolute;
+	left: 25%;
+	top:67%;
+	font-size: 600%;
+	font-weight: bold;
+	font-style: italic;
+	color: blue;
+	animation-name: textyear;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: -1.5s;
+    animation-direction: alternate;
+    transform-origin: 100%;
+}
+@keyframes textyear { 
+ from { margin-left:58%; }
+ to { margin-left: 0%; }
+}
+body{
+	background: content-box radial-gradient(white, lightblue); 
+}
+figure {
+    margin: 0;
+}
+input[type="text"]{
+	color: lightgrey;
+}
+input[type="text"]:hover{
+	cursor: pointer;
+}
+input[type="text"]:active{
+	border-color: red;
+}
