@@ -21,6 +21,7 @@
 #hero{
 	position: fixed;
 	z-index: 2;
+	left: 25px;
 	top: 60%
 }
 #shot{
@@ -30,7 +31,30 @@
 	background-size: 100%;
 	width: 20px;
 	height: 20px;
-	top: 3000px;
+}
+#shot-snowman1{
+	z-index: 3;
+	position: fixed;
+	background-image: url(../img/snowball.png);
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+}
+#shot-snowman2{
+	z-index: 3;
+	position: fixed;
+	background-image: url(../img/snowball.png);
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+}
+#shot-snowman3{
+	z-index: 3;
+	position: fixed;
+	background-image: url(../img/snowball.png);
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
 }
 #snowman1{
 	z-index: 2;
@@ -110,12 +134,21 @@
 }
 #hp-boss{
 	z-index: 5;
-	position: absolute;
-	top: 10px;
-	left: 700px;
-	width: 1000px;
-	height: 50px;
+	position: fixed;
+	top: 90%;
+	left: 10px;
+	width: 500px;
+	height: 20px;
 	background-color: #FF0000;
+}
+#hp-boss2{
+	z-index: 4;
+	position: fixed;
+	top: 90.5%;
+	left: 5px;
+	width: 500px;
+	height: 20px;
+	background-color: #660000;
 }
 #win{
 	z-index: 10;
@@ -135,4 +168,25 @@ p{
 	margin-top: -0.625em;
 	position: absolute;
 	left: 45%;
+}
+#defeat{
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	height: 100%;
+	top: 0px;
+	background-color: red;
+	opacity: 0.5;
+	font-family: 'Fredoka One', cursive;
+	font-size: 100px;
+	display: none;
+}
+#shot1-boss{
+	z-index: 3;
+	position: fixed;
+	background-image: url(../img/snowball.png);
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
 }
