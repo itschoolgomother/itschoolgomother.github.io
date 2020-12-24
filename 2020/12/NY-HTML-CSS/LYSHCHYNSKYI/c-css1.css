@@ -292,11 +292,8 @@
 	z-index: -1;
 }
 body{
-	background-image: linear-gradient(to bottom, black, white);
+	background-image: linear-gradient(to bottom, black, black, white);
 	background-repeat: no-repeat;
-	height: 5px;
-	cursor:  url(image.cur), auto;
-	min-height: 50vh;
 }
 .boll{
 	width: 5px;
@@ -599,4 +596,322 @@ body{
 	left: 5px;
 	top: 5px;
 }
+.forma{
+	border:1px solid black;
+	color: red;
+	width: 300px;
+	margin: 100px auto;
+}
+input{
+	margin: 10px;
+}
+.gir{
+	position: absolute;
+	bottom: 0px;
+}
+li{
+	display: inline-block;
+	width: 40px;
+	list-style-type: none;
+	height: 40px;
+	background-color: red;
+	border-radius: 50%;
+	animation: gooo 5s infinite linear;
+}
+@keyframes gooo{
+	20%{background-color: blue;}
+	40%{background-color: gold;}
+	60%{background-color: purple;}
+	80%{background-color: cyan;}
+	100%{background-color: green;}
+}
+.b1{
+	animation-delay: 2s;
+}
+.b2{
+	animation-delay: 3.5s;
+}
+.snezh {
 
+	position: absolute;
+	top: 0px;
+	animation: goSnezh 5s infinite linear;
+}
+@keyframes goSnezh {
+	from{
+		top: 0px;
+	}
+	to{
+		top: 100px;
+	}
+}
+.snezh + .snezh {
+	animation-delay: 1s;
+	left: 50px;
+}
+.snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 75px;
+}
+.snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 100px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 3s;
+	left: 125px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 150px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 175px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 200px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 3s;
+	left: 225px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 250px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 275px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 300px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 3s;
+	left: 360px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 375px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+ 	animation-delay: 2s;
+	left: 400px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 425px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 450px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 475px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 500px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 525px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 550px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 575px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 600px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 625px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh{
+	animation-delay: 1s;
+	left: 650px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 3s;
+	left: 675px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 1s;
+	left: 700px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 2s;
+	left: 725px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 2s;
+	left: 750px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 3s;
+	left: 775px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 2s;
+	left: 800px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh{
+	animation-delay: 1s;
+	left:825px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh {
+	animation-delay: 3s;
+	left: 850px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 875px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh  + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 900px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 925px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 950px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 975px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1000px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1025px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 1050px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1075px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1100px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left:1125px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1150px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1175px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1200px;
+}
+
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1225px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1250px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1275px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1300px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 1325px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1350px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1375px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1400px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1425px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1450px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1475px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1500px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1525px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 1s;
+	left: 1550px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  {
+	animation-delay: 2s;
+	left: 1575px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 2s;
+	left: 1600px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  {
+	animation-delay: 3s;
+	left: 1625px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh+ .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh  + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 1s;
+	left: 1650px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh {
+	animation-delay: 2s;
+	left: 1675px;
+}
+.snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh+ .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh + .snezh{
+	animation-delay: 3s;
+	left: 1700px;
+}
