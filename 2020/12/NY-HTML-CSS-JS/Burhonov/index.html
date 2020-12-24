@@ -1,0 +1,474 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <audio id="fireworksSound">
+      <source src="sounds/fireworks/fireworks.mp3" type="audio/mpeg" />
+      <source src="sounds/fireworks/fireworks.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_1_do">
+      <source src="sounds/notes/note_1_do.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_1_do.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_2_re">
+      <source src="sounds/notes/note_2_re.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_2_re.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_3_mi">
+      <source src="sounds/notes/note_3_mi.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_3_mi.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_4_fa">
+      <source src="sounds/notes/note_4_fa.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_4_fa.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_5_sol">
+      <source src="sounds/notes/note_5_sol.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_5_sol.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_6_la">
+      <source src="sounds/notes/note_6_la.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_6_la.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_7_la_sharp">
+      <source src="sounds/notes/note_7_la_sharp.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_7_la_sharp.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_8_do">
+      <source src="sounds/notes/note_8_do.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_8_do.wav" type="audio/wav" />
+    </audio>
+    <audio id="audio_9_re">
+      <source src="sounds/notes/note_9_re.mp3" type="audio/mpeg" />
+      <source src="sounds/notes/note_9_re.wav" type="audio/wav" />
+    </audio>
+    <main class="main">
+      <img id="fireworks" src="images/fireworks.png" alt="Fireworks" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <img src="images/snow_flake.png" class="snow-flake" alt="Snow Flake" />
+      <div class="toy toy1">
+        <img src="images/toy1.png" alt="Toy" />
+      </div>
+      <div class="toy toy2">
+        <img src="images/toy2.png" alt="Toy" />
+      </div>
+      <div class="toy toy3">
+        <img src="images/toy3.png" alt="Toy" />
+      </div>
+      <div class="toy toy4">
+        <img src="images/toy4.png" alt="Toy" />
+      </div>
+      <div class="toy toy5">
+        <img src="images/toy5.png" alt="Toy" />
+      </div>
+      <div class="toy toy6">
+        <img src="images/toy6.png" alt="Toy" />
+      </div>
+      <div class="mountains">
+        <img
+          src="images/mountain.png"
+          class="mountain mountain-left"
+          alt="mountain"
+        />
+        <img
+          src="images/mountain.png"
+          class="mountain mountain-right"
+          alt="mountain"
+        />
+        <img
+          src="images/mountain.png"
+          class="mountain mountain-center"
+          alt="mountain"
+        />
+      </div>
+      <div class="tree-behind">
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree1"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree2"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree3"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree4"
+          alt="christmas_tree"
+        />
+      </div>
+      <div class="hill hill-behind"></div>
+      <div class="tree-in-front">
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree1"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree2"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree3"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree5"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree6"
+          alt="christmas_tree"
+        />
+        <img
+          src="images/christmas_tree.png"
+          class="tree tree7"
+          alt="christmas_tree"
+        />
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="hill hill-in-front"></div>
+      <div id="progressBar" class="progress-bar">
+        <div class="notes-row"></div>
+        <div class="gui-info">
+          <div class="bells">
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell8.png" />
+            <img src="images/bell4.png" />
+            <img src="images/bell5.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell7.png" />
+            <img src="images/bell7.png" />
+            <img src="images/bell7.png" />
+            <img src="images/bell7.png" />
+            <img src="images/bell7.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell5.png" />
+            <img src="images/bell5.png" />
+            <img src="images/bell6.png" />
+            <img src="images/bell5.png" />
+            <img src="images/bell8.png" />
+          </div>
+          <img src="images/gui.png" />
+        </div>
+      </div>
+      <div id="gift" class="gift">
+        <img src="images/green_christmas_tree.png" alt="green_christmas_tree" />
+        <img class="bag" src="images/gift.png" alt="Gift" />
+      </div>
+      <div id="buttons" class="buttons">
+        <div class="symbol note_1_do">
+          <svg id="note_1_do" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell1"
+                id="bellAnimation1"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="1"
+              class="bell"
+              id="bell1"
+              width="100"
+              height="85"
+              href="images/bell1.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_2_re">
+          <svg id="note_2_re" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell2"
+                id="bellAnimation2"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="2"
+              class="bell"
+              id="bell2"
+              width="100"
+              height="85"
+              href="images/bell2.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_3_mi">
+          <svg id="note_3_mi" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell3"
+                id="bellAnimation3"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="3"
+              class="bell"
+              id="bell3"
+              width="100"
+              height="85"
+              href="images/bell3.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_4_fa">
+          <svg id="note_4_fa" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell4"
+                id="bellAnimation4"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="4"
+              class="bell"
+              id="bell4"
+              width="100"
+              height="85"
+              href="images/bell4.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_5_sol">
+          <svg id="note_5_sol" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell5"
+                id="bellAnimation5"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="5"
+              class="bell"
+              id="bell5"
+              width="100"
+              height="85"
+              href="images/bell5.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_6_la">
+          <svg id="note_6_la" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell6"
+                id="bellAnimation6"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="6"
+              class="bell"
+              id="bell6"
+              width="100"
+              height="85"
+              href="images/bell6.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_7_la_sharp">
+          <svg id="note_7_la_sharp" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell7"
+                id="bellAnimation7"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="7"
+              class="bell"
+              id="bell7"
+              width="100"
+              height="85"
+              href="images/bell7.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_8_do">
+          <svg id="note_8_do" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell8"
+                id="bellAnimation8"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="8"
+              class="bell"
+              id="bell8"
+              width="100"
+              height="85"
+              href="images/bell8.png"
+            />
+          </svg>
+        </div>
+        <div class="symbol note_9_re">
+          <svg id="note_9_re" width="100" height="85">
+            <defs>
+              <animateTransform
+                href="#bell9"
+                id="bellAnimation9"
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                keyTimes="0; 0.25; 0.75; 1"
+                values="0 50 10; 15 50 10; -15 50 10; 0 50 10"
+                dur="0.3s"
+                repeatCount="2"
+                begin="none"
+              />
+            </defs>
+            <image
+              data-note="9"
+              class="bell"
+              id="bell9"
+              width="100"
+              height="85"
+              href="images/bell9.png"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="clouds">
+        <img src="images/cloud1.png" class="cloud cloud1" alt="cloud" />
+        <img src="images/cloud2.png" class="cloud cloud2" alt="cloud" />
+        <img src="images/cloud3.png" class="cloud cloud3" alt="cloud" />
+      </div>
+      <div id="send-mail" class="send-mail">
+        <form
+          action="index.html"
+          method="POST"
+          onsubmit="return this.classList.add('hidden'), alert('Ваше пожелание обязательно сбудется')"
+        >
+          <textarea
+            autocomplete="off"
+            maxlength="300"
+            placeholder="Введите Ваше пожелания на новый год"
+          ></textarea>
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div id="welcome" class="welcome">
+        <div class="welcome-content">
+          <h1>Сыграйте припев "Jingle Bells"</h1>
+          <button onclick="startGame()">Прослушать</button>
+          <div>
+            <img class="welcome-info" src="images/info.jpg" alt="Notes" />
+          </div>
+          <button onclick="startGame(true)">Старт</button>
+        </div>
+      </div>
+    </main>
+    <audio id="bgSound">
+      <source src="sounds/background_sound.mp3" type="audio/mpeg" />
+      <source src="sounds/background_sound.wav" type="audio/wav" />
+      Тег audio не поддерживается вашим браузером.
+      <a download="sounds/background_sound.mp3">Скачайте музыку</a>.
+    </audio>
+    <script type="text/javascript" src="scripts/utils.js"></script>
+    <script type="text/javascript" src="scripts/fireworks.js"></script>
+    <script type="text/javascript" src="scripts/snow_flakes.js"></script>
+    <script type="text/javascript" src="scripts/snow.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
+</html>
