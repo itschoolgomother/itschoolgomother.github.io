@@ -1,3 +1,4 @@
+
 html {
     background: #000 url(../gifs/background_menu.gif) 
         no-repeat;
@@ -5,7 +6,7 @@ html {
     font-family: 'Fredoka One', cursive;
 }
 #box{
-	top: 380	px;
+	top: 380px;
 	font-size: 30px;
 	position: relative;
 }
