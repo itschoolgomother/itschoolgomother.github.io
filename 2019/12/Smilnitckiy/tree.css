@@ -1,0 +1,21 @@
+img{
+	left: 10px;
+	width: 1330px;
+	height: 600px;
+	box-shadow: 10px 10px 30px 30px green;}
+
+h1{
+ font-family: 'Noto Sans JP', sans-serif;
+ text-transform: uppercase;
+ text-align: center;
+ box-shadow: 10px 5px 15px green
+}
+h1:active{
+visibility: hidden;
+}
+body{
+	background-color: red;
+}
+button{
+	font-size: 100px;
+}

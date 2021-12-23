@@ -1,0 +1,15 @@
+img{
+	left: 10px;
+	width: 400px;
+	height: 400px;
+	box-shadow: 10px 10px 30px 30px red;}
+
+h1:active{
+visibility: hidden;
+}
+body{
+	background-color: aqua;
+}
+button{
+	font-size: 50px;
+}
