@@ -1,0 +1,529 @@
+body{
+	min-width: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(to left bottom,violet,lightblue,white);
+}
+.card{
+	border: 20px solid white;
+	background-color: #d1eaff;
+	margin: 0px auto;
+	z-index: -10;
+}
+div{
+	width: 700px;
+	margin: 100px auto 10px auto; 
+	z-index: -100;
+}
+.CHR{
+	font-size: 50px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	left: 700px;
+	top: 100px;
+}
+.fire{
+	animation-name: fire;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes fire{
+	10%{
+		fill: lightgreen;
+		stroke: white;
+		stroke-width: 5 ;
+}
+	20%{
+	fill: lightblue;
+	stroke: white;
+	stroke-width: 5 ;
+}
+	30%{
+		fill: purple;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	40%{
+		fill: lightpink;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	50%{
+		fill: purple;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	60%{
+		fill: lightpink;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	70%{
+		fill: violet;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	80%{
+		fill: white;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	90%{
+		fill: #1abc9c;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+	100%{
+		fill: lightpink;
+		stroke: white;
+		stroke-width: 5 ;
+	}
+}
+.send{
+	width: 600px;
+	margin: 100px auto;
+}
+.CARD{
+	background-color: #eef6fd;
+	margin: 0px auto;
+}
+.ball{
+	animation-name: ball;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes ball{
+	10%{
+		fill: #b0baff87;
+}
+	20%{
+	fill: crimson;
+}
+	30%{
+		fill: orange;
+	}
+	40%{
+		fill: red;
+	}
+	50%{
+		fill: green;
+	}
+	60%{
+		fill: lightyellow;
+	}
+	70%{
+		fill: violet;
+	}
+	80%{
+		fill: white;
+	}
+	90%{
+		fill: #1abc9c;
+	}
+	100%{
+		fill: orange;
+	}
+}
+.blue{
+	color: #1a3b56;
+	font-family: "Courier New";
+	font-size: 60px;
+	line-height: 30px
+}
+.words{
+	color: red;
+	font-family: "Snell Roundhand";
+	font-size: 60px;
+	line-height: 30px
+}
+.l_words{
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	font-size: 60px;
+	line-height: 30px
+}
+
+.h_blue{
+	color: #1a3b56;
+	font-family: "Courier New";
+	font-size: 60px;
+	line-height: 30px
+}
+.ll_words{
+	color: red;
+	font-family: "Snell Roundhand";
+	font-size: 60px;
+	line-height: 30px
+}
+.l_ball{
+	animation-name: l_ball;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes l_ball{
+	10%{
+		fill: #1abc9c;
+}
+	20%{
+	fill: yellow;
+}
+	30%{
+		fill: purple;
+	}
+	40%{
+		fill: white;
+	}
+	50%{
+		fill: lightpink;
+	}
+	60%{
+		fill: lightgreen;
+	}
+	70%{
+		fill:lightblue ;
+	}
+	80%{
+		fill: red;
+	}
+	90%{
+		fill: #b0baff87;
+	}
+	100%{
+		fill: orange;
+	}
+}
+audio{
+	position: absolute;
+	top: 0px;
+	left: 10px
+}
+audio::-webkit-media-controls-play-button{
+	background-color: green;
+	color: red;
+	border-radius: 50px;
+}
+audio::-webkit-media-controls-panel{
+	background-color: crimson;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+audio::-webkit-media-controls-mute-button{
+	background-color: green;
+	border-radius: 50px;
+}
+audio{
+	transition: all 0.5s linear;
+	box-shadow: 2px 2px 4px 0px green;
+	border-radius: 50px;
+}
+audio:hover,
+audio:target,
+audio:active{
+	transform: scale(1.05);
+	box-shadow: 15px 15px 20px 0px green;
+
+}
+.write{
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	animation-name: go;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes go{
+	20%{ color: red; }
+	40%{ color: yellow; }
+	60%{ color: white;}
+	80%{ color: pink; }
+
+}
+.balloon{
+	animation-name: balloon;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes balloon{
+	10%{
+		fill: #1abc9c;
+}
+20%{
+	fill: crimson;
+}
+	30%{
+		fill: purple;
+	}
+	40%{
+		fill: lightblue;
+	}
+	50%{
+		fill: pink;
+	}
+	60%{
+		fill: lightyellow;
+	}
+	70%{
+		fill: violet;
+	}
+	80%{
+		fill: lightpink;
+	}
+	90%{
+		fill: crimson;
+	}
+	100%{
+		fill: orange;
+}
+}
+.a_vm{
+	color: crimson;
+	font-family: "Courier New";
+	position: absolute;
+	top: 130px;
+	left: 500px;
+}
+.WWL{
+	font-size: 40px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 160px;
+	left: 450px;
+}
+.bake{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 390px;
+	left: 400px;
+}
+#bake1{
+	position: absolute;
+	top: 395px;
+	left: 590px;
+}
+.make{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 390px;
+	left: 740px;
+}
+#make1{
+	position: absolute;
+	top: 395px;
+	left: 930px;
+}
+.give{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 590px;
+	left: 740px;
+}
+#give1{
+	position: absolute;
+	top: 595px;
+	left: 910px;
+}
+.snowman{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 590px;
+	left: 400px;
+}
+#snowman1{
+	position: absolute;
+	top: 595px;
+	left: 610px;
+}
+.play{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 790px;
+	left: 400px;
+}
+#play1{
+	position: absolute;
+	top: 795px;
+	left: 620px;
+}
+.decorate{
+	font-size: 25px;
+	font-family: "Courier New";
+	position: absolute;
+	top: 790px;
+	left: 740px;
+}
+#decorate1{
+	position: absolute;
+	top: 795px;
+	left: 960px;
+}
+.light{
+	animation-name: light;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes light{
+	10%{
+		fill: #1abc9c;
+}
+20%{
+	fill: crimson;
+}
+	30%{
+		fill: purple;
+	}
+	40%{
+		fill: lightblue;
+	}
+	50%{
+		fill: pink;
+	}
+	60%{
+		fill: lightyellow;
+	}
+	70%{
+		fill: violet;
+	}
+	80%{
+		fill: lightpink;
+	}
+	90%{
+		fill: crimson;
+	}
+	100%{
+		fill: orange;
+}
+}
+.wishes{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 240px;
+	left: 600px;
+}
+.wishes1{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 280px;
+	left: 600px;
+}
+.wishes2{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 320px;
+	left: 600px;
+}
+.wishes3{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 360px;
+	left: 600px;
+}
+.wishes4{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 400px;
+	left: 600px;
+}
+.wishes5{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 440px;
+	left: 600px;
+}
+.wishes6{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 480px;
+	left: 600px;
+}
+.wishes7{
+	font-size: 30px;
+	color: #1a3b56;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 520px;
+	left: 600px;
+}
+.card1{
+	background-color: #d1eaff;
+	margin: 0px auto;
+	z-index: -10;
+}
+.f_2{
+	font-family: "Snell Roundhand";
+	font-size: 250px;
+	color: #ffab2e;
+	position: absolute;
+	top: 430px;
+	left: 420px;
+}
+.s_2{
+	font-family: "Snell Roundhand";
+	font-size: 250px;
+	color: #ffab2e;
+	position: absolute;
+	top: 430px;
+	left: 860px;
+}
+.th_2{
+	font-family: "Snell Roundhand";
+	font-size: 250px;
+	color: #ffab2e;
+	position: absolute;
+	top: 430px;
+	left: 1020px;
+}
+.Hey{
+	font-size: 20px;
+	position: absolute;
+	top: 550px;
+	left: 990px;
+}
+.click1{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 55px;
+	left: 300px;
+}
+.click{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	font-family: "Snell Roundhand";
+	position: absolute;
+	top: 55px;
+	left: 400px;
+}
+.text{
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	z-index: 1;
+}

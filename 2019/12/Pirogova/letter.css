@@ -1,0 +1,255 @@
+body{
+	min-width: 100vh;
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(to left bottom,violet,lightblue,white);
+}
+div{
+	width: 700px;
+	margin: 100px auto 10px auto; 
+	z-index: -100;
+}
+.list{
+	border: 20px solid #ff6464;
+	background-color: #e9f5ff;
+	margin: 0px auto;
+	z-index: -10;
+}
+h1{
+	font-size: 30px;
+	position: absolute;
+	top: 170px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.name{
+	font-size: 30px;
+	position: absolute;
+	top: 230px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.i_name{
+	font-size: 20px;
+	position: absolute;
+	top: 235px;
+	left: 660px;
+	font-family: "Snell Roundhand";
+}
+.f_name{
+	font-size: 30px;
+	position: absolute;
+	top: 270px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.i2_name{
+	font-size: 20px;
+	position: absolute;
+	top: 275px;
+	left: 550px;
+	font-family: "Snell Roundhand";
+}
+.f1_name{
+	font-size: 30px;
+	position: absolute;
+	top: 270px;
+	left: 790px;
+	font-family: "Snell Roundhand";
+}
+.s_name{
+	font-size: 30px;
+	position: absolute;
+	top: 310px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.i3_name{
+	font-size: 20px;
+	position: absolute;
+	top: 315px;
+	left: 530px;
+	font-family: "Snell Roundhand";
+}
+.th_name{
+	font-size: 30px;
+	position: absolute;
+	top: 350px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.would_like{
+	font-size: 30px;
+	position: absolute;
+	top: 390px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.would_l{
+	font-size: 20px;
+	position: absolute;
+	top: 395px;
+	left: 740px;
+	font-family: "Snell Roundhand";
+}
+.check1{
+	font-size: 30px;
+	position: absolute;
+	top: 350px;
+	left: 760px;
+	font-family: "Snell Roundhand";
+}
+#check1{
+	position: absolute;
+	top: 360px;
+	left: 810px;
+}
+.check2{
+	font-size: 30px;
+	position: absolute;
+	top: 350px;
+	left: 850px;
+	font-family: "Snell Roundhand";
+}
+#check2{
+	position: absolute;
+	top: 360px;
+	left: 950px;
+}
+.wishes{
+	font-size: 30px;
+	position: absolute;
+	top: 430px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.wishes1{
+	font-size: 30px;
+	position: absolute;
+	top: 470px;
+	left: 420px;
+	font-family: "Snell Roundhand";
+}
+.love{
+	font-size: 30px;
+	position: absolute;
+	top: 520px;
+	left: 970px;
+	font-family: "Snell Roundhand";
+}
+input[type="text"]:hover{
+	background-color: #e9ecff;
+}
+.to_santa{
+	font-size: 50px;
+	position: absolute;
+	top: 90px;
+	left: 550px;
+	font-family: "Snell Roundhand";
+}
+a{
+	font-size: 50px;
+	text-decoration: none;
+	animation-name: go;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 850px;
+	left: 970px;
+	font-family: "Snell Roundhand";
+}
+@keyframes go{
+	20%{ color: pink;  }
+	40%{ color: violet; }
+	60%{ color: lightblue;}
+	80%{ color: lightgreen;}
+	100%{ color: purple;}
+}
+.pug{
+	animation-name: pug;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes pug{
+	10%{
+		fill: #b0baff87;
+		stroke: violet;
+		stroke-width: 5 ;
+}
+	20%{
+	fill: crimson;
+	stroke: violet;
+	stroke-width: 5 ;
+}
+	30%{
+		fill: orange;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	40%{
+		fill: gold;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	50%{
+		fill: green;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	60%{
+		fill: blue;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	70%{
+		fill: violet;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	80%{
+		fill: white;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	90%{
+		fill: #1abc9c;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+	100%{
+		fill: orange;
+		stroke: violet;
+		stroke-width: 5 ;
+	}
+}
+audio{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
+audio::-webkit-media-controls-play-button{
+	background-color: green;
+	color: red;
+	border-radius: 50px;
+}
+audio::-webkit-media-controls-panel{
+	background-color: crimson;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+audio::-webkit-media-controls-mute-button{
+	background-color: green;
+	border-radius: 50px;
+}
+audio{
+	transition: all 0.5s linear;
+	box-shadow: 2px 2px 4px 0px green;
+	border-radius: 50px;
+}
+audio:hover,
+audio:target,
+audio:active{
+	transform: scale(1.05);
+	box-shadow: 15px 15px 20px 0px green;
+
+}
