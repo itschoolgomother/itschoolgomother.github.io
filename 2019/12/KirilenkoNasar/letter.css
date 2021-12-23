@@ -1,0 +1,42 @@
+body{
+	background:url(unnamed.jpg) no-repeat center center fixed;
+	background-size: cover; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.snow{
+	position: fixed;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color:white;
+	animation: snow 2s linear infinite;
+	z-index: 99;
+	top: -10px;
+}
+@keyframes snow{
+	to{
+		transform: translate3d(200px,1000px,0);
+
+	}
+}
+#back_letter{
+	background: url('41571ba7b1fc80e30d0ad7c0fd1c343f.jpeg') no-repeat;
+	width: 400px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+textarea{
+	width: 200px;
+	height: 150px;
+	resize: none;
+}
+#submit {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 10px 10px 10px; 
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Otkritka.css">
+</head>
+<body>
+	<div class="slide">
+	<div class="slide-item visible">
+		<img src="2740682590_w640_h640_2740682590.jpg">
+	</div>
+	<div class="slide-item">
+		<img src="2783_news.jpg">
+	</div>
+	<div class="slide-item">
+		<img src="32_main.jpg">
+	</div>
+	<div class="slide-item">
+		<img src="659c496c127f853fa251aebdd570e224_preview_w440_h290.jpg">
+	</div>
+	<div class="slide-buttons">
+		<button id="back"><</button>
+		<button id="forward">></button>
+	</div>
+	<div id="slide_dots">
+	</div>
+</div>
+
+<!-- <div id="snowfall">
+</div> -->
+<!-- <audio controls autoplay> 
+	<source src="George Michael - Last Christmas.mp3" >
+</audio> -->
+<script type="text/javascript">
+	let a = "УВАГА! УВАГА! Я ВІТАЮ ВАС З НОВИМ РОКОМ"
+	alert(a)
+
+	let i=0;
+	back.addEventListener("click",backSlide);
+	forward.addEventListener("click",forwardSlide);
+let slides=document.getElementsByClassName('slide-item');
+for(let i=0;i<slides.length;i++){
+	slide_dots.innerHTML+="<div class='dots'></div>"
+}
+let dots=document.getElementsByClassName('dots')
+dots[0].style.background="gray"
+ function slidePosition(){
+		for (let slide of slides) {
+		slide.classList.remove('visible');
+		slide.classList.add('hidden');	}
+		slides[i].classList.add('visible');
+	}
+	function backSlide(){
+		dots[i].style.background="white"
+		 if (i==0) {
+			i=slides.length-1;
+		}
+		else{
+			i--;
+		}
+		slidePosition();
+		slides [i].style.animation="back 1s"
+		dots[i].style.background="gray"
+	}
+	function forwardSlide(){
+		dots[i].style.background="blue"
+		if (i==slides.length-1) {
+			i=0;
+		}
+		else{
+			i++;
+		}
+		slidePosition();
+		slides [i].style.animation="forward 1s"
+		dots[i].style.background="gray"
+	}
+	let music = new Audio("George Michael - Last Christmas.mp3")
+	window.addEventListener('click',click)
+    function click() 
+    {
+      music.play();
+ }
+</script>
+</body>
+</html>
