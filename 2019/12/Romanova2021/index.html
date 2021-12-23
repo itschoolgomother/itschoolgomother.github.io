@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<style type="text/css">
+	body{
+  		background-image: url("levels/images/snow.jpg"); 
+  		position: fixed;
+	}
+	html, body
+     {
+      height: 100%;
+      width: 100%;
+     }
+	#snow
+    {
+      background-image: url("levels/images/snow_1.png"),url("levels/images/snow_3.png");
+      height: 100%;
+      width: 100%;
+      animation:showsnow 20s linear infinite;
+      
+    }
+    @keyframes showsnow
+    {
+      0% { background-position: 0px 0px, 0px 0px;}
+      100% {background-position: 500px 1000px,100px 1200px ;}
+    }
+
+    .sleigh{
+    	position: absolute;
+    	width: 23%;
+    	margin-left: 55%;
+    	margin-top: -1%;
+    	transform: scale(-1, 1);
+
+    }
+    .house_1{
+    	position: absolute;
+    	width: 30%;
+    	margin-left: 60%;
+    	margin-top: 25%;
+    }
+    .house_2{
+    	position: absolute;
+    	width: 20%;
+    	margin-left: 12%;
+    	margin-top: 20%;
+    	transform: scale(-1, 1);
+    }
+    .house_3{
+    	position: absolute;
+    	width: 30%;
+    	margin-left: 25%;
+    	margin-top: 2%;
+    }
+    .christmas_tree{
+    	position: absolute;
+    	width: 28%;
+    	margin-left: 70%;
+    	margin-top: -1%;
+    }
+    .christmas_tree2{
+    	position: absolute;
+    	width: 15%;
+    	margin-left: 5%;
+    	margin-top: 1%;
+    }
+
+    .santa{
+    	position: absolute;
+    	width: 5%;
+    	margin-left: 16%;
+    	margin-top: 20.5%;
+    	z-index: 2;
+    }
+    .snowman{
+    	position: absolute;
+    	width: 8%;
+    	margin-left: 73%;
+    	margin-top: 16%;
+    	z-index: 2;
+    }
+    .elf{
+    	position: absolute;
+    	width: 7%;
+    	margin-left: 30%;
+    	margin-top: 30%;
+    }
+    .deer{
+    	position: absolute;
+    	width: 8%;
+    	margin-left: 22%;
+    	margin-top: 10%;
+    }
+
+
+
+    .footprint1{
+      position: absolute;
+      margin-top: 35%;
+      margin-left: 28%;
+      height: 10%;
+      width: 10%;
+      -webkit-transform: rotate(-60deg);
+    }
+    .footprint_1{
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_2{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+
+
+
+
+ .footprint2{
+      position: absolute;
+      margin-top: 42%;
+      margin-left: 60%;
+      height: 10%;
+      width: 10%;
+      -webkit-transform: rotate(78deg);
+    }
+    .footprint_1_{
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_2_{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_3_{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_4_{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+
+
+
+
+ .footprint3{
+      position: absolute;
+      margin-top: 18%;
+      margin-left: 35%;
+      height: 10%;
+      width: 10%;
+      -webkit-transform: rotate(-38deg);
+    }
+    .footprint_1_1{
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_2_2{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_3_3{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_4_4{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+
+
+     .footprint4{
+      position: absolute;
+      margin-top: 17%;
+      margin-left: 55%;
+      height: 10%;
+      width: 10%;
+      -webkit-transform: rotate(40deg);
+    }
+    .footprint_1_1_{
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_2_2_{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+    .footprint_3_3_{
+      margin-top: -7%;
+      width: 40%;
+      height: auto;
+      display: none;
+    }
+
+    .game_board{
+      border: 2mm ridge rgba(59, 217, 217, 1);
+      margin: 25px;
+      margin-top:7% ;
+      margin-left: 25%;
+      height: 65%;
+      width: 50%;
+      background-color: #ccffff;
+      position: fixed;
+      z-index: 3;
+      display: none;
+    }
+
+    .game_text_{
+      font-size: 40px;
+    }
+    .next_{
+      width: 40%;
+      height: 20%;
+      background-color: white;
+      border: 2mm ridge rgb(94%, 42%, 80%, 1);;
+      padding: 5px;
+      background-color: #ffccff;
+      margin-top: 3%;
+      font-size: 35px;
+    }
+    .game_text{
+      font-size: 40px;
+    }
+    .next{
+      width: 40%;
+      height: 30%;
+      background-color: white;
+      border: 2mm ridge rgb(94%, 42%, 80%, 1);;
+      padding: 5px;
+      background-color: #ffccff;
+      font-size: 35px;
+    }
+    .game_next{
+      border: 2mm ridge rgba(59, 217, 217, 1);
+      margin: 25px;
+      margin-top:10% ;
+      margin-left: 25%;
+      height: 45%;
+      width: 45%;
+      background-color: #ccffff;
+      position: fixed;
+      display: none;
+      z-index: 3;
+    }
+    .win{
+      position :absolute;
+      width: 60%;
+      height: auto;
+      margin-left: 20%;
+      margin-top: 1.5%;
+      background-color: whitesmoke;
+      display: none;
+      z-index: 5;
+    }
+</style>
+<div class="main">
+<div><img class="elf" src="levels/images/main/elf.png"></div>
+<div><img class="snowman" src="levels/images/main/snowman.png"></div>
+<div><img class="santa" src="levels/images/main/santa.png"></div>
+<div><img class="christmas_tree" src="levels/images/main/christmas_tree2.png"></div>
+<div><img class="christmas_tree2" src="levels/images/main/christmas_tree.png"></div>
+
+<div><img class="deer" src="levels/images/main/deer.gif"></div>
+
+<div><img class="sleigh" src="levels/images/main/santa's_sleigh.png"></div>
+<div><img class="house_1" src="levels/images/main/house1.png"></div>
+<div><img class="house_2" src="levels/images/main/house2.png"></div>
+<div><img class="house_3" src="levels/images/main/house3.png"></div>
+
+<div class="footprint1">
+  <div class="div_footprint"><img class="footprint_1" src="levels/images/main/footprint.png"></div>
+  <div class="div_footprint"><img class="footprint_2" src="levels/images/main/footprint.png"></div>
+
+</div>
+<div class="footprint2">
+  <div class="div_footprint"><img class="footprint_1_" src="levels/images/main/footprint.png"></div>
+  <div class="div_footprint"><img class="footprint_2_" src="levels/images/main/footprint.png"></div>
+  <div class="div_footprint"><img class="footprint_3_" src="levels/images/main/footprint.png"></div>
+  <div class="div_footprint"><img class="footprint_4_" src="levels/images/main/footprint.png"></div>
+
+</div>
+
+<div class="footprint3">
+  <div><img class="footprint_1_1" src="levels/images/main/footprint.png"></div>
+  <div><img class="footprint_2_2" src="levels/images/main/footprint.png"></div>
+  <div><img class="footprint_3_3" src="levels/images/main/footprint.png"></div>
+  <div><img class="footprint_4_4" src="levels/images/main/footprint.png"></div>
+</div>
+
+<div class="footprint4">
+  <div><img class="footprint_1_1_" src="levels/images/main/footprint.png"></div>
+  <div><img class="footprint_2_2_" src="levels/images/main/footprint.png"></div>
+  <div><img class="footprint_3_3_" src="levels/images/main/footprint.png"></div>
+  
+</div>
+
+<center><div class="game_board">
+  <p class="game_text_">Hello player! Let `s start. <br>Let's help Santa collect all the presents.<br>(´∩｡• ᵕ •｡∩`) ♡</p>
+  <button class="next_">Start</button>
+</center></div>
+
+<center><div class="game_next">
+  <p class="game_text">Go to the next level!<br>(´∩｡• ᵕ •｡∩`) ♡<br></p>
+  <button class="next">Next level</button>
+</center></div>
+
+</div>
+<img class ="win"src="levels/images/main/merry_christmas.jpg">
+<div id="snow"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+var level = localStorage.getItem('levelId');
+if(level==null){level = 0}
+if (level==3) {
+  $(".footprint_1").css("display","block")
+  $(".footprint_2").css("display","block")
+  $(".footprint_4_").css("display","block")
+  $(".footprint_3_").css("display","block")
+  $(".footprint_2_").css("display","block")
+  $(".footprint_1_").css("display","block")
+  $(".footprint_4_4").css("display","block")
+  $(".footprint_3_3").css("display","block")
+  $(".footprint_2_2").css("display","block")
+  $(".footprint_1_1").css("display","block")
+
+  $(".footprint_4_4_").fadeIn(100)
+  $(".footprint_3_3_").fadeIn(1400)
+  $(".footprint_2_2_").fadeIn(1800)
+  $(".footprint_1_1_").fadeIn(2400)
+
+  $(".win").delay(2200).fadeIn(1000)
+}
+if (level==2) {
+  $(".footprint_1").css("display","block")
+  $(".footprint_2").css("display","block")
+  $(".footprint_4_").css("display","block")
+  $(".footprint_3_").css("display","block")
+  $(".footprint_2_").css("display","block")
+  $(".footprint_1_").css("display","block")
+
+  $(".footprint_4_4").fadeIn(100)
+  $(".footprint_3_3").fadeIn(1400)
+  $(".footprint_2_2").fadeIn(1800)
+  $(".footprint_1_1").fadeIn(2200)
+
+  $(".footprint_4_4").fadeIn(100)
+  $(".footprint_3_3").fadeIn(1400)
+  $(".footprint_2_2").fadeIn(1800)
+  $(".footprint_1_1").fadeIn(2200)
+
+  $(".game_next").delay(2200).fadeIn(1000)
+  $(".next").on("click", function(){
+      $(".game_next").css("display","none")
+      window.location.href = "levels/indoor_level.html";
+  });
+}
+if (level==1) {
+  $(".footprint_1").css("display","block")
+  $(".footprint_2").css("display","block")
+  $(".footprint_4_").fadeIn(100)
+  $(".footprint_3_").fadeIn(1400)
+  $(".footprint_2_").fadeIn(1800)
+  $(".footprint_1_").fadeIn(2200)
+  $(".game_next").delay(2200).fadeIn(1000)
+  $(".next").on("click", function(){
+      $(".game_next").css("display","none")
+      window.location.href = "levels/snake.html";
+  });
+}
+if(level==0){
+$(".game_board").fadeIn(800)
+$(".next_").on("click", function(){
+    $(".game_board").css("display","none")
+    $(".footprint_1").fadeIn(800)
+    $(".footprint_2").fadeIn(1000)
+    $(".game_next").delay(2200).fadeIn(1000)
+});
+$(".next").on("click", function(){
+    $(".game_next").css("display","none")
+    window.location.href = "levels/tetris.html";
+});
+}
+
+localStorage.setItem('levelId', 0);
+
+</script>
+</body>
+</html>

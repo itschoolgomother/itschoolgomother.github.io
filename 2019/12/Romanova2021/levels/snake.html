@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+body{
+      background-image: url("images/snow.jpg");
+
+  }
+  html, body
+     {
+      height: 99%;
+     }
+  #snow
+    {
+      background-image: url("images/snow_1.png"),url("images/snow_3.png");
+      height: 100%;
+      animation:showsnow 20s linear infinite;
+    }
+    @keyframes showsnow
+    {
+      0% { background-position: 0px 0px, 0px 0px;}
+      100% {background-position: 500px 1000px,100px 1200px ;}
+    }
+  canvas {
+    border: 2mm ridge rgba(59, 217, 217, 1);  
+    background-color: black;
+    position: absolute;
+    margin-left:30%;
+    margin-top: 5%;
+  }
+  .snowman{
+    width: 40%;
+    height: auto;
+    position: fixed;
+    margin-left: 65%;
+    margin-top: 20%;
+  }
+    .main_{
+    border: 2mm ridge rgba(59, 217, 217, 1);
+    margin: 25px;
+    margin-top:7%;
+    margin-left:65% ;
+    height: 10%;
+    width: 20%;
+    background-color: #ccffff;
+    position: absolute;
+    /*display: none;*/
+  }
+    h1{
+    margin: 8px;
+  }
+  .decoration{
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 27%;
+    height: auto;
+    position: fixed;
+  }
+      .game_win_board{
+      border: 2mm ridge rgba(59, 217, 217, 1);
+      margin: 25px;
+      margin-top:10% ;
+      margin-left: 30%;
+      height: 40%;
+      width: 40%;
+      background-color: #ccffff;
+      position: fixed;
+      display: none;
+    }
+    .game_win{
+      font-size: 40px;
+    }
+    .next{
+      width: 40%;
+      height: 40%;
+      background-color: white;
+      border: 2mm ridge rgb(94%, 42%, 80%, 1);;
+      padding: 5px;
+      background-color: #ffccff;
+      font-size: 35px;
+      z-index: 5;
+    }
+    .game_win_board{
+      z-index: 4;
+    }
+    .confetti{
+      width: 94%;
+      height: 100%;
+      margin-left: 3%;
+      margin-top:-1% ;
+      position:absolute;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<canvas width="400" height="400" id="game"></canvas>
+<div class="main_">
+    <h1 id="score">Your score: 0</h1>
+  </div>
+<img class="decoration" src="images/snake/christmas_decoration_3.png">
+<img class="snowman" src="images/snake/snowman.png">
+<center><div class="game_win_board">
+  <p class="game_win">Hooray! You won!<br> Congratulations! ƪ(♥ﻬ  ♥)ʃ</p>
+  <button class="next">Next level</button>
+</center></div>
+<div><img class="confetti" src="images/confetti.gif"></div>
+<div id="snow"></div>
+<script>
+var canvas = document.getElementById('game');
+var canvas_ = canvas.getContext('2d');
+var grid = 16;
+var count = 0;
+var score=0;
+var snake = {
+  x: 160,
+  y: 160,
+  ax: grid,
+  ay: 0,
+  snake_body: [],
+  max_snake_body: 4
+};
+var apple = {
+  x: 320,
+  y: 320
+};
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function draw() {
+  requestAnimationFrame(draw);
+  if (++count < 4) {return;}
+  count = 0;
+  canvas_.clearRect(0,0,canvas.width,canvas.height);
+  snake.x += snake.ax;
+  snake.y += snake.ay;
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+
+  snake.snake_body.unshift({x: snake.x, y: snake.y});
+
+  if (snake.snake_body.length > snake.max_snake_body) {
+    snake.snake_body.pop();
+  }
+
+  canvas_.fillStyle = 'red';
+  canvas_.fillRect(apple.x, apple.y, grid-1, grid-1);
+
+  canvas_.fillStyle = 'green';
+  snake.snake_body.forEach(function(cell, index) {
+
+    canvas_.fillRect(cell.x, cell.y, grid-1, grid-1);  
+
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.max_snake_body++;
+      score++
+      document.getElementById("score").innerHTML = "Your score : "+score+""
+      if (snake.max_snake_body==9) {win()}
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+
+    for (var i = index + 1; i < snake.snake_body.length; i++) {
+
+      if (cell.x === snake.snake_body[i].x && cell.y === snake.snake_body[i].y) {
+        snake.x = 160;
+        snake.y = 160;
+        snake.snake_body = [];
+        snake.max_snake_body = 4;
+        snake.ax = grid;
+        snake.ay = 0;
+
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+
+
+document.addEventListener('keydown', function(e) {
+
+  if (e.which === 37 && snake.ax === 0) {
+    snake.ax = -grid;
+    snake.ay = 0;
+  }
+
+  else if (e.which === 38 && snake.ay === 0) {
+    snake.ay = -grid;
+    snake.ax = 0;
+  }
+
+  else if (e.which === 39 && snake.ax === 0) {
+    snake.ax = grid;
+    snake.ay = 0;
+  }
+
+  else if (e.which === 40 && snake.ay === 0) {
+    snake.ay = grid;
+    snake.ax = 0;
+  }
+});
+
+requestAnimationFrame(draw);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+<script type="text/javascript">
+var go = new Audio('music/snake.mp3');
+go.muted=false;
+var is_play=false;
+
+function win(){
+  $(".main_").css("display","none")
+  $("canvas").css("display","none")
+
+  $(".game_win_board").css("display","block")
+  $(".confetti").css("display","block")
+
+  $(".next").on("click", function(){
+    localStorage.setItem('levelId', 2);
+    window.history.back(-1)
+  })
+}
+function music() {
+    go.play()
+}
+setTimeout(music,3000)
+</script>
+</body>
+</html>

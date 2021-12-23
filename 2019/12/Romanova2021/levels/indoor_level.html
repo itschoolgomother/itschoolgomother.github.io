@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <style type="text/css">
+    body{
+        background-image: url("images/snow.jpg"); 
+
+    }
+    html, body
+     {
+      height: 100%;
+     }
+    #snow
+    {
+        
+      background-image: url("images/snow_1.png"),url("images/snow_3.png");
+      height: 100%;
+      animation:showsnow 20s linear infinite;
+    }
+    @keyframes showsnow
+    {
+      0% { background-position: 0px 0px, 0px 0px;}
+      100% {background-position: 500px 1000px,100px 1200px ;}
+    }
+
+
+     #talking
+     {
+     left:30px;
+     top:328px ;
+     width: 400px;
+     height: 200px;
+     position: absolute;
+     }
+
+     #talk
+     {
+     left:70px;
+     top:360px ;
+     width: 340px;
+     height: 200px;
+     font-size:20px;
+     position: absolute;
+     }
+   #talking { z-index: 0;}
+   #talk { z-index: 0;}
+
+    .main_board_text{
+        border: 2mm ridge rgba(59, 217, 217, 1);
+        margin: 25px;
+        margin-top:8% ;
+        margin-left: 20%;
+        height: 60%;
+        width: 60%;
+        background-color: #ccffff;
+        position: fixed;
+    }
+    .main_board_text{
+        z-index: 4;
+    }
+    p{
+        font-size: 25px;
+    }
+    li{
+        font-size: 23px;
+
+    }
+    .game_qui{
+        font-size: 40px;
+    }
+    .main_text{
+        margin-left: 100px;
+    }
+    .text_{
+        margin:20px ;
+        margin-left: 30px;
+    }
+    .play{
+        width: 30%;
+        height: 30%;
+        background-color: white;
+        border: 2mm ridge rgb(94%, 42%, 80%, 1);
+        padding: 5px;
+        background-color: #ffccff;
+        font-size: 35px;
+    }
+
+    canvas{
+        display: none;
+        margin-left: 20%;
+        margin-top:5%;
+    }
+    .board{
+        border: 2mm ridge rgba(59, 217, 217, 1);
+        margin: 25px;
+        margin-top:5% ;
+        margin-left: 60%;
+        height: 80%;
+        width: 17%;
+        background-color: #ccffff;
+        position: fixed;
+        display: none;
+    }
+    .text_find{
+        width:96%;
+        height: 13%;
+        background-color: white;
+        border: 2mm ridge rgb(94%, 42%, 80%, 1);
+        margin: 5px;
+        background-color: #ffccff;
+        font-size: 35px;
+        text-align: center;
+    }
+    .find_img{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        width: 86px;
+        height: 86px;
+        margin-left:30%;
+    }
+   
+   .obj_1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 19%;
+    margin-top: 6%;
+   }
+   .obj_2{
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    margin-left: 77.8%;
+    margin-top: 82.5%;
+   }
+   .obj_3{
+    width: 35px;
+    height: 65px;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 26%;
+   }
+   .obj_4{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    margin-left: 89%;
+    margin-top:48%;
+   }
+   .obj_5{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 25%;
+   }
+   .obj_6{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 51.5%;
+    margin-top: 26%;
+   }
+   .obj_7{
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 82%;
+   }
+   .obj_8{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 69%;
+   }
+   .obj_9{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 32%;
+   }
+   .obj_10{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 63%;
+   }
+    .obj{
+        margin-left: 20%;
+        margin-top:5%;
+        width:512px ;
+        height:512px ;
+        position: absolute;
+    }
+    .obj{
+        z-index: 3;
+    }
+    .game_win_board{
+        border: 2mm ridge rgba(59, 217, 217, 1);
+        margin: 25px;
+        margin-top:10% ;
+        margin-left: 30%;
+        height: 40%;
+        width: 40%;
+        background-color: #ccffff;
+        position: fixed;
+        display: none;
+    }
+    .game_win{
+        font-size: 40px;
+    }
+    .next{
+        width: 40%;
+        height: 40%;
+        background-color: white;
+        border: 2mm ridge rgb(94%, 42%, 80%, 1);;
+        padding: 5px;
+        background-color: #ffccff;
+        font-size: 35px;
+    }
+    .game_win_board{
+        z-index: 5;
+    }
+
+ </style>
+
+
+<canvas  style="border:1px solid black; position: fixed;z-index:0; "id="canvas"></canvas>
+<canvas  style="border:1px solid black; position: fixed;z-index:2; "id="hero_player"></canvas>
+<canvas  style="border:1px solid black; position: fixed;z-index:1; "id="interior"></canvas>
+
+
+<div class="board">
+
+    <div class="text_find">Find</div>
+    <div class="find_img">
+        <div class="d-flex">
+            <div class="painting"><img src="images/find/painting.png"></div>
+            <div class="carpet"><img src="images/find/carpet.png"></div>
+        </div>
+        <div class="d-flex">
+            <div class="telescope"><img src="images/find/telescope.png"></div>
+            <div class="flower"><img src="images/find/flower.png"></div>
+        </div>
+        <div class="d-flex">
+            <div class="bear"><img src="images/find/bear.png"></div>
+            <div class="boat"><img src="images/find/boat.png"></div>
+        </div>
+        <div class="d-flex">
+            <div class="chair"><img src="images/find/chair.png"></div>
+            <div class="globe"><img src="images/find/globe.png"></div>
+        </div>
+        <div class="d-flex">
+            <div class="biscuits"><img src="images/find/biscuits.png"></div>
+            <div class="cactus"><img src="images/find/cactus.png"></div>
+        </div>
+    </div>
+</div>
+
+<div class="obj">
+    <div class="obj_1"></div>
+    <div class="obj_2"></div>
+    <div class="obj_3"></div>
+    <div class="obj_4"></div>
+    <div class="obj_5"></div>
+    <div class="obj_6"></div>
+    <div class="obj_7"></div>
+    <div class="obj_8"></div>
+    <div class="obj_9"></div>
+    <div class="obj_10"></div>
+</div>
+<div class="main_board_text">
+    <center><p class="game_qui ">Game gui</p></center>
+    <div class="main_text d-flex">
+
+        <div class="text_">
+        <p>Controls:</p>
+        <ul>
+            <li>Click with the mouse</li>
+        </ul>
+      </div>
+
+      <div class="text_">  
+        <p>Game:</p>
+        <ul >
+            <li>Find all ten things that are<br> listed in the table on the right.</li>
+        </ul>
+      </div>  
+    </div>
+        <center><button class="play">Play</button></center>
+
+</div>
+
+<center><div class="game_win_board">
+  <p class="game_win">Hooray! You won!<br> Congratulations! (´｡ • ᵕ • ｡`)</p>
+  <button class="next">Next level</button>
+</center></div>
+
+<div id="snow"></div>
+
+<script type="text/javascript">
+var canvas =document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+canvas.width = 512;
+canvas.height = 512;
+
+var hero_player =document.getElementById('hero_player');
+var ctx_hero = hero_player.getContext('2d');
+hero_player.width = 512;
+hero_player.height = 512;
+
+var interior =document.getElementById('interior');
+var ctx_interior = interior.getContext('2d');
+interior.width = 512;
+interior.height = 512;
+
+
+var mapIMG = new Image()
+    mapIMG.src = 'images/find/full_house.png'
+   
+    var level_house=0;
+    var ix=0;
+    var iy=0;
+    var px=0;
+    var py=0;
+    var ix2=0;
+    var iy2=0;
+    var px2=0;
+    var py2=0;
+
+    var int_ix=0;
+    var int_iy=0;
+    var int_px=0;
+    var int_py=0;
+    var int_height=0;
+    var int_width=0;
+    var int = 0;
+
+    var isPressed =false;
+    var isPressed_top =false;
+    var isPressed_right =false;
+    var isPressed_left =false;
+    var isPressed_bottom =false;
+    var x=410;
+    var y=400;
+    var pix=0;
+    var piy=0;
+    
+    var old_player_y=400;
+    var old_player_piy=86;
+    var old_player_pix=0;
+    var old_player_x=220;
+    var sprite=0;
+    var old_player_sprite=0;
+    var i = 0;
+    var height=0;
+    var width=0;
+    var crossing=false;
+    var math_0_text = 0;
+    var math_1_text = 0;
+
+ 
+
+    var collision
+	var map=[
+    7,3,4,4,4,4,4,4,4,4,4,4,4,4,5,8,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,1,2,2,2,2,2,2,2,2,2,2,2,2,10,9,
+    6,2,0,0,0,0,0,0,0,0,0,0,0,0,2,9,
+    6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,9,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,9,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,9,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,9,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,
+    6,2,2,2,2,2,2,2,2,2,2,2,2,2,2,9,
+    12,11,11,11,11,11,11,11,11,11,11,11,11,11,11,13,]
+
+
+    var map_int=[
+    0,0,0,0,0,0,0,0,0,0,0,24,0,0,0,0,
+    0,0,0,1,0,0,0,12,0,0,0,0,0,0,0,0,
+    0,13,0,0,0,0,0,0,0,0,0,0,0,0,13,0,
+    0,0,8,0,0,0,0,0,11,0,0,0,0,0,0,0,
+    0,15,0,23,0,0,0,0,21,0,0,6,6,6,0,0,
+    0,0,0,0,0,0,0,0,0,0,4,2,20,0,5,0,
+    0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,16,0,0,0,0,0,10,0,0,0,
+    12,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,
+    0,0,9,0,0,22,0,0,0,7,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,18,0,0,0,0,0,0,0,0,0,0,3,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]
+ 
+	left_collision=false;
+	right_collision=false;
+	top_collision=false;
+	bottom_collision=false;
+ 
+
+
+var obj_1=document.querySelector(".obj_1");
+var obj_2=document.querySelector(".obj_2");
+var obj_3=document.querySelector(".obj_3");
+var obj_4=document.querySelector(".obj_4");
+var obj_5=document.querySelector(".obj_5");
+var obj_6=document.querySelector(".obj_6");
+var obj_7=document.querySelector(".obj_7");
+var obj_8=document.querySelector(".obj_8");
+var obj_9=document.querySelector(".obj_9");
+var obj_10=document.querySelector(".obj_10");
+var points=0;
+obj_1.onclick=function obj1() {
+  document.querySelector(".painting").style.display = "none";
+  points+=1;
+}
+obj_2.onclick=function obj2() {
+  document.querySelector(".carpet").style.display = "none";
+  points+=1;
+}
+obj_3.onclick=function obj3() {
+  document.querySelector(".telescope").style.display = "none";
+  points+=1;
+}
+obj_4.onclick=function obj4() {
+  document.querySelector(".flower").style.display = "none";
+  points+=1;
+}
+obj_5.onclick=function obj5() {
+  document.querySelector(".boat").style.display = "none";
+  points+=1;
+}
+obj_6.onclick=function obj6() {
+  document.querySelector(".bear").style.display = "none";
+  points+=1;
+}
+obj_7.onclick=function obj7() {
+  document.querySelector(".chair").style.display = "none";
+  points+=1;
+}
+obj_8.onclick=function obj8() {
+  document.querySelector(".globe").style.display = "none";
+  points+=1;
+}
+obj_9.onclick=function obj9() {
+  document.querySelector(".biscuits").style.display = "none";
+  points+=1;
+}
+obj_10.onclick=function obj10() {
+  document.querySelector(".cactus").style.display = "none";
+  points+=1;
+}
+
+function level2(){
+    ctx_interior.clearRect(0,0,512,512)
+ 
+
+    int_py=0;
+        for (int = 0; int < 256; int++) {
+        switch(map_int[int]){
+
+
+            case 0:
+            // пусто
+            int_ix=-270;int_iy=32; int_height=32; int_width=16;
+            break;
+
+
+            case 1:
+            //картина 
+            int_ix=35;int_iy=144; int_height=32; int_width=32;
+            break;
+  
+
+            case 2:
+            //стол
+            int_ix=147;int_iy=32; int_height=37; int_width=46;
+            break;
+
+
+            case 3:
+            //ковер
+            int_ix=146;int_iy=0; int_height=32; int_width=48;
+            break;
+
+
+           case 4:
+            //стул лево
+            int_ix=196;int_iy=0; int_height=29; int_width=14;
+            break; 
+
+
+            case 5:
+            //стул право
+            int_ix=196;int_iy=34; int_height=29; int_width=14;
+            break;
+
+
+            case 6:
+            //стул верх
+            int_ix=212;int_iy=0; int_height=29; int_width=14;
+            break;
+
+
+            case 7:
+            //большой мишка 
+            int_ix=237;int_iy=0; int_height=64; int_width=30;
+            break;
+
+
+             case 8:
+            //бильярд
+            int_ix=0;int_iy=183; int_height=40; int_width=79;
+            break;
+
+
+            case 9:
+            //стол2
+            int_ix=148;int_iy=129; int_height=58; int_width=63;
+            break;
+
+
+            case 10:
+            //дворецкий
+            int_ix=82;int_iy=132; int_height=50; int_width=50;
+            break;
+
+
+            case 11:
+            //кусты
+            int_ix=128;int_iy=98; int_height=43; int_width=35;
+            break;
+
+
+            case 12:
+            //дерево-пальма
+            int_ix=52;int_iy=85; int_height=50; int_width=50;
+            break;
+
+
+            case 13:
+            //пальма
+            int_ix=36;int_iy=87; int_height=43; int_width=22;
+            break;
+
+
+            case 14:
+            //игра
+            int_ix=90;int_iy=185; int_height=43; int_width=55;
+            break;
+
+
+            case 15:
+            //телескоп
+            int_ix=165;int_iy=88; int_height=40; int_width=32;
+            break;
+
+
+            case 16:
+            //доска
+            int_ix=229;int_iy=73; int_height=47; int_width=47;
+            break;
+
+
+            case 17:
+            //цветок
+            int_ix=100;int_iy=84; int_height=47; int_width=22;
+            break;
+
+
+            case 18:
+            //пуф
+            int_ix=10;int_iy=158; int_height=22; int_width=22;
+            break;
+
+
+            case 19:
+            //кактус
+            int_ix=155;int_iy=73; int_height=20; int_width=10;
+            break;
+
+            case 20:
+            //печенье
+            int_ix=178;int_iy=72; int_height=20; int_width=22;
+            break;
+
+
+            case 21:
+            //медведь
+            int_ix=200;int_iy=80; int_height=17; int_width=22;
+            break;
+
+
+            case 22:
+            //глобус
+            int_ix=200;int_iy=97; int_height=18; int_width=22;
+            break;
+
+
+            case 23:
+            //корабль
+            int_ix=200;int_iy=114; int_height=25; int_width=22;
+            break;
+
+            case 24:
+            //камин 
+            int_ix=113;int_iy=0; int_height=75; int_width=32;
+            break;
+}
+         ctx_interior.beginPath()
+         ctx_interior.drawImage(mapIMG,int_ix,int_iy,int_width,int_height,int_px,int_py,int_width*2,int_height*2)
+         int_px+=32
+         if (int_px==512) {int_py+=32; int_px=0}
+         
+
+
+    }
+
+}
+
+
+    function level(){
+       py=0;
+	    for (i = 0; i < 256; i++) {
+        switch(map[i]){
+            case 0:
+            // пусто
+            ix=-1;iy=64; height=32; width=16;
+            break;
+
+            case 1:
+            //пол лево накладка
+            ix=16;iy=64; height=32; width=16;
+            break;
+            case 2:
+            //пол  
+            ix=96;iy=5; height=32; width=16;
+            break;
+            case 10:
+            //пол право накладка
+            ix=48;iy=64; height=32; width=16;
+            break;
+
+            case 3:
+            //левая стена
+            ix=16;iy=0; height=64; width=16;
+            break;
+
+            case 4:
+            //средина стена
+            ix=32;iy=0; height=64; width=16;
+            break;
+
+            case 5:
+            //правоя стена
+            ix=48;iy=0; height=64; width=16;
+             break;
+
+            case 6:
+            //соединение левое стена
+            ix=0;iy=32; height=32; width=16;
+            break;
+
+            case 7:
+            //соединение правое уголок
+            ix=0;iy=0; height=64; width=16;
+             break;
+
+             case 8:
+            //соединение левое уголок 
+            ix=64;iy=0; height=64; width=16;
+             break;
+
+            case 9:
+            //соединение правое стена
+            ix=64;iy=31; height=32; width=16;
+            break;
+
+           case 11:
+            //пол с черным
+            ix=65;iy=48; height=32; width=15;
+            break;
+
+           case 12:
+            //соединение правое низ пол
+            ix=64;iy=64; height=32; width=16;
+            break;
+
+           case 13:
+            //соединение левое низ пол
+            ix=80;iy=64; height=32; width=16;
+            break;
+
+            
+        }
+        ctx.drawImage(mapIMG,ix,iy,width,height,px,py,32,height*2);
+        px+=32
+        if (px==512) {py+=32; px=0}
+         }
+        }
+
+function top_collision_do (bx,by,bw,bh){
+if (x<bx+bw
+ &&x+48>bx
+ && y <by+bh
+ && y>by) {top_collision=true}
+else{top_collision=false}
+}
+function right_collision_do (bx,by,bw,bh){
+if (x+48<bx+bw
+ &&x+48>bx
+ &&y<by+bh
+ &&y+64>by) {right_collision=true}
+else{right_collision=false}    
+}
+function left_collision_do (bx,by,bw,bh){
+if (x<bx+bw
+ &&x>bx
+ &&y<by+bh
+ &&y+64>by) {left_collision=true}
+else{left_collision=false}   
+}
+function bottom_collision_do (bx,by,bw,bh){
+if (x<bx+bw
+ &&x+48>bx
+ && y+64<by+bh
+ && y+64>by) {bottom_collision=true}
+else{bottom_collision=false}    
+}
+
+function draw () {
+if (points==10) {win()}
+    top_collision_do(0,0,512,75)
+    bottom_collision_do(0,490,512,16)
+    left_collision_do(10,0,32,512)
+    right_collision_do(490,0,32,512)
+
+		draw_hero()
+old_player_sprite+=50;
+        if(old_player_sprite>0 && old_player_sprite<400){old_player_piy=86}
+        else if(old_player_sprite>400 && old_player_sprite<800){old_player_piy=120}
+        else if(old_player_sprite>800){old_player_sprite=0;}
+
+if(left_collision==false){  if (isPressed_left) { piy=96}}
+if(top_collision==false){    if (isPressed_top){piy=0}}
+if(right_collision==false){   if (isPressed_right){piy=32}}
+if(bottom_collision==false){ if (isPressed_bottom){ piy=64}}	
+}
+window.addEventListener("keyup",function () {isPressed = false; 
+	if (event.keyCode == 37  ) {isPressed_left=false}
+	else if (event.keyCode == 38 ) {isPressed_top=false}
+	else if (event.keyCode == 39 ) {isPressed_right=false}
+	else if (event.keyCode == 40 ) {isPressed_bottom=false} 
+})
+function draw_hero() {
+ctx_hero.clearRect(0,0,512,512)
+ctx_hero.drawImage(mapIMG,old_player_pix,old_player_piy,32,33,old_player_x,old_player_y,74,76)
+}
+
+setInterval(level,32)
+setInterval(level2,32)
+setInterval(draw,35)
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+var go = new Audio('music/indoor_level.mp3');
+go.muted=false;
+var is_play=false;
+$(".play").on("click", function(){
+    $(".board").css("display","block")
+    $("canvas").css("display","block")
+    $(".main_board_text").css("display","none")
+})
+function win() {
+    $(".board").css("display","none")
+    $("canvas").css("display","none")
+    $(".game_win_board").css("display","block") 
+    localStorage.setItem('levelId', 3);
+    window.history.back(-1)
+}
+function music() {
+    go.play()
+}
+setTimeout(music,3000)
+</script>
+</body>
+</html>
