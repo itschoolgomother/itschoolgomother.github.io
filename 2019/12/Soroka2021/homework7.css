@@ -1,0 +1,24 @@
+#rozetka{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	left: 1300px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 39% 76%, 8% 96%, 25% 75%, 0% 75%);
+	background-color:blue;
+	z-index: 2;
+}
+.house{
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	left: 600px;
+	top: 300px;
+	z-index: 1;
+}
+.text2{
+	left: 1300px;
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	z-index: 3;
+}

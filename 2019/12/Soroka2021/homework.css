@@ -1,0 +1,86 @@
+.hoho{
+	width: 100%;
+	height: 1000px;
+}
+.star{
+	position: absolute;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	animation: star 5s normal infinite;
+}
+@keyframes star{
+	0%{
+		background-color: red;
+	}
+	25%{
+		background-color: yellow;
+	}
+	50%{
+		background-color: blue;
+	}
+	75%{
+		background-color: green;
+	}
+	100%{
+		background-color: purple;
+	}
+
+	
+}
+.star2{
+	position: absolute;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+	left: 800px;
+	background-color:red;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		animation: star2 5s normal infinite;
+}
+@keyframes star2{
+		0%{
+			background-color: red;
+		}
+		25%{
+			background-color:green;
+		}
+		50%{
+			background-color: yellow;
+		}
+		75%{
+			background-color: purple;
+		}
+		100%{
+				background-color: cyan ;
+		}
+}
+.star3{
+	position: absolute;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+	left: 100%;
+	background-color:red;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		animation: star3 5s normal infinite;
+}
+@keyframes star3{
+	0%{
+	background-color: red;
+	}
+	25%{
+	background-color: grey;
+	}
+	50%{
+	background-color: black;
+	}
+	75%{
+	background-color: cyan;
+	}
+	100%{
+	background-color: yellow;
+	}
+}

@@ -1,0 +1,23 @@
+.text{
+	background-color: black;
+	left: 800px;
+	top: 1px;
+	width: 250px;
+	height: 400px;
+	clip-path: polygon(0 0, 100% 0, 100% 67%, 29% 77%, 8% 100%, 18% 76%, 0 77%);
+	position: absolute;
+	z-index: 1;
+}
+.read2{
+	color: blue;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	 left: 800px;
+	 top: 1px;
+ 	 z-index: 2;
+}
+.mary{
+	top: 200px;
+ 	position: absolute;
+}
