@@ -1,0 +1,56 @@
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+}
+
+#score_table {
+  font-size: 24;
+  color: white;
+  font-family: cursive;
+  visibility: hidden;
+}
+
+#santa {
+  width: 15%;
+  height: auto;
+  transform: scaleX(-1);
+  position: fixed;
+  top: 20%;
+  visibility: hidden;
+}
+
+#olaf {
+  width: 8%;
+  height: auto;
+  position: fixed;
+  top: 80%;
+  left: 10%;
+}
+
+#gift1 {
+  width: 2%;
+  height: auto;
+  visibility: hidden;
+  position: fixed;
+}
+
+#gift2 {
+  width: 2%;
+  height: auto;
+  visibility: hidden;
+  position: fixed;
+}
+
+#rules {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+#start {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
